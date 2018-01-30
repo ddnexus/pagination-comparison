@@ -1,0 +1,84 @@
+= render 'shared/reload_warning', hidden: false
+= render 'shared/github'
+
+.container-head
+
+  .container
+
+    .page-title.fas.fa-gem
+      = @title = 'Gems Comparison'
+
+    .section.scrollable-section
+      #pagy.pager-example
+        h4.subtitle
+          | Pagy
+          span.version  v#{Pagy::VERSION}
+        == pagy_nav_bootstrap(@pagy)
+        .paginate-info
+          == pagy_info(@pagy)
+
+      #will_paginate.pager-example
+        h4.subtitle
+          | Will Paginate
+          span.version  v#{WillPaginate::VERSION::STRING}
+        = will_paginate @will_paginate_records , outer_window: 4, page_links: true , renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer
+        .paginate-info
+          = page_entries_info(@will_paginate_records)
+
+      #kaminari.pager-example
+        h4.subtitle
+          | Kaminari
+          span.version  v#{Kaminari::VERSION}
+        = paginate @kaminari_records
+        .paginate-info
+          = kaminari_page_entries_info(@kaminari_records)
+
+
+
+.container.container-page
+
+  = render 'shared/redirected_notice'
+
+  - unless Rails.env.production?
+    = render 'shared/env_warning'
+
+  h3.title.fas.fa-exclamation-circle Important Notes
+
+  ul.important-notes
+
+    li <b>Output</b>: In this page we compare each gem while it is producing the pagination output for Bootstrap shown above.
+
+    li <b>Code</b>: For all the Benchmarks and profiles in this page we run the same code for all the gems, needed to pull exactly the same records from the DB and render exactly the same navigation links. The only difference is the gem we use.
+
+    li <b>Focus</b>: We omit the output of the actual records (Dish model) from the view, because they are the same for all gems and not relevant for this comparison.
+
+    li <b>Page Range</b>: We configured each gem so they could all produce the same output, however please consider that only the pages in the range 12..28 are offering a fair context to all the gems. If you request a page outside that range, different gems produce a different number of links in their navigation bar, so comparing the results of different output wouldn't make any sense.
+
+    li <b>Environment</b>: The comparisons would not be accurate unless the rails server runs in production mode. In production mode the pagination on this page works as expected and the comparisons refer to the chosen page. The data shown in production is recorded/overridden in a local file. In development mode the comparisons shown are read from the last production recorded session, the pagination is not working and will always show the recorded page.
+
+
+  h2.title.fas.fa-balance-scale Comparisons
+
+  .graph-container
+    .alert.alert-sm.alert-info.fade.show.info-box
+      p The values shown by these charts are measured while each gem is producing <b>the exact same output as the others</b>: same environment conditions, same task, just different gems.
+
+    #gems1.step
+      = render 'shared/step', path: :gems1, timeout: 1000
+
+#links.footer
+  = link_to "Home", root_path, class: 'fas fa-home'
+  = link_to "Pagy Comparisons", pagy_path(page:20,format:'html'),  class: 'fas fa-balance-scale'
+
+javascript:
+  // https://stackoverflow.com/questions/25523294/best-practice-for-responsive-google-charts
+  //bind a resizing function to the window
+  $(window).resize(function () {
+    if (this.resizeTO) clearTimeout(this.resizeTO);
+    this.resizeTO = setTimeout(function () {
+      $(this).trigger('resizeEnd');
+    }, 500);
+  });
+
+- if Rails.env.static?
+  = render 'shared/init_charts'

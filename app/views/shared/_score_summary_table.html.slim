@@ -1,0 +1,32 @@
+#score-table
+  table.score-comparison.table.table-sm.table-bordered
+    thead.thead-dark
+      tr
+        th Pagy
+        th Will Paginate
+        th Kaminari
+    tbody
+      tr
+        td.best.table-success = ratio_score($p, $k, :faster) { |o| o.ips }
+        td.plain.table-danger = ratio_score($p, $w, :slower) { |o| o.ips }
+        td.worse.table-danger = ratio_score($p, $k, :slower) { |o| o.ips }
+      tr
+        td.best.table-success = ratio_score($k, $p, 'less memory') { |o| o.memory.size }
+        td.plain.table-danger = ratio_score($w, $p, 'more memory') { |o| o.memory.size }
+        td.worse.table-danger = ratio_score($k, $p, 'more memory') { |o| o.memory.size }
+      tr
+        td.best.table-success = ratio_score($w, $p, 'less LOC') { |o| o.code_size.loc_count }
+        td.worse.table-danger = ratio_score($w, $p, 'more LOC') { |o| o.code_size.loc_count }
+        td.plain.table-danger = ratio_score($k, $p, 'more LOC') { |o| o.code_size.loc_count }
+      tr
+        td.best.table-success = ratio_score($k, $p, 'less modules') { |o| o.code_struct.module_count }
+        td.plain.table-danger = ratio_score($w, $p, 'more modules') { |o| o.code_struct.module_count }
+        td.worse.table-danger = ratio_score($k, $p, 'more modules') { |o| o.code_struct.module_count }
+      tr
+        td.best.table-success = ratio_score($k, $p, 'less methods') { |o| o.code_struct.method_count }
+        td.plain.table-danger = ratio_score($w, $p, 'more methods') { |o| o.code_struct.method_count }
+        td.worse.table-danger = ratio_score($k, $p, 'more methods') { |o| o.code_struct.method_count }
+      tr
+        td.best.bg-good.txt-invert = ratio_ipskb_score($p, $k, 'more efficient')
+        td.plain.bg-bad.txt-invert = ratio_ipskb_score($p, $w, 'less efficient')
+        td.worse.bg-bad.txt-invert = ratio_ipskb_score($p, $k, 'less efficient')

@@ -1,0 +1,74 @@
+.subsection
+  h3.subtitle.fas.fa-tachometer-alt IPS - Nav Methods
+
+  = render 'shared/details', id: :nav_ips, show: true do
+    table
+      thead
+        tr
+          th pagy_nav / pagy-template
+      tbody
+        tr
+          td.pre-mono = $pagy.nav_ips
+
+
+.subsection
+  h3.subtitle.fas.fa-microchip Memory - Nav Methods
+
+  = render 'shared/details', id: :nav_memory, show: true do
+    table
+      thead
+        tr
+          th pagy_nav / pagy-template
+      tbody
+        tr
+          td.pre-mono = $pagy.nav_memory
+
+
+.subsection
+  h3.subtitle.fas.fa-tachometer-alt IPS - Link Methods
+
+  = render 'shared/details', id: :link_ips, show: true do
+    table
+      thead
+        tr
+          th pagy_link_proc / rails-link_to
+      tbody
+        tr
+          td.pre-mono = $pagy.link_ips
+
+
+.subsection
+  h3.subtitle.fas.fa-microchip Memory - Link Methods
+
+  = render 'shared/details', id: :link_memory, show: true do
+    table
+      thead
+        tr
+          th pagy_link_proc / rails-link_to
+      tbody
+        tr
+          td.pre-mono = $pagy.link_memory
+
+.subsection
+  h3.subtitle.fas.fa-tachometer-alt IPS - I18n Methods
+
+  = render 'shared/details', id: :i18n_ips, show: true do
+    table
+      thead
+        tr
+          th pagy_t / rails-t
+      tbody
+        tr
+          td.pre-mono = $pagy.i18n_ips
+
+.subsection
+  h3.subtitle.fas.fa-microchip Memory - I18n Methods
+
+  = render 'shared/details', id: :i18n_memory, show: true do
+    table
+      thead
+        tr
+          th pagy_t / rails-t
+      tbody
+        tr
+          td.pre-mono = $pagy.i18n_memory

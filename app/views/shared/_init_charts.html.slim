@@ -1,0 +1,40 @@
+javascript:
+
+  locChartData         = #{{ loc_chart_data.to_json }}
+  filesChartData       = #{{ files_chart_data.to_json }}
+  methodsChartData     = #{{ methods_chart_data.to_json }}
+  modulesChartData     = #{{ modules_chart_data.to_json }}
+  memoryChartData      = #{{ memory_chart_data.to_json }}
+  objectsChartData     = #{{ objects_chart_data.to_json }}
+  memoryPagesChartData = #{{ memory_pages_chart_data.to_json }}
+  ipsData              = #{{ ips_chart_data.to_json }}
+  comparisonData       = #{{ comparison_chart_data.to_json }}
+
+  google.charts.setOnLoadCallback(function () {
+    drawLocChart();
+    drawFilesChart();
+    drawMethodsChart();
+    drawModulesChart();
+    drawMemoryChart();
+    drawObjectsChart();
+    drawMemoryPagesChart();
+    drawIpsChart();
+    drawComparisonChart();
+  });
+
+  $(window).resize(function() {
+    if (this.resizeTO) clearTimeout(this.resizeTO);
+    this.resizeTO = setTimeout(function() {
+      $(this).trigger('resizeEnd');
+    }, 500);
+  });
+
+  $(window).bind('resizeEnd', drawLocChart);
+  $(window).bind('resizeEnd', drawFilesChart);
+  $(window).bind('resizeEnd', drawMethodsChart);
+  $(window).bind('resizeEnd', drawModulesChart);
+  $(window).bind('resizeEnd', drawMemoryChart);
+  $(window).bind('resizeEnd', drawObjectsChart);
+  $(window).bind('resizeEnd', drawMemoryPagesChart);
+  $(window).bind('resizeEnd', drawIpsChart);
+  $(window).bind('resizeEnd', drawComparisonChart);

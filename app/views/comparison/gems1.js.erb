@@ -1,0 +1,35 @@
+
+<%
+  init_code_size
+  init_code_struct
+  init_memory
+-%>
+
+locChartData         = <%== loc_chart_data.to_json %>;
+filesChartData       = <%== files_chart_data.to_json %>;
+methodsChartData     = <%== methods_chart_data.to_json %>;
+modulesChartData     = <%== modules_chart_data.to_json %>;
+memoryChartData      = <%== memory_chart_data.to_json %>;
+objectsChartData     = <%== objects_chart_data.to_json %>;
+memoryPagesChartData = <%== memory_pages_chart_data.to_json %>;
+
+$('#gems1').html("<%= j(render 'gems1')%>");
+
+// https://stackoverflow.com/questions/42714876/google-visualization-piechart-is-not-a-constructor
+google.charts.setOnLoadCallback(function () {
+  drawLocChart();
+  drawFilesChart();
+  drawMethodsChart();
+  drawModulesChart();
+  drawMemoryChart();
+  drawObjectsChart();
+  drawMemoryPagesChart();
+});
+
+$(window).bind('resizeEnd', drawLocChart);
+$(window).bind('resizeEnd', drawFilesChart);
+$(window).bind('resizeEnd', drawMethodsChart);
+$(window).bind('resizeEnd', drawModulesChart);
+$(window).bind('resizeEnd', drawMemoryChart);
+$(window).bind('resizeEnd', drawObjectsChart);
+$(window).bind('resizeEnd', drawMemoryPagesChart);

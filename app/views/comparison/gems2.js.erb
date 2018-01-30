@@ -1,0 +1,17 @@
+<%
+  init_ips
+-%>
+ipsData        = <%== ips_chart_data.to_json %>;
+comparisonData = <%== comparison_chart_data.to_json %>;
+
+$('#reload-warning').remove();
+
+$('#gems2').html("<%= j(render partial: 'gems2') %>");
+
+google.charts.setOnLoadCallback(function () {
+  drawIpsChart();
+  drawComparisonChart();
+});
+
+$(window).bind('resizeEnd', drawIpsChart);
+$(window).bind('resizeEnd', drawComparisonChart);

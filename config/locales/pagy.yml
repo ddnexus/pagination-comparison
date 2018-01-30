@@ -1,0 +1,28 @@
+# Standard pagy I18n strings
+
+en:
+  pagy:
+    nav:
+      prev: "&lsaquo;&nbsp;Prev"
+      next: "Next&nbsp;&rsaquo;"
+      gap: "&hellip;"
+    info:
+      single_page:
+        zero: "No %{item_name} found"
+        one: "Displaying <b>1</b> %{item_name}"
+        other: "Displaying <b>all %{count}</b> %{item_name}"
+      multiple_pages: "Displaying %{item_name} <b>%{from}-%{to}</b> of <b>%{count}</b> in total"
+      item_name:
+        zero: "items"
+        one: "item"
+        other: "items"
+
+  # we add the activerecord models here, since we don't use I18n
+  # with I18n we don't need to add the models here, but we need to add
+  # the translated pagy entries (above) to some i18n file
+  activerecord:
+    models:
+      dish:
+        zero: Dishes
+        one: Dish
+        other: Dishes

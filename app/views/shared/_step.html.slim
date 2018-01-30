@@ -1,0 +1,30 @@
+- if Rails.env.static?
+  = render path.to_s
+- else
+  - link_text ||= '_'
+  .collecting-container.alert.alert-sm.alert-info.fade.show
+    => link_to link_text.html_safe, send(:"#{path}_path", page: params[:page]), method: :get, remote: true, id: 'step-link'
+
+    #collecting style="display: none;"
+      b Collecting metrics: please, do not reload nor click on any link...
+      p The waiting time depends on your hardware an can vary from a few seconds to a few minutes.
+      p Please, be patient :)
+
+    - if link_text == '_'     # automatic loading, no link shown, no click needed
+      javascript:
+        $('a#step-link').hide();
+        $('.collecting-container').addClass('collecting-box');
+        $('#reload-warning').show();
+        $('#collecting').show();
+        setTimeout(function(){ $('a#step-link').get(0).click() }, #{timeout});
+    - else                    # loading on demand, link shown
+      javascript:
+        $('.collecting-container').addClass('run-box');
+        $('a#step-link').on('click', function(){
+          $('.collecting-container').removeClass('run-box');
+          $('.collecting-container').addClass('collecting-box');
+          $('#reload-warning').show();
+          $(this).hide();
+          $('#collecting').show();
+          }
+        );

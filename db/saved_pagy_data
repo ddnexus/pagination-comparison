@@ -1,0 +1,64 @@
+U:OpenStruct{:nav_ipsI"Warming up --------------------------------------
+            pagy_nav   352.000  i/100ms
+       pagy-template   250.000  i/100ms
+Calculating -------------------------------------
+            pagy_nav      3.494k (± 2.4%) i/s -     17.600k in   5.059695s
+       pagy-template      2.479k (± 2.6%) i/s -     12.500k in   5.072524s
+                   with 99.0% confidence
+
+Comparison:
+            pagy_nav:     3493.9 i/s
+       pagy-template:     2478.5 i/s - 1.41x  (± 0.05) slower
+                   with 99.0% confidence
+
+:ET:nav_memoryI"�Memory -----------------------------------   
+           pagy_nav     35.41 Kb
+      pagy-template     35.20 Kb - 1x more
+
+Objects -----------------------------------   
+           pagy_nav       381
+      pagy-template       433    - 1.14x more
+
+;T:link_ipsI"Warming up --------------------------------------
+      pagy_link_proc     2.125k i/100ms
+       rails-link_to    80.000  i/100ms
+Calculating -------------------------------------
+      pagy_link_proc     21.625k (± 1.2%) i/s -    108.375k in   5.016836s
+       rails-link_to    806.948  (± 1.7%) i/s -      4.080k in   5.067150s
+                   with 99.0% confidence
+
+Comparison:
+      pagy_link_proc:    21625.2 i/s
+       rails-link_to:      806.9 i/s - 26.80x  (± 0.54) slower
+                   with 99.0% confidence
+
+;T:link_memoryI"�Memory -----------------------------------   
+      pagy_link_proc      9.68 Kb
+       rails-link_to    116.52 Kb - 12x more
+
+Objects -----------------------------------   
+      pagy_link_proc       146
+       rails-link_to     1,462    - 10x more
+
+;T:i18n_ipsI"Warming up --------------------------------------
+              pagy_t    18.611k i/100ms
+             rails-t     3.159k i/100ms
+Calculating -------------------------------------
+              pagy_t    183.007k (± 2.6%) i/s -    930.550k in   5.100731s
+             rails-t     35.283k (± 1.8%) i/s -    176.904k in   5.027555s
+                   with 99.0% confidence
+
+Comparison:
+              pagy_t:   183006.9 i/s
+             rails-t:    35283.5 i/s - 5.19x  (± 0.16) slower
+                   with 99.0% confidence
+
+;T:i18n_memoryI"�Memory -----------------------------------   
+             pagy_t      0.99 Kb
+            rails-t      3.63 Kb - 3.66x more
+
+Objects -----------------------------------   
+             pagy_t        13
+            rails-t        39    - 3x more
+
+;T

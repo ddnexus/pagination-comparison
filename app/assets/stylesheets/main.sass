@@ -1,0 +1,364 @@
+@mixin fas-icon
+  +fa-icon
+  vertical-align: 0
+  font-family: 'Font Awesome 5 Free'
+  font-weight: 900
+
+@mixin icon-band($icon)
+  position: relative
+  padding-left: 4.5rem
+  &:before, &:after
+    position: absolute
+    +fas-icon
+    top: 0
+    left: 0
+    padding: .8rem
+    width: 4rem
+    height: 100%
+    font-size: 2.5em
+    text-align: center
+    background-color: rgba(0, 0, 0, 0.15)
+    color: rgba(0, 0, 0, 0)
+    content: fa-content($icon)
+    border-top-left-radius: .25rem
+    border-bottom-left-radius: .25rem
+  //  allow spinning
+  &:after
+    color: unset
+    background-color: rgba(0, 0, 0, 0)
+    height: auto
+
+@mixin border-shadow
+  border: 1px solid #e5e5e5
+  box-shadow: 0 0 10px rgba(0,0,0,0.1)
+
+$dark-white: #f7f7f7
+$dark-grey: #51585f
+$light-grey: lighten($dark-grey, 20%)
+$bg-blue: #315BA7
+$bg-good: #0F9D58
+$bg-bad: #DB4437
+
+
+//////// Override
+
+.pagination
+  @extend .pagination-sm
+
+//////// Home
+
+#home-title
+  white-space: nowrap
+  color: rgba(255, 255, 255, 0.8)
+
+#home
+  white-space: nowrap
+  #gem
+    margin-top: 4.5rem
+    color: $light-grey
+
+  #gems
+    h4
+      margin-top: 4.5rem
+    span
+      font-family: monospace
+      +border-radius( 2rem)
+      background-color: rgba(255, 255, 255, 0.08)
+      color: white
+      padding: .7rem 2rem
+      margin: 1rem .5rem
+
+  #headline
+    h3
+      margin-top: 2.5rem
+      margin-bottom: 3rem
+      font-size: 2rem
+
+  #compare a
+    font-family: $font-family-base
+    font-weight: $font-weight-base
+    +border-radius(2rem)
+    padding: .5rem 1.3rem
+    margin: 1rem .5rem
+    background-color: $light-grey
+    color: white
+    &:before
+      +fas-icon
+      margin-right: .5rem
+
+
+///////  general
+
+
+body, html
+  color: $dark-grey
+  background-color: $dark-white
+
+
+#reload-warning
+  position: fixed
+  z-index: 100
+  text-align: center
+  width: 100%
+  padding: .2rem .3rem
+  white-space: nowrap
+  color: white
+
+  //background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(210, 1, 1, 0.90)
+
+  .warning-container
+    display: inline-block
+    white-space: nowrap
+
+    i
+      margin-right: .1rem
+
+@media (max-width: 520px)
+  //#reload-warning
+  //  white-space: normal !important
+  .warning-container
+    white-space: normal !important
+
+.footer
+  position: fixed
+  bottom: 0
+  z-index: 100
+  text-align: center
+  width: 100%
+  padding: .1rem .3rem
+  white-space: nowrap
+  color: white
+  background-color: rgba(34, 36, 43, 0.9)
+
+  a
+    color: $light-grey
+    font-family: $font-family-base
+    font-weight: $font-weight-base
+    margin-left: 1rem
+    margin-right: 1rem
+    &:before
+      +fas-icon
+      margin-right: .3rem
+
+
+
+.container-head
+  background: $dark-grey
+  color: white
+  padding: 3rem
+
+.container-page
+  margin-bottom: 4rem
+
+.collecting-container
+  //padding: 2em
+  margin-top: 2em
+  margin-bottom: 2em
+  height: 100px
+
+.graph-container
+  margin-top: 35px
+  margin-bottom: 25px
+
+.section
+  margin-top: 2rem
+.scrollable-section
+  overflow-x: auto
+
+.subsection
+  margin-top: 3rem
+
+.small-subsection
+  margin-top: 2rem
+
+.alert
+  &.alert-sm
+    p
+      margin-bottom: auto
+  &.alert-danger
+    color: #b50011
+
+.page-title
+  font-size: 2rem
+  margin-top: 1.4rem
+
+.title
+  font-size: 1.8rem
+  margin-top: 4rem
+  margin-bottom: 1.2rem
+  width: 100%
+  border-bottom: .08rem solid lighten($dark-grey, 50%)
+  padding-bottom: .4rem
+
+.subtitle
+  font-size: 1.4rem
+  margin-top: 1rem
+
+.small-subtitle
+  font-size: 1.2rem
+
+span.version
+  font-size: .9rem
+  color: $light-grey
+
+.page-title, .title, .subtitle, .small-subtitle, .conclusion
+  font-family: $font-family-base
+  font-weight: $font-weight-base
+  &:before
+    +fas-icon
+    color: $light-grey
+    margin-right: .7rem
+
+.pager-example
+  margin-bottom: 2.1rem
+  .paginate-info
+    margin-top: -10px
+
+.pre-mono
+  font-family: monospace
+  white-space: pre
+  overflow-wrap: normal
+  overflow: auto
+  line-height: 1.25em
+
+
+ul.important-notes
+  li
+    margin-bottom: .7em
+
+.scroll
+  height: 600px
+  .pre-mono
+    height: 600px
+
+
+.chart
+  @extend .rounded
+  background-color: #FFF
+  width: 100%
+  min-height: 160px
+  padding: 5px
+  +border-shadow
+
+
+#memory-page-chart, #comparison-chart
+  overflow: hidden
+  min-height: 450px
+
+
+.chart-caption
+  font-size: .8rem
+  font-style: italic
+  padding-left: 20px
+
+.bg-good
+  background-color: $bg-good
+.bg-bad
+  background-color: $bg-bad
+
+.table
+  margin-bottom: 0
+
+table
+  width: 100%
+  table-layout: fixed
+  th
+    text-align: left
+  td
+    vertical-align: top
+    width: 33%
+
+table.score-comparison
+  //  margin-bottom: 2rem
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+  font-size: .85rem
+  td, th
+    padding: 0.3rem 0.5rem
+
+  caption
+    padding-bottom: 0.2rem
+    caption-side: top
+    color: $dark-grey
+    font-size: 1.2rem
+
+  .thead-dark th
+    color: #fff
+    background-color: $dark-grey
+    //border-color: white
+
+
+  td.txt-invert
+    color: white
+
+  &.table-bordered
+    th, td
+      border: 1px solid $dark-white
+
+    thead th
+      border-bottom: 2px solid $dark-white !important
+
+.comments
+  margin-top: 1rem
+
+.card
+  margin-top: 1.6em
+  +border-shadow
+
+.card-header
+  background-color: #fff
+
+  padding: 0
+  border-bottom: 0
+
+  .btn-link
+    font-weight: 700
+    font-size: 1.15rem
+    color: $dark-grey !important
+
+    //light blue: #007bff; dark blue: #0056b3;
+    &:hover, &:focus
+      text-decoration: none
+      color: #007bff !important
+
+      //light blue: #007bff; dark blue: #0056b3;
+
+div.card-body th
+  padding-bottom: .8em
+
+
+[data-toggle="collapse"]:before
+  +fas-icon
+  vertical-align: 0
+  content: fa-content( $fa-var-chevron-right )
+  margin-right: .4rem
+  transform: rotate(90deg)
+  transition: all linear 0.25s
+
+[data-toggle="collapse"].collapsed:before
+  transform: rotate(0deg)
+
+.warning-box
+  +icon-band($fa-var-shield-alt)
+
+.info-box, .notice-box
+  +icon-band($fa-var-info-circle)
+  font-style: italic
+
+.collecting-box
+  +icon-band($fa-var-spinner)
+  &:after
+    @extend .fa-spin
+
+.run-box
+  +icon-band($fa-var-flag-checkered)
+
+#pagy-nav
+
+  .capt
+    margin-top: 2em
+    margin-bottom: 0.7em
+
+  .no-flex nav.pagination
+    display: block

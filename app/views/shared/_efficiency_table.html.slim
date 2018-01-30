@@ -1,0 +1,23 @@
+#efficiency-table
+  table.score-comparison.table.table-sm.table-bordered
+    thead.thead-dark
+      tr
+        th Gem
+        th IPS per Kb
+        th Score
+    tbody
+      tr
+        td.table-success Pagy
+        td.table-success
+          b = ips_per_kb($p)
+        td.best.bg-good.txt-invert = ratio_ipskb_score($p, $k, 'more efficient')
+      tr
+        td.table-danger Will Paginate
+        td.table-danger
+          b = ips_per_kb($w)
+        td.best.bg-bad.txt-invert  = ratio_ipskb_score($p, $w, 'less efficient')
+      tr
+        td.table-danger Kaminari
+        td.table-danger
+          b = ips_per_kb($k)
+        td.best.bg-bad.txt-invert  = ratio_ipskb_score($p, $k, 'less efficient')

@@ -1,0 +1,12 @@
+- show ||= false
+div id="p#{id}"
+  .card
+    .card-header
+      h5.mb-0
+        button.btn.btn-link class="#{'collapsed' unless show}" data-toggle="collapse" data-target="#t#{id}" aria-show="false" aria-controls="body-code"
+          | Details...
+
+    .collapse class="#{'show' if show}" id="t#{id}" aria-labelledby="heading-code" data-parent="#p#{id}"
+      .card-body
+
+        = yield

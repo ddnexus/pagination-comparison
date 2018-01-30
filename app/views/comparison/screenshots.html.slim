@@ -1,0 +1,49 @@
+style
+  | body, html { background-color: white; }
+    .graph-screenshot { margin-top: 35px; margin-bottom: 25px; padding: 6px; }
+
+
+.container.container-page
+
+  #screenshots.subsection
+    h3.subtitle.fas.fa-image
+      = @title = 'Screenshot Helper'
+
+    .col-md-10.col-xl-8
+
+      .graph-screenshot
+        #loc-chart.chart
+
+      .graph-screenshot
+        #file-chart.chart
+
+      .graph-screenshot
+        #methods-chart.chart
+
+      .graph-screenshot
+        #modules-chart.chart
+
+      .graph-screenshot
+        #objects-chart.chart
+
+      .graph-screenshot
+        #memory-chart.chart
+
+      .graph-screenshot
+        #memory-page-chart.chart
+
+      .graph-screenshot
+        #ips-chart.chart
+
+      .graph-screenshot
+        #comparison-chart.chart
+
+      .graph-screenshot
+        = render 'shared/score_summary_table'
+
+    .col-md-8.col-lg-6
+
+      .graph-screenshot
+        = render 'shared/efficiency_table'
+
+= render 'shared/init_charts'

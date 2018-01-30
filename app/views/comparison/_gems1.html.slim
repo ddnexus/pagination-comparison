@@ -1,0 +1,115 @@
+#code-size.subsection
+  h3.subtitle.fas.fa-file-alt Code Size
+
+  .row
+
+    .graph-container.col-md-10.col-lg-7
+      #loc-chart.chart
+
+    .graph-container.col-md-10.col-lg-5
+      #file-chart.chart
+      / .chart-caption
+        | click to dig-in and right-click to dig-out
+
+
+  .comments
+    p While the Code Size is not a critical topic, it gives you a good idea about how elegant and effective each gem is while accomplishing the exact same task... and the differences are very noticeable.
+    p Less code to perform the same task usually means less complexity and more efficiency, and understanding 10 lines of code is obviously easier than understanding 100 lines, so in the end the Code Size is also a good factor to evaluate a gem.
+    p
+      = icon('fas', 'info-circle')
+      i  To be fair with all gems, we removed the generator-related files from Kaminari, and added the lines of ERB templates it uses.
+
+
+  = render 'shared/details', id: :loc do
+    table.details#loc
+      thead
+        tr
+          th Pagy
+          th Will Paginate
+          th Kaminari
+      tbody
+        tr
+          td.pre-mono == $p.code_size.stats
+          td.pre-mono == $w.code_size.stats
+          td.pre-mono == $k.code_size.stats
+
+
+#code-structure.subsection
+  h3.subtitle.fas.fa-sitemap Code Structure
+
+  .row
+    .graph-container.col-md-10.col-lg-7
+      #methods-chart.chart
+
+    .graph-container.col-md-10.col-lg-5
+      #modules-chart.chart
+      / .chart-caption
+        | click to dig-in and right-click to dig-out
+
+  .comments
+    p Modules and Methods give you a good idea about how complicated is the code. Pagy is not only very simple in structure and number of methods, but 100% of its modules and methods are public API, directly accessible and directly overridable (without monkey patching or subclassing) so there is zero waste there.
+
+    P The other two gems, conversely, use most of their modules and methods internally, and you would have to deal with a quite complicated "entropy" if you needed some significant overriding.
+
+    p Moreover, a complicated structure is also affecting speed and object and memory allocation, as the following Memory Profile and Benchmark expose.
+
+
+  = render 'shared/details', id: :code do
+    table.details#code
+      thead
+        tr
+          th Pagy
+          th Will Paginate
+          th Kaminari
+      tbody
+        tr
+          td.pre-mono == $p.code_struct.stats
+          td.pre-mono == $w.code_struct.stats
+          td.pre-mono == $k.code_struct.stats
+
+
+
+#memory-profile.subsection
+  h3.subtitle.fas.fa-microchip Memory Profile
+
+
+  .row.graph-container.col-md-10.col-lg-8
+    #objects-chart.chart
+
+
+  .row.graph-container.col-md-10.col-lg-8
+    #memory-chart.chart
+
+  .comments
+    p The bar charts show the dramatic difference in object created and memory usage by each gem. So many thousand of objects needed to perform such a simple task, show that there is a lot of expensive waste in how that gems work: this is a mayor performance issue.
+
+  .row.graph-container.col-md-10.col-lg-8
+    #memory-page-chart.chart
+
+  p This chart shows the memory usage with increasing number of pages shown, starting from a pagination bar of just 2 pages, up to 20 pages. From 2 to 20 pages Pagy has just a <b>#{increase_times(:p)}</b> (its chart-line is almost horizontal on the very bottom part of the memory usage), Will Paginate has a <b>#{increase_times(:w)}</b> (noticeable slope) and Kaminari has a <b>#{increase_times(:k)}</b> (a very steep memory increase)!
+
+  p You can take a look at the full Memory Profile for each gem in the Details below. Please, keep in mind that each pagination gem may use its own code or may use other gems (rails, activerecord, activesupport, etc.) to do its job. Because of that, we measure the memory allocated by the app as a whole (all gems included), not by the single pagination gem (which obviously wouldn't make any sense).
+
+  p You can see the the specs broken down by gem, classes, files and location in the memory profile below. Certain rails gem use more memory when used with a pagination gem than when they are used with another one.
+
+
+  = render 'shared/details', id: :memory  do
+    table.details#memory
+      thead
+        tr
+          th Pagy
+          th Will Paginate
+          th Kaminari
+      tbody
+        tr
+          td.scroll
+            .pre-mono == $p.memory.stats
+          td.scroll
+            .pre-mono == $w.memory.stats
+          td.scroll
+            .pre-mono == $k.memory.stats
+
+
+
+#gems2.step
+  = render 'shared/step', path: :gems2, timeout: 4000

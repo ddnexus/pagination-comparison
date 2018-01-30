@@ -1,0 +1,81 @@
+= render 'shared/reload_warning', hidden: true
+
+.container-head
+
+  .container
+
+    .page-title.fas.fa-balance-scale
+      = @title = 'Pagy Comparisons'
+
+    .subsection
+
+      p In this page we show and/or compare different aspects of the Pagy gem:
+
+      ul
+        li Helpers
+        li Templates
+        li
+          | (your) Custom Templates
+        li Other Methods (benchmarks and profiles)
+
+      p You can use this page to inspect the commented source, and make decision about using one method or another, based on Benchmarks and Memory allocation.
+
+.container.container-page
+
+  = render 'shared/github'
+
+  = render 'shared/redirected_notice'
+
+  - unless Rails.env.production?
+    = render 'shared/env_warning'
+
+  #pagy-nav
+
+    h3.title.fas.fa-code Pagy Helpers
+
+    .scrollable-section
+      .pagy-nav
+        .capt pagy_nav
+        .no-flex.pager-example
+          == wrap_nav "pagy_nav helper"
+            == pagy_nav(@pagy)
+
+      .pagy-nav
+        .capt pagy_nav_bootstrap
+        .pager-example
+          == wrap_nav "pagy_nav_bootstrap helper"
+            == pagy_nav_bootstrap(@pagy)
+
+    h3.title.fas.fa-file-code Pagy Templates
+
+    .scrollable-section
+      - Pagy.root.join('templates').each_child.sort.each do |t|
+        .pagy-nav
+          .capt title=t = t.basename
+          .no-flex.pager-example
+            == wrap_nav "template #{t}"
+              == render file: t, locals: { pagy: @pagy }
+
+    h3.title.fas.fa-file-code Custom Templates
+
+    .scrollable-section
+      - if Rails.root.join('app', 'views', 'pagy').entries.size > 2
+        - Rails.root.join('app', 'views', 'pagy').each_child.sort.each do |t|
+          .pagy-nav
+            .capt title=t = t.basename
+            .no-flex.pager-example
+              == wrap_nav "template #{t}"
+                == render file: t, locals: { pagy: @pagy }
+      - else
+        .pagy-nav
+          p You can try your custom templates by adding them to the <code>app/views/pagy</code> dir and reload this page.
+
+
+  h2.title.fas.fa-balance-scale Comparisons
+
+  #pagy1.step
+    = render 'shared/step', path: :pagy1, link_text: "Click to run the  Comparison Benchmarks..."
+
+#links.footer
+  = link_to "Home", root_path, class: 'fas fa-home'
+  = link_to "Gems Comparison", gems_path(page:20, format:'html'), class: 'fas fa-gem'

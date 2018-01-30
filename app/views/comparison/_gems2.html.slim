@@ -1,0 +1,68 @@
+#ips-benchmark.subsection
+
+  h3.subtitle.fas.fa-tachometer-alt Speed Benchmark
+
+  .row
+    .graph-container.col-md-10.col-lg-8
+      #ips-chart.chart
+  .comments
+    p This is probably the most important and certainly the most striking comparison, but the result is not completely unespected. Indeed, the poor performance of Will Paginate and Kaminari is also a consequence of the waste of objects shown in the previous chart. Besides - being small and easy to manage - Pagy has been optimized for performance almost line by line.
+
+  = render 'shared/details', id: :ips  do
+    table
+      thead
+        tr
+          th Iterations Per Second
+      tbody
+        tr
+          td.pre-mono = $ips_stats
+
+
+#metrics-correlation.subsection
+
+  h3.subtitle.fas.fa-braille Correlation Between Metrics
+
+  .row
+    .graph-container.col-md-10.col-lg-8
+      #comparison-chart.chart
+
+  .comments
+
+    p In this chart you can visually appreciate the difference between the gems by just looking how close or far they are, big or small, fast or slow... You can also hover on the bubbles to read the data for each gem.
+    ul
+      li The speed is represented on the horizontal axis: left means slow, right means fast.
+      li The size of the code is represented on the vertical axis: bottom means few LOC, top means many LOC.
+      li The size of the bubble represents the memory used: small is good, big is bad
+      li The darkness of the bubble represents the complexity: light-blue is simple, dark is complex.
+
+    p Pagy is the smallest and lightest blue bubble. Its position is on the lowest and fastest bottom-right area of the chart. The other gems look quite close together on the slowest top-left area of the chart, and very far from Pagy. The dimension and colors of Will Paginate and Kaminari are quite similar between them, much darker and bigger than Pagy.
+
+#efficiency-ratio.subsection
+
+  h3.subtitle.fas.fa-road Efficiency Ratio (IPS/Kb)
+
+  .row.graph-container.col-md-4.col-lg-6
+    = render 'shared/efficiency_table'
+
+  p The IPS/Kb ratio is calculated out of speed (IPS) and Memory (Kb): it shows how well each gem uses any Kb of memory it allocates/consumes.
+
+  p It is similar to the mileage of a car: how many Miles (or Kilometers) the car is capable to run per each Gallon (or Liter) of gasoline it consumes. It is the ratio between the good thing (distance) and the bad thing (gasoline or money paid for it). The higher the index, the better for your pockets.
+
+  p For a software the good thing is the speed: how fast it can give you the output, and the bad thing is the memory required to do the job. Below is the calculation for this page: the difference between the gems is so extreme that cannot even be compared in a chart.
+
+  .graph-container
+    .alert.alert-sm.alert-info.fade.show.info-box
+
+      p The IPS/Kb ratio is proportional to the hardware speed, so you may get different numbers on different hardwares, but about the same score (i.e. the ratios between gems).
+
+      p For example, if you run this page on a computer that is 2 times faster, you should get all IPS/Kb 2 times greater, but the scores should be basically the same.
+
+#score-summary.subsection
+
+  h3.subtitle.fas.fa-th-list Score Summary
+
+  .row.graph-container.col-md-10.col-lg-7
+    = render 'shared/score_summary_table'
+
+  h5.conclusion.fas.fa-trophy
+    | Pagy outperforms the other gems in each and every score!
