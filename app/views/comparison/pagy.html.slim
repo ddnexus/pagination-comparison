@@ -77,5 +77,5 @@
     = render 'shared/step', path: :pagy1, link_text: "Click to run the  Comparison Benchmarks..."
 
 #links.footer
-  = link_to "Home", root_path, class: 'fas fa-home'
-  = link_to "Gems Comparison", gems_path(page:20, format:'html'), class: 'fas fa-gem'
+  = link_to "Home", "#{ENV['RAILS_RELATIVE_URL_ROOT']}/", class: 'fas fa-home'
+  = link_to "Gems Comparison", "#{ENV['RAILS_RELATIVE_URL_ROOT']}/gems.html?page=20", class: 'fas fa-gem'
