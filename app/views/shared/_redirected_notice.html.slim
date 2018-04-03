@@ -1,9 +1,6 @@
 - if flash[:notice]
-  #redirect-warning.alert.alert-sm.alert-info.alert-dismissible.fade.show.graph-container.notice-box
+  #redirect-warning.alert.alert-sm.alert-info.fade.show.graph-container.notice-box
     h4
       b Notice
       | : Your request has been redirected.
     p = flash[:notice]
-
-    button.close type="button" data-dismiss="alert" aria-label="Close"
-      span aria-hidden="true" &times

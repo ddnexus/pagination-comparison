@@ -1,5 +1,5 @@
 .graph-container
-  #env-warning.alert.alert-sm.alert-danger.alert-dismissible.fade.show.warning-box role="alert"
+  #env-warning.alert.alert-sm.alert-danger.fade.show.warning-box role="alert"
     h4
       b  WARNING
       | : #{Rails.env.inspect} mode detected!
@@ -11,6 +11,3 @@
     - else
       p The comparisons shown below would not be accurate in #{Rails.env} mode, so we display the last production-recorded data.
       p In order to actually run Benchmarks and Memory Profiles on this hardware, please restart the rails server in production mode.
-
-    button.close type="button" data-dismiss="alert" aria-label="Close"
-      span aria-hidden="true" &times
