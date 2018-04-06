@@ -73,18 +73,21 @@
   h3.subtitle.fas.fa-microchip Memory Profile
 
 
-  .row.graph-container.col-md-10.col-lg-8
-    #objects-chart.chart
+  .row
+    .graph-container.col-md-10.col-lg-8
+      #objects-chart.chart
 
 
-  .row.graph-container.col-md-10.col-lg-8
-    #memory-chart.chart
+  .row
+    .graph-container.col-md-10.col-lg-8
+      #memory-chart.chart
 
   .comments
     p The bar charts show the dramatic difference in object created and memory usage by each gem. So many thousand of objects needed to perform such a simple task, show that there is a lot of expensive waste in how that gems work: this is a mayor performance issue.
 
-  .row.graph-container.col-md-10.col-lg-8
-    #memory-page-chart.chart
+  .row
+    .graph-container.col-md-10.col-lg-8
+      #memory-page-chart.chart
 
   p This chart shows the memory usage with increasing number of pages shown, starting from a pagination bar of just 2 pages, up to 20 pages. From 2 to 20 pages Pagy has just a <b>#{increase_times(:p)}</b> (its chart-line is almost horizontal on the very bottom part of the memory usage), Will Paginate has a <b>#{increase_times(:w)}</b> (noticeable slope) and Kaminari has a <b>#{increase_times(:k)}</b> (a very steep memory increase)!
 

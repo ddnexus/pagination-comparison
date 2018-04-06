@@ -41,8 +41,9 @@
 
   h3.subtitle.fas.fa-road Efficiency Ratio (IPS/Kb)
 
-  .row.graph-container.col-md-4.col-lg-6
-    = render 'shared/efficiency_table'
+  .row
+    .graph-container.col-md-8.col-lg-6
+      = render 'shared/efficiency_table'
 
   p The IPS/Kb ratio is calculated out of speed (IPS) and Memory (Kb): it shows how well each gem uses any Kb of memory it allocates/consumes.
 
@@ -61,8 +62,9 @@
 
   h3.subtitle.fas.fa-th-list Score Summary
 
-  .row.graph-container.col-md-10.col-lg-7
-    = render 'shared/score_summary_table'
+  .row
+    .graph-container.col-md-10.col-lg-7
+      = render 'shared/score_summary_table'
 
   h5.conclusion.fas.fa-trophy
     | Pagy outperforms the other gems in each and every score!
