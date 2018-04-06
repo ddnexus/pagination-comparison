@@ -15359,7 +15359,7 @@ body, html {
   z-index: 100;
   text-align: center;
   width: 100%;
-  padding: 0.2rem 0.3rem;
+  padding: 0.2rem 3rem;
   white-space: nowrap;
   color: white;
   background-color: rgba(210, 1, 1, 0.9);
@@ -15420,7 +15420,7 @@ body, html {
 .container-head {
   background: #51585f;
   color: white;
-  padding: 3rem;
+  padding-top: 2.5rem;
 }
 
 /* line 151, /opt/project/app/assets/stylesheets/main.sass */
@@ -15528,13 +15528,14 @@ span.version {
 /* line 213, /opt/project/app/assets/stylesheets/main.sass */
 .pager-example {
   margin-bottom: 2.1rem;
+  white-space: nowrap;
 }
-/* line 215, /opt/project/app/assets/stylesheets/main.sass */
+/* line 216, /opt/project/app/assets/stylesheets/main.sass */
 .pager-example .paginate-info {
   margin-top: -10px;
 }
 
-/* line 218, /opt/project/app/assets/stylesheets/main.sass */
+/* line 219, /opt/project/app/assets/stylesheets/main.sass */
 .pre-mono {
   font-family: monospace;
   white-space: pre;
@@ -15543,21 +15544,21 @@ span.version {
   line-height: 1.25em;
 }
 
-/* line 227, /opt/project/app/assets/stylesheets/main.sass */
+/* line 228, /opt/project/app/assets/stylesheets/main.sass */
 ul.important-notes li {
   margin-bottom: 0.7em;
 }
 
-/* line 230, /opt/project/app/assets/stylesheets/main.sass */
+/* line 231, /opt/project/app/assets/stylesheets/main.sass */
 .scroll {
   height: 600px;
 }
-/* line 232, /opt/project/app/assets/stylesheets/main.sass */
+/* line 233, /opt/project/app/assets/stylesheets/main.sass */
 .scroll .pre-mono {
   height: 600px;
 }
 
-/* line 236, /opt/project/app/assets/stylesheets/main.sass */
+/* line 237, /opt/project/app/assets/stylesheets/main.sass */
 .chart {
   background-color: #FFF;
   width: 100%;
@@ -15568,90 +15569,90 @@ ul.important-notes li {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* line 245, /opt/project/app/assets/stylesheets/main.sass */
+/* line 246, /opt/project/app/assets/stylesheets/main.sass */
 #memory-page-chart, #comparison-chart {
   overflow: hidden;
   min-height: 450px;
 }
 
-/* line 250, /opt/project/app/assets/stylesheets/main.sass */
+/* line 251, /opt/project/app/assets/stylesheets/main.sass */
 .chart-caption {
   font-size: 0.8rem;
   font-style: italic;
   padding-left: 20px;
 }
 
-/* line 255, /opt/project/app/assets/stylesheets/main.sass */
+/* line 256, /opt/project/app/assets/stylesheets/main.sass */
 .bg-good {
   background-color: #0F9D58;
 }
 
-/* line 257, /opt/project/app/assets/stylesheets/main.sass */
+/* line 258, /opt/project/app/assets/stylesheets/main.sass */
 .bg-bad {
   background-color: #DB4437;
 }
 
-/* line 260, /opt/project/app/assets/stylesheets/main.sass */
+/* line 261, /opt/project/app/assets/stylesheets/main.sass */
 .table {
   margin-bottom: 0;
 }
 
-/* line 263, /opt/project/app/assets/stylesheets/main.sass */
+/* line 264, /opt/project/app/assets/stylesheets/main.sass */
 table {
   width: 100%;
   table-layout: fixed;
 }
-/* line 266, /opt/project/app/assets/stylesheets/main.sass */
+/* line 267, /opt/project/app/assets/stylesheets/main.sass */
 table th {
   text-align: left;
 }
-/* line 268, /opt/project/app/assets/stylesheets/main.sass */
+/* line 269, /opt/project/app/assets/stylesheets/main.sass */
 table td {
   vertical-align: top;
   width: 33%;
 }
 
-/* line 272, /opt/project/app/assets/stylesheets/main.sass */
+/* line 273, /opt/project/app/assets/stylesheets/main.sass */
 table.score-comparison {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 0.85rem;
 }
-/* line 277, /opt/project/app/assets/stylesheets/main.sass */
+/* line 278, /opt/project/app/assets/stylesheets/main.sass */
 table.score-comparison td, table.score-comparison th {
   padding: 0.3rem 0.5rem;
 }
-/* line 280, /opt/project/app/assets/stylesheets/main.sass */
+/* line 281, /opt/project/app/assets/stylesheets/main.sass */
 table.score-comparison caption {
   padding-bottom: 0.2rem;
   caption-side: top;
   color: #51585f;
   font-size: 1.2rem;
 }
-/* line 286, /opt/project/app/assets/stylesheets/main.sass */
+/* line 287, /opt/project/app/assets/stylesheets/main.sass */
 table.score-comparison .thead-dark th {
   color: #fff;
   background-color: #51585f;
 }
-/* line 292, /opt/project/app/assets/stylesheets/main.sass */
+/* line 293, /opt/project/app/assets/stylesheets/main.sass */
 table.score-comparison td.txt-invert {
   color: white;
 }
-/* line 296, /opt/project/app/assets/stylesheets/main.sass */
+/* line 297, /opt/project/app/assets/stylesheets/main.sass */
 table.score-comparison.table-bordered th, table.score-comparison.table-bordered td {
   border: 1px solid #f7f7f7;
 }
-/* line 299, /opt/project/app/assets/stylesheets/main.sass */
+/* line 300, /opt/project/app/assets/stylesheets/main.sass */
 table.score-comparison.table-bordered thead th {
   border-bottom: 2px solid #f7f7f7 !important;
 }
 
-/* line 302, /opt/project/app/assets/stylesheets/main.sass */
+/* line 303, /opt/project/app/assets/stylesheets/main.sass */
 .comments {
   margin-top: 1rem;
 }
 
-/* line 305, /opt/project/app/assets/stylesheets/main.sass */
+/* line 306, /opt/project/app/assets/stylesheets/main.sass */
 .card {
   margin-top: 1.6em;
   border: 1px solid #e5e5e5;
@@ -15659,30 +15660,30 @@ table.score-comparison.table-bordered thead th {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* line 309, /opt/project/app/assets/stylesheets/main.sass */
+/* line 310, /opt/project/app/assets/stylesheets/main.sass */
 .card-header {
   background-color: #fff;
   padding: 0;
   border-bottom: 0;
 }
-/* line 315, /opt/project/app/assets/stylesheets/main.sass */
+/* line 316, /opt/project/app/assets/stylesheets/main.sass */
 .card-header .btn-link {
   font-weight: 700;
   font-size: 1.15rem;
   color: #51585f !important;
 }
-/* line 321, /opt/project/app/assets/stylesheets/main.sass */
+/* line 322, /opt/project/app/assets/stylesheets/main.sass */
 .card-header .btn-link:hover, .card-header .btn-link:focus {
   text-decoration: none;
   color: #007bff !important;
 }
 
-/* line 327, /opt/project/app/assets/stylesheets/main.sass */
+/* line 328, /opt/project/app/assets/stylesheets/main.sass */
 div.card-body th {
   padding-bottom: 0.8em;
 }
 
-/* line 331, /opt/project/app/assets/stylesheets/main.sass */
+/* line 332, /opt/project/app/assets/stylesheets/main.sass */
 [data-toggle="collapse"]:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15704,13 +15705,13 @@ div.card-body th {
   transition: all linear 0.25s;
 }
 
-/* line 339, /opt/project/app/assets/stylesheets/main.sass */
+/* line 340, /opt/project/app/assets/stylesheets/main.sass */
 [data-toggle="collapse"].collapsed:before {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
-/* line 342, /opt/project/app/assets/stylesheets/main.sass */
+/* line 343, /opt/project/app/assets/stylesheets/main.sass */
 .warning-box {
   position: relative;
   padding-left: 4.5rem;
@@ -15749,7 +15750,7 @@ div.card-body th {
   height: auto;
 }
 
-/* line 345, /opt/project/app/assets/stylesheets/main.sass */
+/* line 346, /opt/project/app/assets/stylesheets/main.sass */
 .info-box, .notice-box {
   position: relative;
   padding-left: 4.5rem;
@@ -15789,7 +15790,7 @@ div.card-body th {
   height: auto;
 }
 
-/* line 349, /opt/project/app/assets/stylesheets/main.sass */
+/* line 350, /opt/project/app/assets/stylesheets/main.sass */
 .collecting-box {
   position: relative;
   padding-left: 4.5rem;
@@ -15828,7 +15829,7 @@ div.card-body th {
   height: auto;
 }
 
-/* line 354, /opt/project/app/assets/stylesheets/main.sass */
+/* line 355, /opt/project/app/assets/stylesheets/main.sass */
 .run-box {
   position: relative;
   padding-left: 4.5rem;
@@ -15867,12 +15868,12 @@ div.card-body th {
   height: auto;
 }
 
-/* line 359, /opt/project/app/assets/stylesheets/main.sass */
+/* line 360, /opt/project/app/assets/stylesheets/main.sass */
 #pagy-nav .capt {
   margin-top: 2em;
   margin-bottom: 0.7em;
 }
-/* line 363, /opt/project/app/assets/stylesheets/main.sass */
+/* line 364, /opt/project/app/assets/stylesheets/main.sass */
 #pagy-nav .no-flex nav.pagination {
   display: block;
 }
