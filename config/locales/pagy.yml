@@ -16,6 +16,10 @@ en:
         zero: "items"
         one: "item"
         other: "items"
+    compact:
+      page: Page
+      of: of
+
 
   # we add the activerecord models here, since we don't use I18n
   # with I18n we don't need to add the models here, but we need to add

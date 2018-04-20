@@ -17,7 +17,7 @@
     p Less code to perform the same task usually means less complexity and more efficiency, and understanding 10 lines of code is obviously easier than understanding 100 lines, so in the end the Code Size is also a good factor to evaluate a gem.
     p
       = icon('fas', 'info-circle')
-      i  To be fair with all gems, we removed the generator-related files from Kaminari, and added the lines of ERB templates it uses.
+      i  To be fair with all gems, we removed the generator-related files from Kaminari, and added the lines of ERB templates it uses. We also added the <b>bootstrap</b> extra from the <b>pagy-ext</b> gem, needed to render the same bootstrap pagination as the other gems.
 
 
   = render 'shared/details', id: :loc do
@@ -52,6 +52,10 @@
     P The other two gems, conversely, use most of their modules and methods internally, and you would have to deal with a quite complicated "entropy" if you needed some significant overriding.
 
     p Moreover, a complicated structure is also affecting speed and object and memory allocation, as the following Memory Profile and Benchmark expose.
+
+    p
+      = icon('fas', 'info-circle')
+      i  To be fair with all gems, we added the <b>pagy_nav_bootstrap</b> method needed to render the same bootstrap pagination as the other gems.
 
 
   = render 'shared/details', id: :code do

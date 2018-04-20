@@ -46,10 +46,49 @@
           == wrap_nav "pagy_nav_bootstrap helper"
             == pagy_nav_bootstrap(@pagy)
 
+    h3.title.fas.fa-code Pagy Responsive Helpers
+
+    p Resize the windodw to get different quantities of pages shown...
+
+    .pagy-nav
+      .capt pagy_nav_responsive
+      .no-flex.pager-example
+        == wrap_nav "pagy_nav_responsive helper"
+          == pagy_nav_responsive(@pagy)
+
+
+    .pagy-nav
+      .capt pagy_nav_bootstrap_responsive
+      .pager-example
+        == wrap_nav "pagy_nav_bootstrap_responsive helper"
+          == pagy_nav_bootstrap_responsive(@pagy)
+
+
+    h3.title.fas.fa-code Pagy Compact Helpers
+
+    .pagy-nav
+      .capt pagy_nav_compact
+      .no-flex.pager-example
+        == wrap_nav "pagy_nav_compact helper"
+          == pagy_nav_compact(@pagy)
+
+    .pagy-nav
+      .capt pagy_nav_bootstrap_compact
+      .pager-example
+        == wrap_nav "pagy_nav_bootstrap_compact helper"
+          == pagy_nav_bootstrap_compact(@pagy)
+
     h3.title.fas.fa-file-code Pagy Templates
 
     .scrollable-section
       - Pagy.root.join('templates').each_child.sort.each do |t|
+        .pagy-nav
+          .capt title=t = t.basename
+          .no-flex.pager-example
+            == wrap_nav "template #{t}"
+              == render file: t, locals: { pagy: @pagy }
+
+      - Pagy.extras_root.join('templates').each_child.sort.each do |t|
         .pagy-nav
           .capt title=t = t.basename
           .no-flex.pager-example
@@ -78,4 +117,4 @@
 
 #links.footer
   = link_to "Home", "#{ENV['RAILS_RELATIVE_URL_ROOT']}/", class: 'fas fa-home'
-  = link_to "Gems Comparison", "#{ENV['RAILS_RELATIVE_URL_ROOT']}/gems.html?page=20", class: 'fas fa-gem'
+  = link_to "Gems Comparison", "/gems.html?page=20", class: 'fas fa-gem'

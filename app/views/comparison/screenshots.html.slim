@@ -1,5 +1,5 @@
 style
-  | body, html { background-color: white; }
+  | html, body { background-color: white; }
     .graph-screenshot { margin-top: 35px; margin-bottom: 25px; padding: 6px; }
 
 
@@ -45,5 +45,23 @@ style
 
       .graph-screenshot
         = render 'shared/efficiency_table'
+
+    - pagy = Pagy.new count: 1000, page: 20
+    #responsive-extra.graph-screenshot
+      .row
+        .col-lg-6
+          == pagy_nav_bootstrap_responsive(pagy)
+      .row
+        .col-lg-4
+          == pagy_nav_bootstrap_responsive(pagy)
+      .row
+        .col-lg-3
+          == pagy_nav_bootstrap_responsive(pagy)
+
+    #compact-extra.graph-screenshot
+      .row
+        .col-lg-3
+          == pagy_nav_bootstrap_compact(pagy)
+
 
 = render 'shared/init_charts'

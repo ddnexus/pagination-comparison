@@ -37,7 +37,8 @@ module ComparisonHelper
   def init_code_size
     return unless Rails.env.production?
     # pagy
-    $p.code_size = CodeSize.new paths: [File.join(`bundle show pagy`.strip, 'lib')]
+    $p.code_size = CodeSize.new paths: [File.join(`bundle show pagy`.strip, 'lib'),
+                                        File.join(`bundle show pagy-ext`.strip, 'lib', 'pagy-ext')], exclude: [/compact\.rb/, /responsive\.rb/]
     # will_paginate
     paths = [ File.join(`bundle show will_paginate`.strip, 'lib'),
               File.join(`bundle show bootstrap-will_paginate`.strip, 'lib'),
@@ -77,7 +78,7 @@ module ComparisonHelper
 
   def init_code_struct
     return unless Rails.env.production?
-    $p.code_struct = CodeStruct.new Pagy
+    $p.code_struct = CodeStruct.new Pagy, [/responsive|compact/]
     $w.code_struct = CodeStruct.new WillPaginate
     $k.code_struct = CodeStruct.new Kaminari
   end

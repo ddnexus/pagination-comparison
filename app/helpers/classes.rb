@@ -96,8 +96,9 @@ class CodeStruct
 
   attr_reader :modules
 
-  def initialize(mod)
+  def initialize(mod, exclude=[])
     @modules = []   # {name: '', methods: [], is_class: bool }
+    @exclude = exclude
     dig(mod)
   end
 
@@ -135,7 +136,10 @@ class CodeStruct
 
   def dig(mod)
     obj = {name: mod.name, methods: [], is_class: mod.is_a?(Class)}
-    obj[:methods] += mod.methods(false) + mod.instance_methods(false) + mod.private_instance_methods(false)
+    mod_methods = mod.methods(false) + mod.instance_methods(false) + mod.private_instance_methods(false)
+    mod_methods.each do |m|
+      obj[:methods].push(m) unless @exclude.any?{|r| m =~ r}
+    end
     obj[:methods].sort!
     @modules << obj
 

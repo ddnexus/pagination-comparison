@@ -18005,6 +18005,46 @@ var Alert = function ($) {
 
 
 
+function PagyResponsive(id, items, widths, series){
+  var pagyNav    = document.getElementById('pagy-nav-'+id),
+      pagyBox    = pagyNav.firstChild || pagyNav,
+      pagyParent = pagyNav.parentElement,
+      lastWidth  = undefined;
+
+  this.render = function(){
+                  var parentWidth = parseInt(pagyParent.clientWidth),
+                      width       = widths.find(function(w){return parentWidth > w});
+                  if (width !== lastWidth) {
+                    while (pagyBox.firstChild) { pagyBox.removeChild(pagyBox.firstChild) }
+                    var tags = items['prev'];
+                    series[width].forEach(function(item){tags += items[item]});
+                    tags += items['next'];
+                    pagyBox.insertAdjacentHTML('beforeend', tags);
+                    lastWidth = width;
+                  }
+                };
+
+  if (window.attachEvent) { window.attachEvent('onresize', this.render) }
+  else if (window.addEventListener) { window.addEventListener('resize', this.render, true) }
+
+  this.render();
+};
+function PagyCompact(id, marker, page){
+  var pagyNav = document.getElementById('pagy-nav-'+id),
+      input   = pagyNav.getElementsByTagName('input')[0],
+      link    = pagyNav.getElementsByTagName('a')[0];
+
+  this.go = function(){
+    if (page !== input.value) {
+      var href = link.getAttribute('href').replace(marker, input.value);
+      link.setAttribute('href', href);
+      link.click();
+    }
+  };
+
+  input.addEventListener("focusout", this.go);
+}
+;
 google.charts.load('current', { 'packages': ['bar', 'treemap', 'corechart'] });
 
 var sharedOpts = {
@@ -18021,7 +18061,8 @@ var sharedOpts = {
 var barOpts = $.extend({}, sharedOpts, {
   chartArea: { left: 80, top: 40, width: '82%' },
   hAxis:     { format: 'short', gridlines: { count: 8 } },
-  legend:    { position: "none" }
+  legend:    { position: "none" },
+  annotations: { alwaysOutside: true }
 });
 
 var treeMapOpts = $.extend({}, sharedOpts, {
@@ -18046,7 +18087,7 @@ function dataTooltip(data, row, size, value) {
 function drawLocChart() {
   var data  = new google.visualization.arrayToDataTable(locChartData);
   var chart = new google.visualization.BarChart(document.getElementById('loc-chart'));
-  var opts  = $.extend({}, barOpts, { title: 'Total Lines of Code' });
+  var opts  = $.extend({}, barOpts, { title: 'Total Lines of Code', chartArea: { left: 80, top: 40, width: '80%' } });
   chart.draw(data, opts);
 };
 
@@ -18065,7 +18106,7 @@ function drawFilesChart() {
 function drawMethodsChart() {
   var data  = new google.visualization.arrayToDataTable(methodsChartData);
   var chart = new google.visualization.BarChart(document.getElementById('methods-chart'));
-  var opts  = $.extend({}, barOpts, { title: 'Total Methods' });
+  var opts  = $.extend({}, barOpts, { title: 'Total Methods', chartArea: { left: 80, top: 40, width: '85%' } });
   chart.draw(data, opts);
 }
 
@@ -18096,6 +18137,7 @@ function drawObjectsChart() {
     // legend:    { position: "bottom" },
     legend:    { position: 'top', alignment: 'end' } ,
 
+    chartArea: { left: 80, top: 40, width: '81%' },
     isStacked: true
   });
   chart.draw(data, opts);
@@ -18120,7 +18162,8 @@ function drawIpsChart() {
   var chart = new google.visualization.BarChart(document.getElementById('ips-chart'));
   var opts  = $.extend({}, barOpts, {
     title: 'Iterations Per Second',
-    hAxis: { format: 'decimal', gridlines: { count: 8 } }
+    hAxis: { format: 'decimal', gridlines: { count: 8 } },
+    chartArea: { left: 80, top: 40, width: '84%' }
   });
   chart.draw(data, opts);
 };
@@ -18161,6 +18204,8 @@ function drawComparisonChart() {
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+
 
 
 

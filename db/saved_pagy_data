@@ -1,56 +1,56 @@
 U:OpenStruct{:nav_ipsI"Warming up --------------------------------------
-            pagy_nav   352.000  i/100ms
-       pagy-template   250.000  i/100ms
+            pagy_nav   351.000  i/100ms
+       pagy-template   240.000  i/100ms
 Calculating -------------------------------------
-            pagy_nav      3.494k (± 2.4%) i/s -     17.600k in   5.059695s
-       pagy-template      2.479k (± 2.6%) i/s -     12.500k in   5.072524s
+            pagy_nav      3.290k (± 0.9%) i/s -     16.497k in   5.017487s
+       pagy-template      2.518k (± 1.6%) i/s -     12.720k in   5.065227s
                    with 99.0% confidence
 
 Comparison:
-            pagy_nav:     3493.9 i/s
-       pagy-template:     2478.5 i/s - 1.41x  (± 0.05) slower
+            pagy_nav:     3289.8 i/s
+       pagy-template:     2517.8 i/s - 1.31x  (± 0.02) slower
                    with 99.0% confidence
 
 :ET:nav_memoryI"�Memory -----------------------------------   
-           pagy_nav     35.41 Kb
-      pagy-template     35.20 Kb - 1x more
+           pagy_nav     35.42 Kb
+      pagy-template     34.38 Kb - 1x more
 
 Objects -----------------------------------   
-           pagy_nav       381
-      pagy-template       433    - 1.14x more
+           pagy_nav       372
+      pagy-template       425    - 1.14x more
 
 ;T:link_ipsI"Warming up --------------------------------------
-      pagy_link_proc     2.125k i/100ms
-       rails-link_to    80.000  i/100ms
+      pagy_link_proc     2.208k i/100ms
+       rails-link_to    81.000  i/100ms
 Calculating -------------------------------------
-      pagy_link_proc     21.625k (± 1.2%) i/s -    108.375k in   5.016836s
-       rails-link_to    806.948  (± 1.7%) i/s -      4.080k in   5.067150s
+      pagy_link_proc     22.168k (± 0.9%) i/s -    112.608k in   5.082882s
+       rails-link_to    804.616  (± 1.3%) i/s -      4.050k in   5.039907s
                    with 99.0% confidence
 
 Comparison:
-      pagy_link_proc:    21625.2 i/s
-       rails-link_to:      806.9 i/s - 26.80x  (± 0.54) slower
+      pagy_link_proc:    22168.4 i/s
+       rails-link_to:      804.6 i/s - 27.55x  (± 0.45) slower
                    with 99.0% confidence
 
-;T:link_memoryI"�Memory -----------------------------------   
-      pagy_link_proc      9.68 Kb
-       rails-link_to    116.52 Kb - 12x more
+;T:link_memoryI"�Memory -----------------------------------   
+      pagy_link_proc      8.92 Kb
+       rails-link_to    116.52 Kb - 13x more
 
 Objects -----------------------------------   
-      pagy_link_proc       146
-       rails-link_to     1,462    - 10x more
+      pagy_link_proc       138
+       rails-link_to     1,462    - 10.59x more
 
 ;T:i18n_ipsI"Warming up --------------------------------------
-              pagy_t    18.611k i/100ms
-             rails-t     3.159k i/100ms
+              pagy_t    17.624k i/100ms
+             rails-t     3.339k i/100ms
 Calculating -------------------------------------
-              pagy_t    183.007k (± 2.6%) i/s -    930.550k in   5.100731s
-             rails-t     35.283k (± 1.8%) i/s -    176.904k in   5.027555s
+              pagy_t    183.790k (± 2.9%) i/s -    916.448k in   5.019874s
+             rails-t     35.655k (± 1.0%) i/s -    180.306k in   5.060880s
                    with 99.0% confidence
 
 Comparison:
-              pagy_t:   183006.9 i/s
-             rails-t:    35283.5 i/s - 5.19x  (± 0.16) slower
+              pagy_t:   183789.8 i/s
+             rails-t:    35655.0 i/s - 5.16x  (± 0.16) slower
                    with 99.0% confidence
 
 ;T:i18n_memoryI"�Memory -----------------------------------   

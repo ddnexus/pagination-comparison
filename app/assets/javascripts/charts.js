@@ -14,7 +14,8 @@ var sharedOpts = {
 var barOpts = $.extend({}, sharedOpts, {
   chartArea: { left: 80, top: 40, width: '82%' },
   hAxis:     { format: 'short', gridlines: { count: 8 } },
-  legend:    { position: "none" }
+  legend:    { position: "none" },
+  annotations: { alwaysOutside: true }
 });
 
 var treeMapOpts = $.extend({}, sharedOpts, {
@@ -39,7 +40,7 @@ function dataTooltip(data, row, size, value) {
 function drawLocChart() {
   var data  = new google.visualization.arrayToDataTable(locChartData);
   var chart = new google.visualization.BarChart(document.getElementById('loc-chart'));
-  var opts  = $.extend({}, barOpts, { title: 'Total Lines of Code' });
+  var opts  = $.extend({}, barOpts, { title: 'Total Lines of Code', chartArea: { left: 80, top: 40, width: '80%' } });
   chart.draw(data, opts);
 };
 
@@ -58,7 +59,7 @@ function drawFilesChart() {
 function drawMethodsChart() {
   var data  = new google.visualization.arrayToDataTable(methodsChartData);
   var chart = new google.visualization.BarChart(document.getElementById('methods-chart'));
-  var opts  = $.extend({}, barOpts, { title: 'Total Methods' });
+  var opts  = $.extend({}, barOpts, { title: 'Total Methods', chartArea: { left: 80, top: 40, width: '85%' } });
   chart.draw(data, opts);
 }
 
@@ -89,6 +90,7 @@ function drawObjectsChart() {
     // legend:    { position: "bottom" },
     legend:    { position: 'top', alignment: 'end' } ,
 
+    chartArea: { left: 80, top: 40, width: '81%' },
     isStacked: true
   });
   chart.draw(data, opts);
@@ -113,7 +115,8 @@ function drawIpsChart() {
   var chart = new google.visualization.BarChart(document.getElementById('ips-chart'));
   var opts  = $.extend({}, barOpts, {
     title: 'Iterations Per Second',
-    hAxis: { format: 'decimal', gridlines: { count: 8 } }
+    hAxis: { format: 'decimal', gridlines: { count: 8 } },
+    chartArea: { left: 80, top: 40, width: '84%' }
   });
   chart.draw(data, opts);
 };

@@ -8018,7 +8018,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 117, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, .pagy-nav-bootstrap-compact a, .pagy-nav-bootstrap-compact button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -8353,7 +8353,7 @@ tbody.collapse.show {
 }
 
 /* line 84, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_button-group.scss */
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .pagy-nav-bootstrap-compact a + .dropdown-toggle-split, .pagy-nav-bootstrap-compact button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
@@ -15876,4 +15876,10 @@ div.card-body th {
 /* line 364, /opt/project/app/assets/stylesheets/main.sass */
 #pagy-nav .no-flex nav.pagination {
   display: block;
+}
+
+/* line 370, /opt/project/app/assets/stylesheets/main.sass */
+#responsive-extra ul.pagination {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
