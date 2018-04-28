@@ -60,7 +60,7 @@ gem 'haml'
 
 # pagination
 gem 'pagy', '~> 0.6.0'
-gem 'pagy-extras', '~> 0.1.0', require: false
+gem 'pagy-extras', '~> 0.1.1', require: false
 # gem 'pagy', path: '/opt/pagy'
 # gem 'pagy-extras', path: '/opt/pagy-extras', require: false
 gem 'will_paginate'
