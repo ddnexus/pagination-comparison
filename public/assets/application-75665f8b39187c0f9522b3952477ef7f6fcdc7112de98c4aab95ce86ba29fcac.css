@@ -15883,3 +15883,9 @@ div.card-body th {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
+
+/* line 373, /opt/project/app/assets/stylesheets/main.sass */
+#compact-extra div.btn-group {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
