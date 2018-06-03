@@ -81,14 +81,7 @@
     h3.title.fas.fa-file-code Pagy Templates
 
     .scrollable-section
-      - Pagy.root.join('templates').each_child.sort.each do |t|
-        .pagy-nav
-          .capt title=t = t.basename
-          .no-flex.pager-example
-            == wrap_nav "template #{t}"
-              == render file: t, locals: { pagy: @pagy }
-
-      - Pagy.extras_root.join('templates').each_child.sort.each do |t|
+      - Pagy.root.join('pagy', 'extras', 'templates').each_child.sort.each do |t|
         .pagy-nav
           .capt title=t = t.basename
           .no-flex.pager-example

@@ -59,10 +59,9 @@ gem 'slim-rails'
 gem 'haml'
 
 # pagination
-gem 'pagy', '~> 0.6.0'
-gem 'pagy-extras', '~> 0.1.1', require: false
-# gem 'pagy', path: '/opt/pagy'
-# gem 'pagy-extras', path: '/opt/pagy-extras', require: false
+gem 'pagy', '~> 0.8.5'
+#gem 'pagy', path: '/opt/pagy'
+
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'kaminari'

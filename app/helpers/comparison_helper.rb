@@ -37,8 +37,9 @@ module ComparisonHelper
   def init_code_size
     return unless Rails.env.production?
     # pagy
-    $p.code_size = CodeSize.new paths: [File.join(`bundle show pagy`.strip, 'lib'),
-                                        File.join(`bundle show pagy-ext`.strip, 'lib', 'pagy-ext')], exclude: [/compact\.rb/, /responsive\.rb/]
+    $p.code_size = CodeSize.new paths:   [File.join(`bundle show pagy`.strip, 'lib')],
+                                exclude: [/array\.rb/, /compact\.rb/, /responsive\.rb/, /i18n\.rb/, /initializer_example\.rb/]
+
     # will_paginate
     paths = [ File.join(`bundle show will_paginate`.strip, 'lib'),
               File.join(`bundle show bootstrap-will_paginate`.strip, 'lib'),
@@ -262,7 +263,7 @@ module ComparisonHelper
     pagy_info(pagy)
   end
 
-  BOOTSTRAP_TEMPLATE = Pagy.root.join('templates', 'nav_bootstrap.html.slim').to_s
+  BOOTSTRAP_TEMPLATE = Pagy.root.join('pagy', 'extras', 'templates', 'nav_bootstrap.html.slim').to_s
   # same as pagy_pagination done with template so we can compare the IPS with other gems
   # The block run with the template is only ~30% slower than the helper, so it is still ~17x faster than Kaminari
   def pagy_template_block
