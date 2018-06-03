@@ -1,32 +1,32 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pagy Comparisons</title>
-  <meta name="csrf-param" content="authenticity_token" />
-  <meta name="csrf-token" content="LDXioDTpJMV/CM0PB3xy4BsdBkU3Wu4KgSZWKBnBeT7oYI4G9/GwVbHcF70piOQDC9gc5iZd2MWOIQA5xMIlWQ==" />
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagy Comparisons</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="kmMgisSLp7bWsiAONs1m/ZrxIcOSy2zxreJWSjBwwh9WNkwsB5MzJhhm+rwYOfAeijQ7YIPMWj6i5QBb7XOeeA==" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-  <link rel="stylesheet" media="all" href="/pagination-comparison/assets/application-8fa8dda66f74016fe20eb9c406d6a8d69a3de95fa1d31788bb7179cf97a85ac0.css" data-turbolinks-track="reload" />
-  <script src="/pagination-comparison/assets/application-2273a282c75ab180ca1a87aa3286424a5a2781d4979c73935a8dc2a7e9088b4f.js" data-turbolinks-track="reload"></script>
+    <link rel="stylesheet" media="all" href="/pagination-comparison/assets/application-b8c52df94656d5ecd4395a092035b9d099a8c456c3e3d69854be121f8c44473c.css" data-turbolinks-track="reload" />
+    <script src="/pagination-comparison/assets/application-2273a282c75ab180ca1a87aa3286424a5a2781d4979c73935a8dc2a7e9088b4f.js" data-turbolinks-track="reload"></script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42574355-5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42574355-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'UA-42574355-5');
-  </script>
+      gtag('config', 'UA-42574355-5');
+    </script>
 
-</head>
+  </head>
 
-<body>
-<div id="reload-warning" style="display: none;"><div class="warning-container"><i class="fas fa-spinner fa-spin"></i>&nbsp;Collecting metrics: please, do not reload nor click on any link...</div></div><div class="container-head"><div class="container"><div class="page-title fas fa-balance-scale">Pagy Comparisons</div><div class="subsection"><p>In this page we show and/or compare different aspects of the Pagy gem:</p><ul><li>Helpers</li><li>Templates</li><li>(your) Custom Templates</li><li>Other Methods (benchmarks and profiles)</li></ul><p>You can use this page to inspect the commented source, and make decision about using one method or another, based on Benchmarks and Memory allocation.</p></div></div></div><div class="container container-page"><a href="https://github.com/ddnexus/pagination-comparison" class="github-corner" aria-label="View source on Github">
+  <body>
+    <div id="reload-warning" style="display: none;"><div class="warning-container"><i class="fas fa-spinner fa-spin"></i>&nbsp;Collecting metrics: please, do not reload nor click on any link...</div></div><div class="container-head"><div class="container"><div class="page-title fas fa-balance-scale">Pagy Comparisons</div><div class="subsection"><p>In this page we show and/or compare different aspects of the Pagy gem:</p><ul><li>Helpers</li><li>Templates</li><li>(your) Custom Templates</li><li>Other Methods (benchmarks and profiles)</li></ul><p>You can use this page to inspect the commented source, and make decision about using one method or another, based on Benchmarks and Memory allocation.</p></div></div></div><div class="container container-page"><a href="https://github.com/ddnexus/pagination-comparison" class="github-corner" aria-label="View source on Github">
   <svg width="80" height="80" viewBox="0 0 250 250"
        style="fill:#828B94; color:#51585F; position: absolute; z-index: 1500; top: 0; border: 0; left: 0; transform: scale(-1, 1);"
        aria-hidden="true">
@@ -39,285 +39,286 @@
         fill="currentColor" class="octo-body"></path>
   </svg>
 </a>
-  <div class="graph-container"><div class="alert alert-sm alert-danger fade show warning-box" id="env-warning" role="alert"><h4><b> WARNING</b>: &quot;static&quot; mode detected!</h4><p>This page displays recorded data as static HTML, hence the pagination links don't work.</p><p>In order to enable all the functionalities and run Benchmarks and Memory Profiles on your hardware, please install the app.</p></div></div><div id="pagy-nav"><h3 class="title fas fa-code">Pagy Helpers</h3><div class="scrollable-section"><div class="pagy-nav"><div class="capt">pagy_nav</div><div class="no-flex pager-example">
+<div class="graph-container"><div class="alert alert-sm alert-danger fade show warning-box" id="env-warning" role="alert"><h4><b> WARNING</b>: &quot;static&quot; mode detected!</h4><p>This page displays recorded data as static HTML, hence the pagination links don't work.</p><p>In order to enable all the functionalities and run Benchmarks and Memory Profiles on your hardware, please install the app.</p></div></div><div id="pagy-nav"><h3 class="title fas fa-code">Pagy Helpers</h3><div class="scrollable-section"><div class="pagy-nav"><div class="capt">pagy_nav</div><div class="no-flex pager-example">
 
-    <!-- start pagy_nav helper -->
-    <nav class="pagy-nav pagination" role="navigation" aria-label="pager"><span class="page prev"><a href="/pagination-comparison/pagy.html?page=20" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">1</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">2</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">3</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">4</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">5</a></span> <span class="page gap">&hellip;</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">16</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">17</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">18</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20" rel="prev">19</a></span> <span class="page active">20</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20" rel="next">21</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">22</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">23</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">24</a></span> <span class="page gap">&hellip;</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">36</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">37</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">38</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">39</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">40</a></span> <span class="page next"><a href="/pagination-comparison/pagy.html?page=20" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span></nav>
-    <!-- end pagy_nav helper -->
+<!-- start pagy_nav helper -->
+<nav class="pagy-nav pagination" role="navigation" aria-label="pager"><span class="page prev"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >1</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >2</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >3</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >4</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >5</a></span> <span class="page gap">&hellip;</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >16</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >17</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >18</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" >19</a></span> <span class="page active">20</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   rel="next" >21</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >22</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >23</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >24</a></span> <span class="page gap">&hellip;</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >36</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >37</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >38</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >39</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >40</a></span> <span class="page next"><a href="/pagination-comparison/pagy.html?page=20"   rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span></nav>
+<!-- end pagy_nav helper -->
 
-  </div></div><div class="pagy-nav"><div class="capt">pagy_nav_bootstrap</div><div class="pager-example">
+</div></div><div class="pagy-nav"><div class="capt">pagy_nav_bootstrap</div><div class="pager-example">
 
-    <!-- start pagy_nav_bootstrap helper -->
-    <nav class="pagy-nav-boostrap pagination" role="navigation" aria-label="pager"><ul class="pagination"><li class="page-item prev"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">1</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">2</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">3</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">4</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">5</a></li><li class="page-item gap disabled"><a href="#" class="page-link">&hellip;</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">16</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">17</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">18</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev">19</a></li><li class="page-item active"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">20</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next">21</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">22</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">23</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">24</a></li><li class="page-item gap disabled"><a href="#" class="page-link">&hellip;</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">36</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">37</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">38</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">39</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">40</a></li><li class="page-item next"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li></ul></nav>
-    <!-- end pagy_nav_bootstrap helper -->
+<!-- start pagy_nav_bootstrap helper -->
+<nav class="pagy-nav-boostrap pagination" role="navigation" aria-label="pager"><ul class="pagination"><li class="page-item prev"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >1</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >2</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >3</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >4</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >5</a></li><li class="page-item gap disabled"><a href="#" class="page-link">&hellip;</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >16</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >17</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >18</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" >19</a></li><li class="page-item active"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >20</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" >21</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >22</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >23</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >24</a></li><li class="page-item gap disabled"><a href="#" class="page-link">&hellip;</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >36</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >37</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >38</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >39</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >40</a></li><li class="page-item next"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li></ul></nav>
+<!-- end pagy_nav_bootstrap helper -->
 
-  </div></div></div><h3 class="title fas fa-code">Pagy Responsive Helpers</h3><p>Resize the windodw to get different quantities of pages shown...</p><div class="pagy-nav"><div class="capt">pagy_nav_responsive</div><div class="no-flex pager-example">
+</div></div></div><h3 class="title fas fa-code">Pagy Responsive Helpers</h3><p>Resize the windodw to get different quantities of pages shown...</p><div class="pagy-nav"><div class="capt">pagy_nav_responsive</div><div class="no-flex pager-example">
 
-    <!-- start pagy_nav_responsive helper -->
-    <nav id="pagy-nav-1743733748978585014" class="pagy-nav-responsive pagination" role="navigation" aria-label="pager"></nav><script>PagyResponsive('1743733748978585014', {'prev':'<span class="page prev"><a href="/pagination-comparison/pagy.html?page=20" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span> ','1':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">1</a></span> ','gap':'<span class="page gap">&hellip;</span> ','18':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">18</a></span> ','19':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20" rel="prev">19</a></span> ','20':'<span class="page active">20</span> ','21':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20" rel="next">21</a></span> ','22':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">22</a></span> ','40':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">40</a></span> ','2':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">2</a></span> ','17':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">17</a></span> ','23':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">23</a></span> ','39':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">39</a></span> ','3':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">3</a></span> ','16':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">16</a></span> ','24':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">24</a></span> ','38':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">38</a></span> ','4':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">4</a></span> ','15':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">15</a></span> ','25':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">25</a></span> ','37':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">37</a></span> ','5':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">5</a></span> ','14':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">14</a></span> ','26':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">26</a></span> ','36':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20">36</a></span> ','next':'<span class="page next"><a href="/pagination-comparison/pagy.html?page=20" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span>'}, [950,750,550,350,0], {"0":[1,"gap",18,19,"20",21,22,"gap",40],"350":[1,2,"gap",17,18,19,"20",21,22,23,"gap",39,40],"550":[1,2,3,"gap",16,17,18,19,"20",21,22,23,24,"gap",38,39,40],"750":[1,2,3,4,"gap",15,16,17,18,19,"20",21,22,23,24,25,"gap",37,38,39,40],"950":[1,2,3,4,5,"gap",14,15,16,17,18,19,"20",21,22,23,24,25,26,"gap",36,37,38,39,40]});</script>
-    <!-- end pagy_nav_responsive helper -->
+<!-- start pagy_nav_responsive helper -->
+<nav id="pagy-nav-3012142815350245384" class="pagy-nav-responsive pagination" role="navigation" aria-label="pager"></nav><script>PagyResponsive('3012142815350245384', {'prev':'<span class="page prev"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span> ','1':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >1</a></span> ','gap':'<span class="page gap">&hellip;</span> ','18':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >18</a></span> ','19':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" >19</a></span> ','20':'<span class="page active">20</span> ','21':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   rel="next" >21</a></span> ','22':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >22</a></span> ','40':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >40</a></span> ','2':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >2</a></span> ','17':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >17</a></span> ','23':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >23</a></span> ','39':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >39</a></span> ','3':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >3</a></span> ','16':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >16</a></span> ','24':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >24</a></span> ','38':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >38</a></span> ','4':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >4</a></span> ','15':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >15</a></span> ','25':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >25</a></span> ','37':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >37</a></span> ','5':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >5</a></span> ','14':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >14</a></span> ','26':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >26</a></span> ','36':'<span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >36</a></span> ','next':'<span class="page next"><a href="/pagination-comparison/pagy.html?page=20"   rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span>'}, [950,750,550,350,0], {"0":[1,"gap",18,19,"20",21,22,"gap",40],"350":[1,2,"gap",17,18,19,"20",21,22,23,"gap",39,40],"550":[1,2,3,"gap",16,17,18,19,"20",21,22,23,24,"gap",38,39,40],"750":[1,2,3,4,"gap",15,16,17,18,19,"20",21,22,23,24,25,"gap",37,38,39,40],"950":[1,2,3,4,5,"gap",14,15,16,17,18,19,"20",21,22,23,24,25,26,"gap",36,37,38,39,40]});</script>
+<!-- end pagy_nav_responsive helper -->
 
-  </div></div><div class="pagy-nav"><div class="capt">pagy_nav_bootstrap_responsive</div><div class="pager-example">
+</div></div><div class="pagy-nav"><div class="capt">pagy_nav_bootstrap_responsive</div><div class="pager-example">
 
-    <!-- start pagy_nav_bootstrap_responsive helper -->
-    <nav id="pagy-nav--2234067565309677680" class="pagy-nav-bootstrap-responsive pagination" role="navigation" aria-label="pager"><ul class="pagination"></ul></nav><script>PagyResponsive('-2234067565309677680', {'prev':'<li class="page-item prev"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li>','1':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">1</a></li>','gap':'<li class="page-item gap disabled"><a href="#" class="page-link">&hellip;</a></li>','18':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">18</a></li>','19':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev">19</a></li>','20':'<li class="page-item active"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">20</a></li>','21':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next">21</a></li>','22':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">22</a></li>','40':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">40</a></li>','2':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">2</a></li>','17':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">17</a></li>','23':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">23</a></li>','39':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">39</a></li>','3':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">3</a></li>','16':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">16</a></li>','24':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">24</a></li>','38':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">38</a></li>','4':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">4</a></li>','15':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">15</a></li>','25':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">25</a></li>','37':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">37</a></li>','5':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">5</a></li>','14':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">14</a></li>','26':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">26</a></li>','36':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">36</a></li>','next':'<li class="page-item next"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li>'}, [950,750,550,350,0], {"0":[1,"gap",18,19,"20",21,22,"gap",40],"350":[1,2,"gap",17,18,19,"20",21,22,23,"gap",39,40],"550":[1,2,3,"gap",16,17,18,19,"20",21,22,23,24,"gap",38,39,40],"750":[1,2,3,4,"gap",15,16,17,18,19,"20",21,22,23,24,25,"gap",37,38,39,40],"950":[1,2,3,4,5,"gap",14,15,16,17,18,19,"20",21,22,23,24,25,26,"gap",36,37,38,39,40]});</script>
-    <!-- end pagy_nav_bootstrap_responsive helper -->
+<!-- start pagy_nav_bootstrap_responsive helper -->
+<nav id="pagy-nav--2118055261742693197" class="pagy-nav-bootstrap-responsive pagination" role="navigation" aria-label="pager"><ul class="pagination"></ul></nav><script>PagyResponsive('-2118055261742693197', {'prev':'<li class="page-item prev"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li>','1':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >1</a></li>','gap':'<li class="page-item gap disabled"><a href="#" class="page-link">&hellip;</a></li>','18':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >18</a></li>','19':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" >19</a></li>','20':'<li class="page-item active"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >20</a></li>','21':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" >21</a></li>','22':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >22</a></li>','40':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >40</a></li>','2':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >2</a></li>','17':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >17</a></li>','23':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >23</a></li>','39':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >39</a></li>','3':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >3</a></li>','16':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >16</a></li>','24':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >24</a></li>','38':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >38</a></li>','4':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >4</a></li>','15':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >15</a></li>','25':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >25</a></li>','37':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >37</a></li>','5':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >5</a></li>','14':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >14</a></li>','26':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >26</a></li>','36':'<li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >36</a></li>','next':'<li class="page-item next"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li>'}, [950,750,550,350,0], {"0":[1,"gap",18,19,"20",21,22,"gap",40],"350":[1,2,"gap",17,18,19,"20",21,22,23,"gap",39,40],"550":[1,2,3,"gap",16,17,18,19,"20",21,22,23,24,"gap",38,39,40],"750":[1,2,3,4,"gap",15,16,17,18,19,"20",21,22,23,24,25,"gap",37,38,39,40],"950":[1,2,3,4,5,"gap",14,15,16,17,18,19,"20",21,22,23,24,25,26,"gap",36,37,38,39,40]});</script>
+<!-- end pagy_nav_bootstrap_responsive helper -->
 
-  </div></div><h3 class="title fas fa-code">Pagy Compact Helpers</h3><div class="pagy-nav"><div class="capt">pagy_nav_compact</div><div class="no-flex pager-example">
+</div></div><h3 class="title fas fa-code">Pagy Compact Helpers</h3><div class="pagy-nav"><div class="capt">pagy_nav_compact</div><div class="no-flex pager-example">
 
-    <!-- start pagy_nav_compact helper -->
-    <nav id="pagy-nav-735650643213803919" class="pagy-nav-compact pagination" role="navigation" aria-label="pager"><a href="/pagy.html?page=-pagy-3626655057083788808-" style="display: none;" ></a><span class="page prev"><a href="/pagination-comparison/pagy.html?page=20" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span> <span class="pagy-compact-input" style="margin: 0 0.6rem;">Page <input type="number" min="20" max="20" value="20" style="padding: 0; text-align: center; width: 3rem;"> of 40</span> <span class="page next"><a href="/pagination-comparison/pagy.html?page=20" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span></nav><script>PagyCompact('735650643213803919', '-pagy-3626655057083788808-', '20');</script>
-    <!-- end pagy_nav_compact helper -->
+<!-- start pagy_nav_compact helper -->
+<nav id="pagy-nav-1567268473585550518" class="pagy-nav-compact pagination" role="navigation" aria-label="pager"><a href="/pagy.html?page=-pagy-2688795023989638718-"   style="display: none;" ></a><span class="page prev"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span> <span class="pagy-compact-input" style="margin: 0 0.6rem;">Page <input type="number" min="20" max="20" value="20" style="padding: 0; text-align: center; width: 3rem;"> of 40</span> <span class="page next"><a href="/pagination-comparison/pagy.html?page=20"   rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span></nav><script>PagyCompact('1567268473585550518', '-pagy-2688795023989638718-', '20');</script>
+<!-- end pagy_nav_compact helper -->
 
-  </div></div><div class="pagy-nav"><div class="capt">pagy_nav_bootstrap_compact</div><div class="pager-example">
+</div></div><div class="pagy-nav"><div class="capt">pagy_nav_bootstrap_compact</div><div class="pager-example">
 
-    <!-- start pagy_nav_bootstrap_compact helper -->
-    <nav id="pagy-nav-1465178432582173683" class="pagy-nav-bootstrap-compact pagination" role="navigation" aria-label="pager"><a href="/pagy.html?page=-pagy-3626655057083788808-" class="btn btn-primary" style="display: none;" ></a><div class="btn-group" role="group"><a href="/pagination-comparison/pagy.html?page=20" class="btn btn-primary" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a><button type="button" class="pagy-compact-input btn btn-primary disabled">Page <input type="number" min="20" max="20" value="20" style="padding: 0; border: none; text-align: center; width: 3rem;"> of 40</button><a href="/pagination-comparison/pagy.html?page=20" class="btn btn-primary" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></div></nav><script>PagyCompact('1465178432582173683', '-pagy-3626655057083788808-', '20');</script>
-    <!-- end pagy_nav_bootstrap_compact helper -->
+<!-- start pagy_nav_bootstrap_compact helper -->
+<nav id="pagy-nav--3214662809859894240" class="pagy-nav-bootstrap-compact pagination" role="navigation" aria-label="pager"><a href="/pagy.html?page=-pagy-2688795023989638718-"   style="display: none;" ></a><div class="btn-group" role="group"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" aria-label="previous" class="prev btn btn-primary">&lsaquo;&nbsp;Prev</a><div class="pagy-compact-input btn btn-primary disabled">Page <input type="number" min="20" max="20" value="20" style="padding: 0; border: none; text-align: center; width: 3rem;"> of 40</div><a href="/pagination-comparison/pagy.html?page=20"   rel="next" aria-label="next" class="next btn btn-primary">Next&nbsp;&rsaquo;</a></div></nav><script>PagyCompact('-3214662809859894240', '-pagy-2688795023989638718-', '20');</script>
+<!-- end pagy_nav_bootstrap_compact helper -->
 
-  </div></div><h3 class="title fas fa-file-code">Pagy Templates</h3><div class="scrollable-section"><div class="pagy-nav"><div class="capt" title="/opt/pagy/lib/templates/nav.html.erb">nav.html.erb</div><div class="no-flex pager-example">
+</div></div><h3 class="title fas fa-file-code">Pagy Templates</h3><div class="scrollable-section"><div class="pagy-nav"><div class="capt" title="/usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav.html.erb">nav.html.erb</div><div class="no-flex pager-example">
 
-    <!-- start template /opt/pagy/lib/templates/nav.html.erb -->
-    <nav aria-label="pager" class="pagy_nav agination" role="navigation">
-      <span class="page prev"><a href="/pagination-comparison/pagy.html?page=20" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">1</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">2</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">3</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">4</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">5</a></span>
-      <span class="page gap">&hellip;</span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">16</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">17</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">18</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20" rel="prev">19</a></span>
-      <span class="page current">20</span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20" rel="next">21</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">22</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">23</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">24</a></span>
-      <span class="page gap">&hellip;</span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">36</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">37</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">38</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">39</a></span>
-      <span class="page"><a href="/pagination-comparison/pagy.html?page=20">40</a></span>
-      <span class="page next"><a href="/pagination-comparison/pagy.html?page=20" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span>
-    </nav>
+<!-- start template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav.html.erb -->
+<nav aria-label="pager" class="pagy_nav agination" role="navigation">
+  <span class="page prev"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >1</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >2</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >3</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >4</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >5</a></span>
+  <span class="page gap">&hellip;</span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >16</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >17</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >18</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" >19</a></span>
+  <span class="page current">20</span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   rel="next" >21</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >22</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >23</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >24</a></span>
+  <span class="page gap">&hellip;</span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >36</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >37</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >38</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >39</a></span>
+  <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >40</a></span>
+  <span class="page next"><a href="/pagination-comparison/pagy.html?page=20"   rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span>
+</nav>
 
-    <!-- end template /opt/pagy/lib/templates/nav.html.erb -->
+<!-- end template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav.html.erb -->
 
-  </div></div><div class="pagy-nav"><div class="capt" title="/opt/pagy/lib/templates/nav.html.haml">nav.html.haml</div><div class="no-flex pager-example">
+</div></div><div class="pagy-nav"><div class="capt" title="/usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav.html.haml">nav.html.haml</div><div class="no-flex pager-example">
 
-    <!-- start template /opt/pagy/lib/templates/nav.html.haml -->
-    <nav aria-label='pager' class='pagy_nav pagination' role='navigation'>
-      <span class='page prev'><a href="/pagination-comparison/pagy.html?page=20" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">1</a>
+<!-- start template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav.html.haml -->
+<nav aria-label='pager' class='pagy_nav pagination' role='navigation'>
+<span class='page prev'><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >1</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">2</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >2</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">3</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >3</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">4</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >4</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">5</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >5</a>
 </span>
-      <span class='page gap'>&hellip;</span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">16</a>
+<span class='page gap'>&hellip;</span>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >16</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">17</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >17</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">18</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >18</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20" rel="prev">19</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   rel="prev" >19</a>
 </span>
-      <span class='page current'>20</span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20" rel="next">21</a>
+<span class='page current'>20</span>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   rel="next" >21</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">22</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >22</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">23</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >23</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">24</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >24</a>
 </span>
-      <span class='page gap'>&hellip;</span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">36</a>
+<span class='page gap'>&hellip;</span>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >36</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">37</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >37</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">38</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >38</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">39</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >39</a>
 </span>
-      <span class='page'>
-<a href="/pagination-comparison/pagy.html?page=20">40</a>
+<span class='page'>
+<a href="/pagination-comparison/pagy.html?page=20"   >40</a>
 </span>
-      <span class='page next'><a href="/pagination-comparison/pagy.html?page=20" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span>
-    </nav>
+<span class='page next'><a href="/pagination-comparison/pagy.html?page=20"   rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span>
+</nav>
 
-    <!-- end template /opt/pagy/lib/templates/nav.html.haml -->
+<!-- end template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav.html.haml -->
 
-  </div></div><div class="pagy-nav"><div class="capt" title="/opt/pagy/lib/templates/nav.html.slim">nav.html.slim</div><div class="no-flex pager-example">
+</div></div><div class="pagy-nav"><div class="capt" title="/usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav.html.slim">nav.html.slim</div><div class="no-flex pager-example">
 
-    <!-- start template /opt/pagy/lib/templates/nav.html.slim -->
-    <nav aria-label="pager" class="pagy_nav pagination" role="navigation"><span class="page prev"><a href="/pagination-comparison/pagy.html?page=20" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">1</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">2</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">3</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">4</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">5</a></span> <span class="page gap">&hellip;</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">16</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">17</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">18</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20" rel="prev">19</a></span> <span class="page current">20</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20" rel="next">21</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">22</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">23</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">24</a></span> <span class="page gap">&hellip;</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">36</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">37</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">38</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">39</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20">40</a></span> <span class="page next"><a href="/pagination-comparison/pagy.html?page=20" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span></nav>
-    <!-- end template /opt/pagy/lib/templates/nav.html.slim -->
+<!-- start template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav.html.slim -->
+<nav aria-label="pager" class="pagy_nav pagination" role="navigation"><span class="page prev"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >1</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >2</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >3</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >4</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >5</a></span> <span class="page gap">&hellip;</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >16</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >17</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >18</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   rel="prev" >19</a></span> <span class="page current">20</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   rel="next" >21</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >22</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >23</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >24</a></span> <span class="page gap">&hellip;</span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >36</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >37</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >38</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >39</a></span> <span class="page"><a href="/pagination-comparison/pagy.html?page=20"   >40</a></span> <span class="page next"><a href="/pagination-comparison/pagy.html?page=20"   rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></span></nav>
+<!-- end template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav.html.slim -->
 
-  </div></div><div class="pagy-nav"><div class="capt" title="/opt/pagy-ext/lib/templates/nav_bootstrap.html.erb">nav_bootstrap.html.erb</div><div class="no-flex pager-example">
+</div></div><div class="pagy-nav"><div class="capt" title="/usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav_bootstrap.html.erb">nav_bootstrap.html.erb</div><div class="no-flex pager-example">
 
-    <!-- start template /opt/pagy-ext/lib/templates/nav_bootstrap.html.erb -->
-    <nav aria-label="pager"  class="pagy-nav-bootstrap pagination" role="navigation">
-      <ul class="pagination">
-        <li class="page-item prev"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">1</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">2</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">3</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">4</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">5</a></li>
-        <li class="page-item disabled gap"><a href="#" class="page-link">&hellip;</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">16</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">17</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">18</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev">19</a></li>
-        <li class="page-item active"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">20</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next">21</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">22</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">23</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">24</a></li>
-        <li class="page-item disabled gap"><a href="#" class="page-link">&hellip;</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">36</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">37</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">38</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">39</a></li>
-        <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">40</a></li>
-        <li class="page-item next"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li>
-      </ul>
-    </nav>
+<!-- start template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav_bootstrap.html.erb -->
+<nav aria-label="pager"  class="pagy-nav-bootstrap pagination" role="navigation">
+  <ul class="pagination">
+    <li class="page-item prev"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >1</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >2</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >3</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >4</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >5</a></li>
+    <li class="page-item disabled gap"><a href="#" class="page-link">&hellip;</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >16</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >17</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >18</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" >19</a></li>
+    <li class="page-item active"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >20</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" >21</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >22</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >23</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >24</a></li>
+    <li class="page-item disabled gap"><a href="#" class="page-link">&hellip;</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >36</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >37</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >38</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >39</a></li>
+    <li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >40</a></li>
+    <li class="page-item next"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li>
+  </ul>
+</nav>
 
-    <!-- end template /opt/pagy-ext/lib/templates/nav_bootstrap.html.erb -->
+<!-- end template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav_bootstrap.html.erb -->
 
-  </div></div><div class="pagy-nav"><div class="capt" title="/opt/pagy-ext/lib/templates/nav_bootstrap.html.haml">nav_bootstrap.html.haml</div><div class="no-flex pager-example">
+</div></div><div class="pagy-nav"><div class="capt" title="/usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav_bootstrap.html.haml">nav_bootstrap.html.haml</div><div class="no-flex pager-example">
 
-    <!-- start template /opt/pagy-ext/lib/templates/nav_bootstrap.html.haml -->
-    <nav aria-label='pager' class='pagy-nav-bootstrap pagination' role='navigation'>
-      <ul class='pagination'>
-        <li class='page-item prev'><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">1</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">2</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">3</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">4</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">5</a></li>
-        <li class='page-item disabled gap'>
-          <a class='page-link' href='#'>&hellip;</a>
-        </li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">16</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">17</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">18</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev">19</a></li>
-        <li class='page-item active'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">20</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next">21</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">22</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">23</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">24</a></li>
-        <li class='page-item disabled gap'>
-          <a class='page-link' href='#'>&hellip;</a>
-        </li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">36</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">37</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">38</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">39</a></li>
-        <li class='page-item'><a href="/pagination-comparison/pagy.html?page=20" class="page-link">40</a></li>
-        <li class='page-item next'><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li>
-      </ul>
-    </nav>
+<!-- start template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav_bootstrap.html.haml -->
+<nav aria-label='pager' class='pagy-nav-bootstrap pagination' role='navigation'>
+<ul class='pagination'>
+<li class='page-item prev'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >1</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >2</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >3</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >4</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >5</a></li>
+<li class='page-item disabled gap'>
+<a class='page-link' href='#'>&hellip;</a>
+</li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >16</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >17</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >18</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" >19</a></li>
+<li class='page-item active'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >20</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" >21</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >22</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >23</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >24</a></li>
+<li class='page-item disabled gap'>
+<a class='page-link' href='#'>&hellip;</a>
+</li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >36</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >37</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >38</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >39</a></li>
+<li class='page-item'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >40</a></li>
+<li class='page-item next'><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li>
+</ul>
+</nav>
 
-    <!-- end template /opt/pagy-ext/lib/templates/nav_bootstrap.html.haml -->
+<!-- end template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav_bootstrap.html.haml -->
 
-  </div></div><div class="pagy-nav"><div class="capt" title="/opt/pagy-ext/lib/templates/nav_bootstrap.html.slim">nav_bootstrap.html.slim</div><div class="no-flex pager-example">
+</div></div><div class="pagy-nav"><div class="capt" title="/usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav_bootstrap.html.slim">nav_bootstrap.html.slim</div><div class="no-flex pager-example">
 
-    <!-- start template /opt/pagy-ext/lib/templates/nav_bootstrap.html.slim -->
-    <nav aria-label="pager" class="pagy-nav-bootstrap pagination" role="navigation"><ul class="pagination"><li class="page-item prev"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">1</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">2</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">3</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">4</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">5</a></li><li class="page-item disabled gap"><a class="page-link" href="#">&hellip;</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">16</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">17</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">18</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="prev">19</a></li><li class="page-item active"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">20</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next">21</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">22</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">23</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">24</a></li><li class="page-item disabled gap"><a class="page-link" href="#">&hellip;</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">36</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">37</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">38</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">39</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20" class="page-link">40</a></li><li class="page-item next"><a href="/pagination-comparison/pagy.html?page=20" class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li></ul></nav>
-    <!-- end template /opt/pagy-ext/lib/templates/nav_bootstrap.html.slim -->
+<!-- start template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav_bootstrap.html.slim -->
+<nav aria-label="pager" class="pagy-nav-bootstrap pagination" role="navigation"><ul class="pagination"><li class="page-item prev"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" aria-label="previous">&lsaquo;&nbsp;Prev</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >1</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >2</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >3</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >4</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >5</a></li><li class="page-item disabled gap"><a class="page-link" href="#">&hellip;</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >16</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >17</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >18</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="prev" >19</a></li><li class="page-item active"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >20</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" >21</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >22</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >23</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >24</a></li><li class="page-item disabled gap"><a class="page-link" href="#">&hellip;</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >36</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >37</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >38</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >39</a></li><li class="page-item"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" >40</a></li><li class="page-item next"><a href="/pagination-comparison/pagy.html?page=20"  class="page-link" rel="next" aria-label="next">Next&nbsp;&rsaquo;</a></li></ul></nav>
+<!-- end template /usr/local/bundle/gems/pagy-0.8.5/lib/pagy/extras/templates/nav_bootstrap.html.slim -->
 
-  </div></div></div><h3 class="title fas fa-file-code">Custom Templates</h3><div class="scrollable-section"><div class="pagy-nav"><p>You can try your custom templates by adding them to the <code>app/views/pagy</code> dir and reload this page.</p></div></div></div><h2 class="title fas fa-balance-scale">Comparisons</h2><div class="step" id="pagy1"><div class="subsection"><h3 class="subtitle fas fa-tachometer-alt">IPS - Nav Methods</h3><div id="pnav_ips"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#tnav_ips" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#pnav_ips" id="tnav_ips"><div class="card-body"><table><thead><tr><th>pagy_nav / pagy-template</th></tr></thead><tbody><tr><td class="pre-mono">Warming up --------------------------------------
-    pagy_nav   351.000  i/100ms
-    pagy-template   240.000  i/100ms
-    Calculating -------------------------------------
-    pagy_nav      3.290k (± 0.9%) i/s -     16.497k in   5.017487s
-    pagy-template      2.518k (± 1.6%) i/s -     12.720k in   5.065227s
-    with 99.0% confidence
+</div></div></div><h3 class="title fas fa-file-code">Custom Templates</h3><div class="scrollable-section"><div class="pagy-nav"><p>You can try your custom templates by adding them to the <code>app/views/pagy</code> dir and reload this page.</p></div></div></div><h2 class="title fas fa-balance-scale">Comparisons</h2><div class="step" id="pagy1"><div class="subsection"><h3 class="subtitle fas fa-tachometer-alt">IPS - Nav Methods</h3><div id="pnav_ips"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#tnav_ips" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#pnav_ips" id="tnav_ips"><div class="card-body"><table><thead><tr><th>pagy_nav / pagy-template</th></tr></thead><tbody><tr><td class="pre-mono">Warming up --------------------------------------
+            pagy_nav   385.000  i/100ms
+       pagy-template   264.000  i/100ms
+Calculating -------------------------------------
+            pagy_nav      3.638k (± 1.7%) i/s -     18.480k in   5.088984s
+       pagy-template      2.602k (± 2.3%) i/s -     13.200k in   5.096474s
+                   with 99.0% confidence
 
-    Comparison:
-    pagy_nav:     3289.8 i/s
-    pagy-template:     2517.8 i/s - 1.31x  (± 0.02) slower
-    with 99.0% confidence
+Comparison:
+            pagy_nav:     3637.7 i/s
+       pagy-template:     2601.7 i/s - 1.40x  (± 0.04) slower
+                   with 99.0% confidence
 
-  </td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-microchip">Memory - Nav Methods</h3><div id="pnav_memory"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#tnav_memory" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#pnav_memory" id="tnav_memory"><div class="card-body"><table><thead><tr><th>pagy_nav / pagy-template</th></tr></thead><tbody><tr><td class="pre-mono">Memory -----------------------------------
-    pagy_nav     35.42 Kb
-    pagy-template     34.38 Kb - 1x more
+</td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-microchip">Memory - Nav Methods</h3><div id="pnav_memory"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#tnav_memory" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#pnav_memory" id="tnav_memory"><div class="card-body"><table><thead><tr><th>pagy_nav / pagy-template</th></tr></thead><tbody><tr><td class="pre-mono">Memory -----------------------------------
+           pagy_nav     35.56 Kb
+      pagy-template     34.65 Kb - 1x more
 
-    Objects -----------------------------------
-    pagy_nav       372
-    pagy-template       425    - 1.14x more
+Objects -----------------------------------
+           pagy_nav       375
+      pagy-template       430    - 1.15x more
 
-  </td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-tachometer-alt">IPS - Link Methods</h3><div id="plink_ips"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#tlink_ips" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#plink_ips" id="tlink_ips"><div class="card-body"><table><thead><tr><th>pagy_link_proc / rails-link_to</th></tr></thead><tbody><tr><td class="pre-mono">Warming up --------------------------------------
-    pagy_link_proc     2.208k i/100ms
-    rails-link_to    81.000  i/100ms
-    Calculating -------------------------------------
-    pagy_link_proc     22.168k (± 0.9%) i/s -    112.608k in   5.082882s
-    rails-link_to    804.616  (± 1.3%) i/s -      4.050k in   5.039907s
-    with 99.0% confidence
+</td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-tachometer-alt">IPS - Link Methods</h3><div id="plink_ips"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#tlink_ips" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#plink_ips" id="tlink_ips"><div class="card-body"><table><thead><tr><th>pagy_link_proc / rails-link_to</th></tr></thead><tbody><tr><td class="pre-mono">Warming up --------------------------------------
+      pagy_link_proc     2.237k i/100ms
+       rails-link_to    81.000  i/100ms
+Calculating -------------------------------------
+      pagy_link_proc     22.603k (± 1.1%) i/s -    114.087k in   5.052163s
+       rails-link_to    806.722  (± 1.7%) i/s -      4.050k in   5.031474s
+                   with 99.0% confidence
 
-    Comparison:
-    pagy_link_proc:    22168.4 i/s
-    rails-link_to:      804.6 i/s - 27.55x  (± 0.45) slower
-    with 99.0% confidence
+Comparison:
+      pagy_link_proc:    22602.9 i/s
+       rails-link_to:      806.7 i/s - 28.02x  (± 0.55) slower
+                   with 99.0% confidence
 
-  </td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-microchip">Memory - Link Methods</h3><div id="plink_memory"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#tlink_memory" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#plink_memory" id="tlink_memory"><div class="card-body"><table><thead><tr><th>pagy_link_proc / rails-link_to</th></tr></thead><tbody><tr><td class="pre-mono">Memory -----------------------------------
-    pagy_link_proc      8.92 Kb
-    rails-link_to    116.52 Kb - 13x more
+</td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-microchip">Memory - Link Methods</h3><div id="plink_memory"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#tlink_memory" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#plink_memory" id="tlink_memory"><div class="card-body"><table><thead><tr><th>pagy_link_proc / rails-link_to</th></tr></thead><tbody><tr><td class="pre-mono">Memory -----------------------------------
+      pagy_link_proc      8.85 Kb
+       rails-link_to    116.52 Kb - 13.17x more
 
-    Objects -----------------------------------
-    pagy_link_proc       138
-    rails-link_to     1,462    - 10.59x more
+Objects -----------------------------------
+      pagy_link_proc       138
+       rails-link_to     1,462    - 10.59x more
 
-  </td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-tachometer-alt">IPS - I18n Methods</h3><div id="pi18n_ips"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#ti18n_ips" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#pi18n_ips" id="ti18n_ips"><div class="card-body"><table><thead><tr><th>pagy_t / rails-t</th></tr></thead><tbody><tr><td class="pre-mono">Warming up --------------------------------------
-    pagy_t    17.624k i/100ms
-    rails-t     3.339k i/100ms
-    Calculating -------------------------------------
-    pagy_t    183.790k (± 2.9%) i/s -    916.448k in   5.019874s
-    rails-t     35.655k (± 1.0%) i/s -    180.306k in   5.060880s
-    with 99.0% confidence
+</td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-tachometer-alt">IPS - I18n Methods</h3><div id="pi18n_ips"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#ti18n_ips" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#pi18n_ips" id="ti18n_ips"><div class="card-body"><table><thead><tr><th>pagy_t / rails-t</th></tr></thead><tbody><tr><td class="pre-mono">Warming up --------------------------------------
+              pagy_t    15.197k i/100ms
+             rails-t     3.372k i/100ms
+Calculating -------------------------------------
+              pagy_t    159.700k (± 1.6%) i/s -    805.441k in   5.052134s
+             rails-t     35.532k (± 1.6%) i/s -    178.716k in   5.040713s
+                   with 99.0% confidence
 
-    Comparison:
-    pagy_t:   183789.8 i/s
-    rails-t:    35655.0 i/s - 5.16x  (± 0.16) slower
-    with 99.0% confidence
+Comparison:
+              pagy_t:   159699.7 i/s
+             rails-t:    35532.4 i/s - 4.50x  (± 0.10) slower
+                   with 99.0% confidence
 
-  </td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-microchip">Memory - I18n Methods</h3><div id="pi18n_memory"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#ti18n_memory" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#pi18n_memory" id="ti18n_memory"><div class="card-body"><table><thead><tr><th>pagy_t / rails-t</th></tr></thead><tbody><tr><td class="pre-mono">Memory -----------------------------------
-    pagy_t      0.99 Kb
-    rails-t      3.63 Kb - 3.66x more
+</td></tr></tbody></table></div></div></div></div></div><div class="subsection"><h3 class="subtitle fas fa-microchip">Memory - I18n Methods</h3><div id="pi18n_memory"><div class="card"><div class="card-header"><h5 class="mb-0"><button aria-controls="body-code" aria-show="false" class="btn btn-link" data-target="#ti18n_memory" data-toggle="collapse">Details...</button></h5></div><div aria-labelledby="heading-code" class="collapse show" data-parent="#pi18n_memory" id="ti18n_memory"><div class="card-body"><table><thead><tr><th>pagy_t / rails-t</th></tr></thead><tbody><tr><td class="pre-mono">Memory -----------------------------------
+             pagy_t      1.03 Kb
+            rails-t      3.63 Kb - 3.52x more
 
-    Objects -----------------------------------
-    pagy_t        13
-    rails-t        39    - 3x more
+Objects -----------------------------------
+             pagy_t        14
+            rails-t        39    - 2.79x more
 
-  </td></tr></tbody></table></div></div></div></div></div></div></div><div class="footer" id="links"><a class="fas fa-home" href="/pagination-comparison/">Home</a><a class="fas fa-gem" href="/pagination-comparison/gems.html?page=20">Gems Comparison</a></div>
-</body>
+</td></tr></tbody></table></div></div></div></div></div></div></div><div class="footer" id="links"><a class="fas fa-home" href="/pagination-comparison/">Home</a><a class="fas fa-gem" href="/pagination-comparison/gems.html?page=20">Gems Comparison</a></div>
+  </body>
 </html>
+
