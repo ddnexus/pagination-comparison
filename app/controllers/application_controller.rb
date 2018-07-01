@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  rescue_from Pagy::OutOfRangeError, :with => :redirect_to_page_20
+  rescue_from Pagy::OverflowError, :with => :redirect_to_page_20
 
   private
 

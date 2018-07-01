@@ -1,4 +1,4 @@
-# Standard pagy I18n strings
+# Standard pagy dictionary
 
 en:
   pagy:
@@ -16,10 +16,12 @@ en:
         zero: "items"
         one: "item"
         other: "items"
-    compact:
-      page: Page
-      of: of
+    compact: "Page %{page_input} of %{pages}"
+    items:
+      one: "Show %{items_input} item per page"
+      other: "Show %{items_input} items per page"
 
+  # PR for other languages are very welcome. Thanks!
 
   # we add the activerecord models here, since we don't use I18n
   # with I18n we don't need to add the models here, but we need to add

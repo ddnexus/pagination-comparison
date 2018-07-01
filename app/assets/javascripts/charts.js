@@ -116,7 +116,7 @@ function drawIpsChart() {
   var opts  = $.extend({}, barOpts, {
     title: 'Iterations Per Second',
     hAxis: { format: 'decimal', gridlines: { count: 8 } },
-    chartArea: { left: 80, top: 40, width: '84%' }
+    chartArea: { left: 80, top: 40, width: '79%' }
   });
   chart.draw(data, opts);
 };

@@ -14,22 +14,37 @@ class ComparisonController < ApplicationController
   after_action :reset_pagy_data, only: :pagy1
   after_action  :save_pagy_data, only: :pagy1
 
+  # before_action {@pagy_locale = params[:locale] || 'en'}
+  before_action {@pagy_locale = 'en'}
+
   helper_method :pagy      # we use #pagy also in the comparison helpers
 
+  before_action :set_pagy_vars
+
   def gems
-    @pagy, @records        = pagy(Dish.all)
     @will_paginate_records = Dish.all.page(params[:page])
     @kaminari_records      = Dish.all.kaminari_page(params[:page])
   end
 
 
   def pagy_action
-    @pagy, @records = pagy(Dish.all)
     render 'pagy'
+  end
+
+  def responsive_screencast
+    @pagy, @records = pagy(Dish.all)
+  end
+
+  def remote_true
+    @pagy, @records = pagy(Dish.all, link_extra: 'data-remote="true"')
   end
 
 
   private
+
+    def set_pagy_vars
+      @pagy, @records = pagy(Dish.all)
+    end
 
   GEMS_DATA_FILE = Rails.root.join('db', 'saved_gems_data')
 
@@ -40,7 +55,7 @@ class ComparisonController < ApplicationController
         $w = OpenStruct.new
         $k = OpenStruct.new
       else
-        redirect_to gems_url(page: 20), notice: %(Page ##{params[:page]} is a page out of the range 12..28, which is the range fair for all gems (see the "Page Range" note below). Showing comparisons for page #20 instead.)
+        redirect_to url_for(only_path: true, page: 20), notice: %(Page ##{params[:page]} is a page out of the range 12..28, which is the range fair for all gems (see the "Page Range" note below). Showing comparisons for page #20 instead.)
       end
     else
       load_gems_data
@@ -51,7 +66,7 @@ class ComparisonController < ApplicationController
     page = params[:page]
     params[:page], $p, $w, $k, $ips_stats, $memory_pages_data = Marshal.load GEMS_DATA_FILE.binread
     if params[:page] != page
-      redirect_to gems_url(page: params[:page]), notice: %(In #{Rails.env.inspect} mode you cannot run comparisons for pages other than the last production-recorded page ##{params[:page]} (see the "Environment" note below). Please, restart the rails server in production mode if you want to run the comparisons for other pages.)
+      redirect_to url_for(only_path: true, page: params[:page]), notice: %(In #{Rails.env.inspect} mode you cannot run comparisons for pages other than the last production-recorded page ##{params[:page]} (see the "Environment" note below). Please, restart the rails server in production mode if you want to run the comparisons for other pages.)
     end
   end
 

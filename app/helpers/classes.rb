@@ -22,38 +22,29 @@ class CodeSize
 
   attr_reader  :files
 
-  def initialize(paths: [], ext: 'rb', exclude: [])
-    @files = []
+  def initialize(files: [])
 
-    paths.each do |p|
-
-      path  = File.join(p, '**', "*.#{ext}")
-      Dir.glob(path) do |f|
-        next if FileTest.directory?(f)
-        name = f.sub("#{p}/", '')
-        next if exclude.any? { |r| name =~ r }
-        file = { name: name, loc: 0 }
-        in_comment = false
-        File.new(f).each_line do |l|
-          line = l.strip
-          if name.end_with?('.erb')
-            in_comment = true if line.start_with?('<%#')
-            if line.start_with?('-%>')
-              in_comment = false
-              next
-            end
-            next if in_comment
-          else
-            next if line[0] == '#'
-          end
-          next if line.empty?
-          file[:loc] += 1
-        end
-        @files << file
-      end
-
-    end
-
+    @files = files.map do |filename|
+               # name = filename.split(%r!/lib/!)[1]
+               file = { name: filename, loc: 0 }
+               in_comment = false
+               File.new(filename).each_line do |l|
+                 line = l.strip
+                 if filename.end_with?('.erb')
+                   in_comment = true if line.start_with?('<%#')
+                   if line.start_with?('-%>')
+                     in_comment = false
+                     next
+                   end
+                   next if in_comment
+                 else
+                   next if line[0] == '#'
+                 end
+                 next if line.empty?
+                 file[:loc] += 1
+               end
+               file
+             end
   end
 
   # it works only for max 2 duplicates per filename
@@ -167,9 +158,9 @@ class MemoryProfile
     @objects = profile.total_allocated
     @class_count = begin
                     obj     = profile.allocated_objects_by_class
-                    arrays  = obj.find{|i| i[:data] == 'Array'}[:count]
-                    strings = obj.find{|i| i[:data] == 'String'}[:count]
-                    hashes  = obj.find{|i| i[:data] == 'Hash'}[:count]
+                    arrays  = (obj.find{|i| i[:data] == 'Array'}||{})[:count] || 0
+                    strings = (obj.find{|i| i[:data] == 'String'}||{})[:count] || 0
+                    hashes  = (obj.find{|i| i[:data] == 'Hash'}||{})[:count] || 0
                     others  = obj.map{|i| i[:data] =~ /Array|String|Hash/ ? 0 : i[:count]}.sum
                     total   = obj.map{|i| i[:count]}.sum
                     [arrays, strings, hashes, others, total]

@@ -4436,8 +4436,7 @@ readers do not read off random characters that represent icons */
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* line 27, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_reboot.scss */
@@ -4477,8 +4476,7 @@ body {
 
 /* line 83, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_reboot.scss */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -4720,8 +4718,7 @@ button::-moz-focus-inner,
 /* line 371, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_reboot.scss */
 input[type="radio"],
 input[type="checkbox"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -5080,11 +5077,8 @@ pre code {
 
 /* line 28, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_grid.scss */
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -5117,222 +5111,163 @@ pre code {
 
 /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col {
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-basis: 0;
+  flex-grow: 1;
   max-width: 100%;
 }
 
 /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-auto {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   width: auto;
   max-width: none;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-1 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 8.3333333333%;
-          flex: 0 0 8.3333333333%;
+  flex: 0 0 8.3333333333%;
   max-width: 8.3333333333%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-2 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 16.6666666667%;
-          flex: 0 0 16.6666666667%;
+  flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-3 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+  flex: 0 0 25%;
   max-width: 25%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-4 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.3333333333%;
-          flex: 0 0 33.3333333333%;
+  flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 41.6666666667%;
-          flex: 0 0 41.6666666667%;
+  flex: 0 0 41.6666666667%;
   max-width: 41.6666666667%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-6 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 50%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-7 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 58.3333333333%;
-          flex: 0 0 58.3333333333%;
+  flex: 0 0 58.3333333333%;
   max-width: 58.3333333333%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-8 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 66.6666666667%;
-          flex: 0 0 66.6666666667%;
+  flex: 0 0 66.6666666667%;
   max-width: 66.6666666667%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-9 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 75%;
-          flex: 0 0 75%;
+  flex: 0 0 75%;
   max-width: 75%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-10 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 83.3333333333%;
-          flex: 0 0 83.3333333333%;
+  flex: 0 0 83.3333333333%;
   max-width: 83.3333333333%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-11 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 91.6666666667%;
-          flex: 0 0 91.6666666667%;
+  flex: 0 0 91.6666666667%;
   max-width: 91.6666666667%;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .col-12 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+  flex: 0 0 100%;
   max-width: 100%;
 }
 
 /* line 49, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-first {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
+  order: -1;
 }
 
 /* line 51, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-last {
-  -webkit-box-ordinal-group: 14;
-      -ms-flex-order: 13;
-          order: 13;
+  order: 13;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-0 {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
+  order: 0;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-1 {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-2 {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-3 {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  order: 3;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-4 {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  order: 4;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-5 {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
+  order: 5;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-6 {
-  -webkit-box-ordinal-group: 7;
-      -ms-flex-order: 6;
-          order: 6;
+  order: 6;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-7 {
-  -webkit-box-ordinal-group: 8;
-      -ms-flex-order: 7;
-          order: 7;
+  order: 7;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-8 {
-  -webkit-box-ordinal-group: 9;
-      -ms-flex-order: 8;
-          order: 8;
+  order: 8;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-9 {
-  -webkit-box-ordinal-group: 10;
-      -ms-flex-order: 9;
-          order: 9;
+  order: 9;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-10 {
-  -webkit-box-ordinal-group: 11;
-      -ms-flex-order: 10;
-          order: 10;
+  order: 10;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-11 {
-  -webkit-box-ordinal-group: 12;
-      -ms-flex-order: 11;
-          order: 11;
+  order: 11;
 }
 
 /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
 .order-12 {
-  -webkit-box-ordinal-group: 13;
-      -ms-flex-order: 12;
-          order: 12;
+  order: 12;
 }
 
 /* line 60, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -5393,222 +5328,163 @@ pre code {
 @media (min-width: 576px) {
   /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm {
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-basis: 0;
+    flex-grow: 1;
     max-width: 100%;
   }
 
   /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-auto {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: auto;
     max-width: none;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-1 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 8.3333333333%;
-            flex: 0 0 8.3333333333%;
+    flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-2 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 16.6666666667%;
-            flex: 0 0 16.6666666667%;
+    flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-3 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-4 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.3333333333%;
-            flex: 0 0 33.3333333333%;
+    flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-5 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 41.6666666667%;
-            flex: 0 0 41.6666666667%;
+    flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-6 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-7 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 58.3333333333%;
-            flex: 0 0 58.3333333333%;
+    flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 66.6666666667%;
-            flex: 0 0 66.6666666667%;
+    flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-9 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
+    flex: 0 0 75%;
     max-width: 75%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-10 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 83.3333333333%;
-            flex: 0 0 83.3333333333%;
+    flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-11 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 91.6666666667%;
-            flex: 0 0 91.6666666667%;
+    flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-sm-12 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
   /* line 49, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-first {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
   }
 
   /* line 51, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-last {
-    -webkit-box-ordinal-group: 14;
-        -ms-flex-order: 13;
-            order: 13;
+    order: 13;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-0 {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+    order: 0;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-1 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-2 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-3 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-4 {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-5 {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    order: 5;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-6 {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
+    order: 6;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-7 {
-    -webkit-box-ordinal-group: 8;
-        -ms-flex-order: 7;
-            order: 7;
+    order: 7;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-8 {
-    -webkit-box-ordinal-group: 9;
-        -ms-flex-order: 8;
-            order: 8;
+    order: 8;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-9 {
-    -webkit-box-ordinal-group: 10;
-        -ms-flex-order: 9;
-            order: 9;
+    order: 9;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-10 {
-    -webkit-box-ordinal-group: 11;
-        -ms-flex-order: 10;
-            order: 10;
+    order: 10;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-11 {
-    -webkit-box-ordinal-group: 12;
-        -ms-flex-order: 11;
-            order: 11;
+    order: 11;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-sm-12 {
-    -webkit-box-ordinal-group: 13;
-        -ms-flex-order: 12;
-            order: 12;
+    order: 12;
   }
 
   /* line 60, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -5674,222 +5550,163 @@ pre code {
 @media (min-width: 768px) {
   /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md {
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-basis: 0;
+    flex-grow: 1;
     max-width: 100%;
   }
 
   /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-auto {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: auto;
     max-width: none;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-1 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 8.3333333333%;
-            flex: 0 0 8.3333333333%;
+    flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-2 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 16.6666666667%;
-            flex: 0 0 16.6666666667%;
+    flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-3 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-4 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.3333333333%;
-            flex: 0 0 33.3333333333%;
+    flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-5 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 41.6666666667%;
-            flex: 0 0 41.6666666667%;
+    flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-6 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-7 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 58.3333333333%;
-            flex: 0 0 58.3333333333%;
+    flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 66.6666666667%;
-            flex: 0 0 66.6666666667%;
+    flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-9 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
+    flex: 0 0 75%;
     max-width: 75%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-10 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 83.3333333333%;
-            flex: 0 0 83.3333333333%;
+    flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-11 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 91.6666666667%;
-            flex: 0 0 91.6666666667%;
+    flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-md-12 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
   /* line 49, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-first {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
   }
 
   /* line 51, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-last {
-    -webkit-box-ordinal-group: 14;
-        -ms-flex-order: 13;
-            order: 13;
+    order: 13;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-0 {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+    order: 0;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-1 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-2 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-3 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-4 {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-5 {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    order: 5;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-6 {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
+    order: 6;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-7 {
-    -webkit-box-ordinal-group: 8;
-        -ms-flex-order: 7;
-            order: 7;
+    order: 7;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-8 {
-    -webkit-box-ordinal-group: 9;
-        -ms-flex-order: 8;
-            order: 8;
+    order: 8;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-9 {
-    -webkit-box-ordinal-group: 10;
-        -ms-flex-order: 9;
-            order: 9;
+    order: 9;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-10 {
-    -webkit-box-ordinal-group: 11;
-        -ms-flex-order: 10;
-            order: 10;
+    order: 10;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-11 {
-    -webkit-box-ordinal-group: 12;
-        -ms-flex-order: 11;
-            order: 11;
+    order: 11;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-md-12 {
-    -webkit-box-ordinal-group: 13;
-        -ms-flex-order: 12;
-            order: 12;
+    order: 12;
   }
 
   /* line 60, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -5955,222 +5772,163 @@ pre code {
 @media (min-width: 992px) {
   /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg {
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-basis: 0;
+    flex-grow: 1;
     max-width: 100%;
   }
 
   /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-auto {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: auto;
     max-width: none;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-1 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 8.3333333333%;
-            flex: 0 0 8.3333333333%;
+    flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-2 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 16.6666666667%;
-            flex: 0 0 16.6666666667%;
+    flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-3 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-4 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.3333333333%;
-            flex: 0 0 33.3333333333%;
+    flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-5 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 41.6666666667%;
-            flex: 0 0 41.6666666667%;
+    flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-6 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-7 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 58.3333333333%;
-            flex: 0 0 58.3333333333%;
+    flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 66.6666666667%;
-            flex: 0 0 66.6666666667%;
+    flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-9 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
+    flex: 0 0 75%;
     max-width: 75%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-10 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 83.3333333333%;
-            flex: 0 0 83.3333333333%;
+    flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-11 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 91.6666666667%;
-            flex: 0 0 91.6666666667%;
+    flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-lg-12 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
   /* line 49, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-first {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
   }
 
   /* line 51, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-last {
-    -webkit-box-ordinal-group: 14;
-        -ms-flex-order: 13;
-            order: 13;
+    order: 13;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-0 {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+    order: 0;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-1 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-2 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-3 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-4 {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-5 {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    order: 5;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-6 {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
+    order: 6;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-7 {
-    -webkit-box-ordinal-group: 8;
-        -ms-flex-order: 7;
-            order: 7;
+    order: 7;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-8 {
-    -webkit-box-ordinal-group: 9;
-        -ms-flex-order: 8;
-            order: 8;
+    order: 8;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-9 {
-    -webkit-box-ordinal-group: 10;
-        -ms-flex-order: 9;
-            order: 9;
+    order: 9;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-10 {
-    -webkit-box-ordinal-group: 11;
-        -ms-flex-order: 10;
-            order: 10;
+    order: 10;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-11 {
-    -webkit-box-ordinal-group: 12;
-        -ms-flex-order: 11;
-            order: 11;
+    order: 11;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-lg-12 {
-    -webkit-box-ordinal-group: 13;
-        -ms-flex-order: 12;
-            order: 12;
+    order: 12;
   }
 
   /* line 60, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6236,222 +5994,163 @@ pre code {
 @media (min-width: 1200px) {
   /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl {
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-basis: 0;
+    flex-grow: 1;
     max-width: 100%;
   }
 
   /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-auto {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: auto;
     max-width: none;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-1 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 8.3333333333%;
-            flex: 0 0 8.3333333333%;
+    flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-2 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 16.6666666667%;
-            flex: 0 0 16.6666666667%;
+    flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-3 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-4 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.3333333333%;
-            flex: 0 0 33.3333333333%;
+    flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-5 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 41.6666666667%;
-            flex: 0 0 41.6666666667%;
+    flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-6 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-7 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 58.3333333333%;
-            flex: 0 0 58.3333333333%;
+    flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-8 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 66.6666666667%;
-            flex: 0 0 66.6666666667%;
+    flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-9 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
+    flex: 0 0 75%;
     max-width: 75%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-10 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 83.3333333333%;
-            flex: 0 0 83.3333333333%;
+    flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-11 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 91.6666666667%;
-            flex: 0 0 91.6666666667%;
+    flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .col-xl-12 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
   /* line 49, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-first {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
   }
 
   /* line 51, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-last {
-    -webkit-box-ordinal-group: 14;
-        -ms-flex-order: 13;
-            order: 13;
+    order: 13;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-0 {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+    order: 0;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-1 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-2 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-3 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-4 {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-5 {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    order: 5;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-6 {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
+    order: 6;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-7 {
-    -webkit-box-ordinal-group: 8;
-        -ms-flex-order: 7;
-            order: 7;
+    order: 7;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-8 {
-    -webkit-box-ordinal-group: 9;
-        -ms-flex-order: 8;
-            order: 8;
+    order: 8;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-9 {
-    -webkit-box-ordinal-group: 10;
-        -ms-flex-order: 9;
-            order: 9;
+    order: 9;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-10 {
-    -webkit-box-ordinal-group: 11;
-        -ms-flex-order: 10;
-            order: 10;
+    order: 10;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-11 {
-    -webkit-box-ordinal-group: 12;
-        -ms-flex-order: 11;
-            order: 11;
+    order: 11;
   }
 
   /* line 54, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
   .order-xl-12 {
-    -webkit-box-ordinal-group: 13;
-        -ms-flex-order: 12;
-            order: 12;
+    order: 12;
   }
 
   /* line 60, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -6844,10 +6543,7 @@ pre code {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 /* line 31, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
 .form-control::-ms-expand {
@@ -6860,8 +6556,7 @@ pre code {
   background-color: #fff;
   border-color: #80bdff;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 /* line 40, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
 .form-control::-webkit-input-placeholder {
@@ -7009,11 +6704,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 /* line 190, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
 .form-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px;
 }
@@ -7049,12 +6741,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 /* line 228, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
 .form-check-inline {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 0;
   margin-right: 0.75rem;
 }
@@ -7102,8 +6790,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-select:valid:focus,
 .custom-select.is-valid:focus {
   border-color: #28a745;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 /* line 64, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .was-validated .form-control:valid ~ .valid-feedback,
@@ -7147,8 +6834,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 /* line 108, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
 /* line 119, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -7167,8 +6853,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 /* line 131, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .was-validated .custom-file-input:valid:focus ~ .custom-file-label, .custom-file-input.is-valid:focus ~ .custom-file-label {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
 /* line 30, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -7207,8 +6892,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
   border-color: #dc3545;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 /* line 64, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .was-validated .form-control:invalid ~ .invalid-feedback,
@@ -7252,8 +6936,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 /* line 108, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
 /* line 119, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -7272,22 +6955,14 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 /* line 131, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
 /* line 263, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
 .form-inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row wrap;
+  align-items: center;
 }
 /* line 271, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
 .form-inline .form-check {
@@ -7296,32 +6971,17 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 @media (min-width: 576px) {
   /* line 277, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
   .form-inline label {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 0;
   }
   /* line 285, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
   .form-inline .form-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
     margin-bottom: 0;
   }
   /* line 294, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
@@ -7340,15 +7000,9 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   }
   /* line 311, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
   .form-inline .form-check {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     width: auto;
     padding-left: 0;
   }
@@ -7361,12 +7015,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   }
   /* line 325, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
   .form-inline .custom-control {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   /* line 329, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_forms.scss */
   .form-inline .custom-control-label {
@@ -7390,10 +7040,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 /* line 19, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_hover.scss */
 .btn:hover, .btn:focus {
@@ -7402,8 +7049,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 /* line 23, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
 .btn:focus, .btn.focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 /* line 30, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
 .btn.disabled, .btn:disabled {
@@ -7438,8 +7084,7 @@ fieldset:disabled a.btn {
 }
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary.disabled, .btn-primary:disabled {
@@ -7455,8 +7100,7 @@ fieldset:disabled a.btn {
 }
 /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
 /* line 64, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7473,8 +7117,7 @@ fieldset:disabled a.btn {
 }
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-secondary:focus, .btn-secondary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-secondary.disabled, .btn-secondary:disabled {
@@ -7490,8 +7133,7 @@ fieldset:disabled a.btn {
 }
 /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
 /* line 64, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7508,8 +7150,7 @@ fieldset:disabled a.btn {
 }
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-success:focus, .btn-success.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-success.disabled, .btn-success:disabled {
@@ -7525,8 +7166,7 @@ fieldset:disabled a.btn {
 }
 /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
 /* line 64, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7543,8 +7183,7 @@ fieldset:disabled a.btn {
 }
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-info:focus, .btn-info.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-info.disabled, .btn-info:disabled {
@@ -7560,8 +7199,7 @@ fieldset:disabled a.btn {
 }
 /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
 /* line 64, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7578,8 +7216,7 @@ fieldset:disabled a.btn {
 }
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-warning:focus, .btn-warning.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-warning.disabled, .btn-warning:disabled {
@@ -7595,8 +7232,7 @@ fieldset:disabled a.btn {
 }
 /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
 /* line 64, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7613,8 +7249,7 @@ fieldset:disabled a.btn {
 }
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-danger:focus, .btn-danger.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-danger.disabled, .btn-danger:disabled {
@@ -7630,8 +7265,7 @@ fieldset:disabled a.btn {
 }
 /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
 /* line 64, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7648,8 +7282,7 @@ fieldset:disabled a.btn {
 }
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-light:focus, .btn-light.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-light.disabled, .btn-light:disabled {
@@ -7665,8 +7298,7 @@ fieldset:disabled a.btn {
 }
 /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
 /* line 64, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7683,8 +7315,7 @@ fieldset:disabled a.btn {
 }
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-dark:focus, .btn-dark.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-dark.disabled, .btn-dark:disabled {
@@ -7700,8 +7331,7 @@ fieldset:disabled a.btn {
 }
 /* line 46, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
 /* line 70, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7719,8 +7349,7 @@ fieldset:disabled a.btn {
 }
 /* line 69, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 /* line 74, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
@@ -7735,8 +7364,7 @@ fieldset:disabled a.btn {
 }
 /* line 87, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
 /* line 70, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7754,8 +7382,7 @@ fieldset:disabled a.btn {
 }
 /* line 69, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 /* line 74, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
@@ -7770,8 +7397,7 @@ fieldset:disabled a.btn {
 }
 /* line 87, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
 /* line 70, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7789,8 +7415,7 @@ fieldset:disabled a.btn {
 }
 /* line 69, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-success:focus, .btn-outline-success.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 /* line 74, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-success.disabled, .btn-outline-success:disabled {
@@ -7805,8 +7430,7 @@ fieldset:disabled a.btn {
 }
 /* line 87, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
 /* line 70, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7824,8 +7448,7 @@ fieldset:disabled a.btn {
 }
 /* line 69, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-info:focus, .btn-outline-info.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 /* line 74, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-info.disabled, .btn-outline-info:disabled {
@@ -7840,8 +7463,7 @@ fieldset:disabled a.btn {
 }
 /* line 87, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
 /* line 70, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7859,8 +7481,7 @@ fieldset:disabled a.btn {
 }
 /* line 69, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-warning:focus, .btn-outline-warning.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 /* line 74, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-warning.disabled, .btn-outline-warning:disabled {
@@ -7875,8 +7496,7 @@ fieldset:disabled a.btn {
 }
 /* line 87, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
 /* line 70, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7894,8 +7514,7 @@ fieldset:disabled a.btn {
 }
 /* line 69, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-danger:focus, .btn-outline-danger.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 /* line 74, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-danger.disabled, .btn-outline-danger:disabled {
@@ -7910,8 +7529,7 @@ fieldset:disabled a.btn {
 }
 /* line 87, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
 /* line 70, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7929,8 +7547,7 @@ fieldset:disabled a.btn {
 }
 /* line 69, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-light:focus, .btn-outline-light.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 /* line 74, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-light.disabled, .btn-outline-light:disabled {
@@ -7945,8 +7562,7 @@ fieldset:disabled a.btn {
 }
 /* line 87, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
 /* line 70, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -7964,8 +7580,7 @@ fieldset:disabled a.btn {
 }
 /* line 69, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-dark:focus, .btn-outline-dark.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 /* line 74, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-dark.disabled, .btn-outline-dark:disabled {
@@ -7980,8 +7595,7 @@ fieldset:disabled a.btn {
 }
 /* line 87, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
 /* line 81, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -8001,8 +7615,7 @@ fieldset:disabled a.btn {
 .btn-link:focus, .btn-link.focus {
   text-decoration: underline;
   border-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 /* line 100, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link:disabled, .btn-link.disabled {
@@ -8045,7 +7658,6 @@ input[type="button"].btn-block {
 /* line 3, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_transitions.scss */
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
 /* line 7, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_transitions.scss */
@@ -8077,7 +7689,6 @@ tbody.collapse.show {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 0.35s ease;
   transition: height 0.35s ease;
 }
 
@@ -8272,8 +7883,6 @@ tbody.collapse.show {
 .btn-group,
 .btn-group-vertical {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle;
 }
@@ -8281,9 +7890,7 @@ tbody.collapse.show {
 .btn-group > .btn,
 .btn-group-vertical > .btn {
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  flex: 0 1 auto;
 }
 /* line 15, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/mixins/_hover.scss */
 .btn-group > .btn:hover,
@@ -8311,14 +7918,9 @@ tbody.collapse.show {
 
 /* line 36, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_button-group.scss */
 .btn-toolbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_button-group.scss */
 .btn-toolbar .input-group {
@@ -8366,16 +7968,9 @@ tbody.collapse.show {
 
 /* line 111, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_button-group.scss */
 .btn-group-vertical {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 /* line 116, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_button-group.scss */
 .btn-group-vertical .btn,
@@ -8421,14 +8016,9 @@ tbody.collapse.show {
 /* line 7, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_input-group.scss */
 .input-group {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-wrap: wrap;
+  align-items: stretch;
   width: 100%;
 }
 /* line 14, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_input-group.scss */
@@ -8436,9 +8026,7 @@ tbody.collapse.show {
 .input-group > .custom-select,
 .input-group > .custom-file {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
   width: 1%;
   margin-bottom: 0;
 }
@@ -8474,12 +8062,8 @@ tbody.collapse.show {
 }
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_input-group.scss */
 .input-group > .custom-file {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 /* line 48, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_input-group.scss */
 .input-group > .custom-file:not(:last-child) .custom-file-label, .input-group > .custom-file:not(:last-child) .custom-file-label::before {
@@ -8495,8 +8079,6 @@ tbody.collapse.show {
 /* line 62, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_input-group.scss */
 .input-group-prepend,
 .input-group-append {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 /* line 69, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_input-group.scss */
@@ -8529,12 +8111,8 @@ tbody.collapse.show {
 
 /* line 91, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_input-group.scss */
 .input-group-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
@@ -8585,8 +8163,6 @@ tbody.collapse.show {
 
 /* line 17, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_custom-forms.scss */
 .custom-control-inline {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-right: 1rem;
 }
@@ -8604,8 +8180,7 @@ tbody.collapse.show {
 }
 /* line 33, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_custom-forms.scss */
 .custom-control-input:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 /* line 38, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_custom-forms.scss */
 .custom-control-input:active ~ .custom-control-label::before {
@@ -8722,8 +8297,7 @@ tbody.collapse.show {
 .custom-select:focus {
   border-color: #80bdff;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(128, 189, 255, 0.5);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(128, 189, 255, 0.5);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(128, 189, 255, 0.5);
 }
 /* line 186, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_custom-forms.scss */
 .custom-select:focus::-ms-value {
@@ -8783,8 +8357,7 @@ tbody.collapse.show {
 /* line 250, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_custom-forms.scss */
 .custom-file-input:focus ~ .custom-file-control {
   border-color: #80bdff;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 /* line 254, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_custom-forms.scss */
 .custom-file-input:focus ~ .custom-file-control::before {
@@ -8830,11 +8403,8 @@ tbody.collapse.show {
 
 /* line 6, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_nav.scss */
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -8905,19 +8475,14 @@ tbody.collapse.show {
 
 /* line 92, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_nav.scss */
 .nav-fill .nav-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
   text-align: center;
 }
 
 /* line 99, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_nav.scss */
 .nav-justified .nav-item {
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-basis: 0;
+  flex-grow: 1;
   text-align: center;
 }
 
@@ -8933,33 +8498,19 @@ tbody.collapse.show {
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   padding: 0.5rem 1rem;
 }
 /* line 28, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar > .container,
 .navbar > .container-fluid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* line 42, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
@@ -8979,13 +8530,8 @@ tbody.collapse.show {
 
 /* line 61, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -9010,14 +8556,9 @@ tbody.collapse.show {
 
 /* line 99, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-collapse {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
 }
 
 /* line 108, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
@@ -9060,20 +8601,12 @@ tbody.collapse.show {
 @media (min-width: 576px) {
   /* line 145, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-sm {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
   }
   /* line 158, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-sm .navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   /* line 161, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-sm .navbar-nav .dropdown-menu {
@@ -9092,16 +8625,12 @@ tbody.collapse.show {
   /* line 177, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   /* line 182, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-sm .navbar-collapse {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    flex-basis: auto;
   }
   /* line 189, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-sm .navbar-toggler {
@@ -9124,20 +8653,12 @@ tbody.collapse.show {
 @media (min-width: 768px) {
   /* line 145, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-md {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
   }
   /* line 158, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-md .navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   /* line 161, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-md .navbar-nav .dropdown-menu {
@@ -9156,16 +8677,12 @@ tbody.collapse.show {
   /* line 177, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   /* line 182, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-md .navbar-collapse {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    flex-basis: auto;
   }
   /* line 189, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-md .navbar-toggler {
@@ -9188,20 +8705,12 @@ tbody.collapse.show {
 @media (min-width: 992px) {
   /* line 145, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-lg {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
   }
   /* line 158, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-lg .navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   /* line 161, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -9220,16 +8729,12 @@ tbody.collapse.show {
   /* line 177, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   /* line 182, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-lg .navbar-collapse {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    flex-basis: auto;
   }
   /* line 189, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-lg .navbar-toggler {
@@ -9252,20 +8757,12 @@ tbody.collapse.show {
 @media (min-width: 1200px) {
   /* line 145, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-xl {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
   }
   /* line 158, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-xl .navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   /* line 161, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-xl .navbar-nav .dropdown-menu {
@@ -9284,16 +8781,12 @@ tbody.collapse.show {
   /* line 177, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   /* line 182, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-xl .navbar-collapse {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    flex-basis: auto;
   }
   /* line 189, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-expand-xl .navbar-toggler {
@@ -9307,13 +8800,8 @@ tbody.collapse.show {
 }
 /* line 145, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-expand {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 /* line 147, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-expand > .container,
@@ -9323,10 +8811,7 @@ tbody.collapse.show {
 }
 /* line 158, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-expand .navbar-nav {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 /* line 161, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-expand .navbar-nav .dropdown-menu {
@@ -9345,16 +8830,12 @@ tbody.collapse.show {
 /* line 177, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-expand > .container,
 .navbar-expand > .container-fluid {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 /* line 182, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-expand .navbar-collapse {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
+  flex-basis: auto;
 }
 /* line 189, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-expand .navbar-toggler {
@@ -9467,13 +8948,8 @@ tbody.collapse.show {
 /* line 5, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
 .card {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
@@ -9499,9 +8975,7 @@ tbody.collapse.show {
 
 /* line 34, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
 .card-body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
   padding: 1.25rem;
 }
 
@@ -9603,13 +9077,8 @@ tbody.collapse.show {
 
 /* line 141, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
 .card-deck {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 /* line 145, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
 .card-deck .card {
@@ -9618,25 +9087,15 @@ tbody.collapse.show {
 @media (min-width: 576px) {
   /* line 141, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
   .card-deck {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     margin-right: -15px;
     margin-left: -15px;
   }
   /* line 154, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
   .card-deck .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 0%;
-            flex: 1 0 0%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex: 1 0 0%;
+    flex-direction: column;
     margin-right: 15px;
     margin-bottom: 0;
     margin-left: 15px;
@@ -9645,13 +9104,8 @@ tbody.collapse.show {
 
 /* line 171, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
 .card-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 /* line 177, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
 .card-group > .card {
@@ -9660,16 +9114,11 @@ tbody.collapse.show {
 @media (min-width: 576px) {
   /* line 171, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
   .card-group {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
   }
   /* line 185, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
   .card-group > .card {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 0%;
-            flex: 1 0 0%;
+    flex: 1 0 0%;
     margin-bottom: 0;
   }
   /* line 190, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_card.scss */
@@ -9757,11 +9206,8 @@ tbody.collapse.show {
 
 /* line 1, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_breadcrumb.scss */
 .breadcrumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
@@ -9792,8 +9238,6 @@ tbody.collapse.show {
 
 /* line 1, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_pagination.scss */
 .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 0;
   list-style: none;
@@ -9822,8 +9266,7 @@ tbody.collapse.show {
 .page-link:focus {
   z-index: 2;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 /* line 31, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_pagination.scss */
 .page-link:not(:disabled):not(.disabled) {
@@ -10209,8 +9652,6 @@ tbody.collapse.show {
 }
 /* line 6, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_progress.scss */
 .progress {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 1rem;
   overflow: hidden;
@@ -10221,20 +9662,12 @@ tbody.collapse.show {
 
 /* line 16, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_progress.scss */
 .progress-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   color: #fff;
   text-align: center;
   background-color: #007bff;
-  -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 
@@ -10252,30 +9685,19 @@ tbody.collapse.show {
 
 /* line 1, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_media.scss */
 .media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 /* line 6, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_media.scss */
 .media-body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 /* line 5, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_list-group.scss */
 .list-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
 }
@@ -10548,7 +9970,6 @@ button.close {
 }
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_modal.scss */
 .modal.fade .modal-dialog {
-  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -10563,25 +9984,16 @@ button.close {
 
 /* line 53, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_modal.scss */
 .modal-dialog-centered {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   min-height: calc(100% - (0.5rem * 2));
 }
 
 /* line 60, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_modal.scss */
 .modal-content {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   pointer-events: auto;
   background-color: #fff;
@@ -10612,15 +10024,9 @@ button.close {
 
 /* line 93, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_modal.scss */
 .modal-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-between;
   padding: 1rem;
   border-bottom: 1px solid #e9ecef;
   border-top-left-radius: 0.3rem;
@@ -10641,23 +10047,15 @@ button.close {
 /* line 116, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_modal.scss */
 .modal-body {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
   padding: 1rem;
 }
 
 /* line 125, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_modal.scss */
 .modal-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
   padding: 1rem;
   border-top: 1px solid #e9ecef;
 }
@@ -11020,11 +10418,8 @@ button.close {
 .carousel-item {
   position: relative;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
-  -webkit-transition: -webkit-transform 0.6s ease;
   transition: -webkit-transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
@@ -11099,15 +10494,9 @@ button.close {
   position: absolute;
   top: 0;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 15%;
   color: #fff;
   text-align: center;
@@ -11160,12 +10549,8 @@ button.close {
   bottom: 10px;
   left: 0;
   z-index: 15;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-left: 0;
   margin-right: 15%;
   margin-left: 15%;
@@ -11174,9 +10559,7 @@ button.close {
 /* line 140, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_carousel.scss */
 .carousel-indicators li {
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  flex: 0 1 auto;
   width: 30px;
   height: 3px;
   margin-right: 3px;
@@ -11536,15 +10919,11 @@ button.bg-dark:focus {
 
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
 .d-flex {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
 }
 
 /* line 19, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
 .d-inline-flex {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
   display: inline-flex !important;
 }
 
@@ -11586,15 +10965,11 @@ button.bg-dark:focus {
 
   /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-sm-flex {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
   }
 
   /* line 19, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-sm-inline-flex {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
 }
@@ -11636,15 +11011,11 @@ button.bg-dark:focus {
 
   /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-md-flex {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
   }
 
   /* line 19, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-md-inline-flex {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
 }
@@ -11686,15 +11057,11 @@ button.bg-dark:focus {
 
   /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-lg-flex {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
   }
 
   /* line 19, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-lg-inline-flex {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
 }
@@ -11736,15 +11103,11 @@ button.bg-dark:focus {
 
   /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-xl-flex {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
   }
 
   /* line 19, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-xl-inline-flex {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
 }
@@ -11786,15 +11149,11 @@ button.bg-dark:focus {
 
   /* line 36, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-print-flex {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
   }
 
   /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_display.scss */
   .d-print-inline-flex {
-    display: -webkit-inline-box !important;
-    display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
 }
@@ -11848,961 +11207,731 @@ button.bg-dark:focus {
 
 /* line 11, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .flex-row {
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: row !important;
-          flex-direction: row !important;
+  flex-direction: row !important;
 }
 
 /* line 12, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .flex-column {
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
+  flex-direction: column !important;
 }
 
 /* line 13, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .flex-row-reverse {
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: reverse !important;
-      -ms-flex-direction: row-reverse !important;
-          flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
 }
 
 /* line 14, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .flex-column-reverse {
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: reverse !important;
-      -ms-flex-direction: column-reverse !important;
-          flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important;
 }
 
 /* line 16, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .flex-wrap {
-  -ms-flex-wrap: wrap !important;
-      flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
 }
 
 /* line 17, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .flex-nowrap {
-  -ms-flex-wrap: nowrap !important;
-      flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
 }
 
 /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .flex-wrap-reverse {
-  -ms-flex-wrap: wrap-reverse !important;
-      flex-wrap: wrap-reverse !important;
+  flex-wrap: wrap-reverse !important;
 }
 
 /* line 20, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .justify-content-start {
-  -webkit-box-pack: start !important;
-      -ms-flex-pack: start !important;
-          justify-content: flex-start !important;
+  justify-content: flex-start !important;
 }
 
 /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .justify-content-end {
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: flex-end !important;
+  justify-content: flex-end !important;
 }
 
 /* line 22, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .justify-content-center {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  justify-content: center !important;
 }
 
 /* line 23, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .justify-content-between {
-  -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
+  justify-content: space-between !important;
 }
 
 /* line 24, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .justify-content-around {
-  -ms-flex-pack: distribute !important;
-      justify-content: space-around !important;
+  justify-content: space-around !important;
 }
 
 /* line 26, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-items-start {
-  -webkit-box-align: start !important;
-      -ms-flex-align: start !important;
-          align-items: flex-start !important;
+  align-items: flex-start !important;
 }
 
 /* line 27, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-items-end {
-  -webkit-box-align: end !important;
-      -ms-flex-align: end !important;
-          align-items: flex-end !important;
+  align-items: flex-end !important;
 }
 
 /* line 28, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-items-center {
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
+  align-items: center !important;
 }
 
 /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-items-baseline {
-  -webkit-box-align: baseline !important;
-      -ms-flex-align: baseline !important;
-          align-items: baseline !important;
+  align-items: baseline !important;
 }
 
 /* line 30, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-items-stretch {
-  -webkit-box-align: stretch !important;
-      -ms-flex-align: stretch !important;
-          align-items: stretch !important;
+  align-items: stretch !important;
 }
 
 /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-content-start {
-  -ms-flex-line-pack: start !important;
-      align-content: flex-start !important;
+  align-content: flex-start !important;
 }
 
 /* line 33, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-content-end {
-  -ms-flex-line-pack: end !important;
-      align-content: flex-end !important;
+  align-content: flex-end !important;
 }
 
 /* line 34, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-content-center {
-  -ms-flex-line-pack: center !important;
-      align-content: center !important;
+  align-content: center !important;
 }
 
 /* line 35, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-content-between {
-  -ms-flex-line-pack: justify !important;
-      align-content: space-between !important;
+  align-content: space-between !important;
 }
 
 /* line 36, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-content-around {
-  -ms-flex-line-pack: distribute !important;
-      align-content: space-around !important;
+  align-content: space-around !important;
 }
 
 /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-content-stretch {
-  -ms-flex-line-pack: stretch !important;
-      align-content: stretch !important;
+  align-content: stretch !important;
 }
 
 /* line 39, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-self-auto {
-  -ms-flex-item-align: auto !important;
-      align-self: auto !important;
+  align-self: auto !important;
 }
 
 /* line 40, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-self-start {
-  -ms-flex-item-align: start !important;
-      align-self: flex-start !important;
+  align-self: flex-start !important;
 }
 
 /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-self-end {
-  -ms-flex-item-align: end !important;
-      align-self: flex-end !important;
+  align-self: flex-end !important;
 }
 
 /* line 42, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-self-center {
-  -ms-flex-item-align: center !important;
-      align-self: center !important;
+  align-self: center !important;
 }
 
 /* line 43, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-self-baseline {
-  -ms-flex-item-align: baseline !important;
-      align-self: baseline !important;
+  align-self: baseline !important;
 }
 
 /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
 .align-self-stretch {
-  -ms-flex-item-align: stretch !important;
-      align-self: stretch !important;
+  align-self: stretch !important;
 }
 
 @media (min-width: 576px) {
   /* line 11, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-sm-row {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    flex-direction: row !important;
   }
 
   /* line 12, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-sm-column {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    flex-direction: column !important;
   }
 
   /* line 13, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-sm-row-reverse {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: row-reverse !important;
-            flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
   }
 
   /* line 14, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-sm-column-reverse {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
   }
 
   /* line 16, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-sm-wrap {
-    -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
   }
 
   /* line 17, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-sm-nowrap {
-    -ms-flex-wrap: nowrap !important;
-        flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
   }
 
   /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-sm-wrap-reverse {
-    -ms-flex-wrap: wrap-reverse !important;
-        flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
   }
 
   /* line 20, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-sm-start {
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
+    justify-content: flex-start !important;
   }
 
   /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-sm-end {
-    -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-            justify-content: flex-end !important;
+    justify-content: flex-end !important;
   }
 
   /* line 22, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-sm-center {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
   }
 
   /* line 23, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-sm-between {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
 
   /* line 24, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-sm-around {
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    justify-content: space-around !important;
   }
 
   /* line 26, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-sm-start {
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
+    align-items: flex-start !important;
   }
 
   /* line 27, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-sm-end {
-    -webkit-box-align: end !important;
-        -ms-flex-align: end !important;
-            align-items: flex-end !important;
+    align-items: flex-end !important;
   }
 
   /* line 28, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-sm-center {
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    align-items: center !important;
   }
 
   /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-sm-baseline {
-    -webkit-box-align: baseline !important;
-        -ms-flex-align: baseline !important;
-            align-items: baseline !important;
+    align-items: baseline !important;
   }
 
   /* line 30, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-sm-stretch {
-    -webkit-box-align: stretch !important;
-        -ms-flex-align: stretch !important;
-            align-items: stretch !important;
+    align-items: stretch !important;
   }
 
   /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-sm-start {
-    -ms-flex-line-pack: start !important;
-        align-content: flex-start !important;
+    align-content: flex-start !important;
   }
 
   /* line 33, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-sm-end {
-    -ms-flex-line-pack: end !important;
-        align-content: flex-end !important;
+    align-content: flex-end !important;
   }
 
   /* line 34, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-sm-center {
-    -ms-flex-line-pack: center !important;
-        align-content: center !important;
+    align-content: center !important;
   }
 
   /* line 35, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-sm-between {
-    -ms-flex-line-pack: justify !important;
-        align-content: space-between !important;
+    align-content: space-between !important;
   }
 
   /* line 36, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-sm-around {
-    -ms-flex-line-pack: distribute !important;
-        align-content: space-around !important;
+    align-content: space-around !important;
   }
 
   /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-sm-stretch {
-    -ms-flex-line-pack: stretch !important;
-        align-content: stretch !important;
+    align-content: stretch !important;
   }
 
   /* line 39, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-sm-auto {
-    -ms-flex-item-align: auto !important;
-        align-self: auto !important;
+    align-self: auto !important;
   }
 
   /* line 40, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-sm-start {
-    -ms-flex-item-align: start !important;
-        align-self: flex-start !important;
+    align-self: flex-start !important;
   }
 
   /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-sm-end {
-    -ms-flex-item-align: end !important;
-        align-self: flex-end !important;
+    align-self: flex-end !important;
   }
 
   /* line 42, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-sm-center {
-    -ms-flex-item-align: center !important;
-        align-self: center !important;
+    align-self: center !important;
   }
 
   /* line 43, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-sm-baseline {
-    -ms-flex-item-align: baseline !important;
-        align-self: baseline !important;
+    align-self: baseline !important;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-sm-stretch {
-    -ms-flex-item-align: stretch !important;
-        align-self: stretch !important;
+    align-self: stretch !important;
   }
 }
 @media (min-width: 768px) {
   /* line 11, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-md-row {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    flex-direction: row !important;
   }
 
   /* line 12, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-md-column {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    flex-direction: column !important;
   }
 
   /* line 13, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-md-row-reverse {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: row-reverse !important;
-            flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
   }
 
   /* line 14, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-md-column-reverse {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
   }
 
   /* line 16, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-md-wrap {
-    -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
   }
 
   /* line 17, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-md-nowrap {
-    -ms-flex-wrap: nowrap !important;
-        flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
   }
 
   /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-md-wrap-reverse {
-    -ms-flex-wrap: wrap-reverse !important;
-        flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
   }
 
   /* line 20, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-md-start {
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
+    justify-content: flex-start !important;
   }
 
   /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-md-end {
-    -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-            justify-content: flex-end !important;
+    justify-content: flex-end !important;
   }
 
   /* line 22, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-md-center {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
   }
 
   /* line 23, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-md-between {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
 
   /* line 24, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-md-around {
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    justify-content: space-around !important;
   }
 
   /* line 26, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-md-start {
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
+    align-items: flex-start !important;
   }
 
   /* line 27, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-md-end {
-    -webkit-box-align: end !important;
-        -ms-flex-align: end !important;
-            align-items: flex-end !important;
+    align-items: flex-end !important;
   }
 
   /* line 28, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-md-center {
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    align-items: center !important;
   }
 
   /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-md-baseline {
-    -webkit-box-align: baseline !important;
-        -ms-flex-align: baseline !important;
-            align-items: baseline !important;
+    align-items: baseline !important;
   }
 
   /* line 30, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-md-stretch {
-    -webkit-box-align: stretch !important;
-        -ms-flex-align: stretch !important;
-            align-items: stretch !important;
+    align-items: stretch !important;
   }
 
   /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-md-start {
-    -ms-flex-line-pack: start !important;
-        align-content: flex-start !important;
+    align-content: flex-start !important;
   }
 
   /* line 33, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-md-end {
-    -ms-flex-line-pack: end !important;
-        align-content: flex-end !important;
+    align-content: flex-end !important;
   }
 
   /* line 34, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-md-center {
-    -ms-flex-line-pack: center !important;
-        align-content: center !important;
+    align-content: center !important;
   }
 
   /* line 35, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-md-between {
-    -ms-flex-line-pack: justify !important;
-        align-content: space-between !important;
+    align-content: space-between !important;
   }
 
   /* line 36, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-md-around {
-    -ms-flex-line-pack: distribute !important;
-        align-content: space-around !important;
+    align-content: space-around !important;
   }
 
   /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-md-stretch {
-    -ms-flex-line-pack: stretch !important;
-        align-content: stretch !important;
+    align-content: stretch !important;
   }
 
   /* line 39, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-md-auto {
-    -ms-flex-item-align: auto !important;
-        align-self: auto !important;
+    align-self: auto !important;
   }
 
   /* line 40, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-md-start {
-    -ms-flex-item-align: start !important;
-        align-self: flex-start !important;
+    align-self: flex-start !important;
   }
 
   /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-md-end {
-    -ms-flex-item-align: end !important;
-        align-self: flex-end !important;
+    align-self: flex-end !important;
   }
 
   /* line 42, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-md-center {
-    -ms-flex-item-align: center !important;
-        align-self: center !important;
+    align-self: center !important;
   }
 
   /* line 43, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-md-baseline {
-    -ms-flex-item-align: baseline !important;
-        align-self: baseline !important;
+    align-self: baseline !important;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-md-stretch {
-    -ms-flex-item-align: stretch !important;
-        align-self: stretch !important;
+    align-self: stretch !important;
   }
 }
 @media (min-width: 992px) {
   /* line 11, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-lg-row {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    flex-direction: row !important;
   }
 
   /* line 12, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-lg-column {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    flex-direction: column !important;
   }
 
   /* line 13, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-lg-row-reverse {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: row-reverse !important;
-            flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
   }
 
   /* line 14, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-lg-column-reverse {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
   }
 
   /* line 16, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-lg-wrap {
-    -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
   }
 
   /* line 17, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-lg-nowrap {
-    -ms-flex-wrap: nowrap !important;
-        flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
   }
 
   /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-lg-wrap-reverse {
-    -ms-flex-wrap: wrap-reverse !important;
-        flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
   }
 
   /* line 20, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-lg-start {
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
+    justify-content: flex-start !important;
   }
 
   /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-lg-end {
-    -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-            justify-content: flex-end !important;
+    justify-content: flex-end !important;
   }
 
   /* line 22, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-lg-center {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
   }
 
   /* line 23, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-lg-between {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
 
   /* line 24, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-lg-around {
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    justify-content: space-around !important;
   }
 
   /* line 26, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-lg-start {
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
+    align-items: flex-start !important;
   }
 
   /* line 27, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-lg-end {
-    -webkit-box-align: end !important;
-        -ms-flex-align: end !important;
-            align-items: flex-end !important;
+    align-items: flex-end !important;
   }
 
   /* line 28, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-lg-center {
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    align-items: center !important;
   }
 
   /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-lg-baseline {
-    -webkit-box-align: baseline !important;
-        -ms-flex-align: baseline !important;
-            align-items: baseline !important;
+    align-items: baseline !important;
   }
 
   /* line 30, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-lg-stretch {
-    -webkit-box-align: stretch !important;
-        -ms-flex-align: stretch !important;
-            align-items: stretch !important;
+    align-items: stretch !important;
   }
 
   /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-lg-start {
-    -ms-flex-line-pack: start !important;
-        align-content: flex-start !important;
+    align-content: flex-start !important;
   }
 
   /* line 33, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-lg-end {
-    -ms-flex-line-pack: end !important;
-        align-content: flex-end !important;
+    align-content: flex-end !important;
   }
 
   /* line 34, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-lg-center {
-    -ms-flex-line-pack: center !important;
-        align-content: center !important;
+    align-content: center !important;
   }
 
   /* line 35, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-lg-between {
-    -ms-flex-line-pack: justify !important;
-        align-content: space-between !important;
+    align-content: space-between !important;
   }
 
   /* line 36, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-lg-around {
-    -ms-flex-line-pack: distribute !important;
-        align-content: space-around !important;
+    align-content: space-around !important;
   }
 
   /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-lg-stretch {
-    -ms-flex-line-pack: stretch !important;
-        align-content: stretch !important;
+    align-content: stretch !important;
   }
 
   /* line 39, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-lg-auto {
-    -ms-flex-item-align: auto !important;
-        align-self: auto !important;
+    align-self: auto !important;
   }
 
   /* line 40, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-lg-start {
-    -ms-flex-item-align: start !important;
-        align-self: flex-start !important;
+    align-self: flex-start !important;
   }
 
   /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-lg-end {
-    -ms-flex-item-align: end !important;
-        align-self: flex-end !important;
+    align-self: flex-end !important;
   }
 
   /* line 42, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-lg-center {
-    -ms-flex-item-align: center !important;
-        align-self: center !important;
+    align-self: center !important;
   }
 
   /* line 43, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-lg-baseline {
-    -ms-flex-item-align: baseline !important;
-        align-self: baseline !important;
+    align-self: baseline !important;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-lg-stretch {
-    -ms-flex-item-align: stretch !important;
-        align-self: stretch !important;
+    align-self: stretch !important;
   }
 }
 @media (min-width: 1200px) {
   /* line 11, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-xl-row {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    flex-direction: row !important;
   }
 
   /* line 12, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-xl-column {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    flex-direction: column !important;
   }
 
   /* line 13, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-xl-row-reverse {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: row-reverse !important;
-            flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important;
   }
 
   /* line 14, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-xl-column-reverse {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
   }
 
   /* line 16, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-xl-wrap {
-    -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
   }
 
   /* line 17, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-xl-nowrap {
-    -ms-flex-wrap: nowrap !important;
-        flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
   }
 
   /* line 18, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .flex-xl-wrap-reverse {
-    -ms-flex-wrap: wrap-reverse !important;
-        flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important;
   }
 
   /* line 20, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-xl-start {
-    -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: flex-start !important;
+    justify-content: flex-start !important;
   }
 
   /* line 21, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-xl-end {
-    -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-            justify-content: flex-end !important;
+    justify-content: flex-end !important;
   }
 
   /* line 22, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-xl-center {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    justify-content: center !important;
   }
 
   /* line 23, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-xl-between {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    justify-content: space-between !important;
   }
 
   /* line 24, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .justify-content-xl-around {
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
+    justify-content: space-around !important;
   }
 
   /* line 26, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-xl-start {
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
+    align-items: flex-start !important;
   }
 
   /* line 27, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-xl-end {
-    -webkit-box-align: end !important;
-        -ms-flex-align: end !important;
-            align-items: flex-end !important;
+    align-items: flex-end !important;
   }
 
   /* line 28, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-xl-center {
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    align-items: center !important;
   }
 
   /* line 29, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-xl-baseline {
-    -webkit-box-align: baseline !important;
-        -ms-flex-align: baseline !important;
-            align-items: baseline !important;
+    align-items: baseline !important;
   }
 
   /* line 30, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-items-xl-stretch {
-    -webkit-box-align: stretch !important;
-        -ms-flex-align: stretch !important;
-            align-items: stretch !important;
+    align-items: stretch !important;
   }
 
   /* line 32, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-xl-start {
-    -ms-flex-line-pack: start !important;
-        align-content: flex-start !important;
+    align-content: flex-start !important;
   }
 
   /* line 33, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-xl-end {
-    -ms-flex-line-pack: end !important;
-        align-content: flex-end !important;
+    align-content: flex-end !important;
   }
 
   /* line 34, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-xl-center {
-    -ms-flex-line-pack: center !important;
-        align-content: center !important;
+    align-content: center !important;
   }
 
   /* line 35, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-xl-between {
-    -ms-flex-line-pack: justify !important;
-        align-content: space-between !important;
+    align-content: space-between !important;
   }
 
   /* line 36, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-xl-around {
-    -ms-flex-line-pack: distribute !important;
-        align-content: space-around !important;
+    align-content: space-around !important;
   }
 
   /* line 37, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-content-xl-stretch {
-    -ms-flex-line-pack: stretch !important;
-        align-content: stretch !important;
+    align-content: stretch !important;
   }
 
   /* line 39, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-xl-auto {
-    -ms-flex-item-align: auto !important;
-        align-self: auto !important;
+    align-self: auto !important;
   }
 
   /* line 40, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-xl-start {
-    -ms-flex-item-align: start !important;
-        align-self: flex-start !important;
+    align-self: flex-start !important;
   }
 
   /* line 41, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-xl-end {
-    -ms-flex-item-align: end !important;
-        align-self: flex-end !important;
+    align-self: flex-end !important;
   }
 
   /* line 42, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-xl-center {
-    -ms-flex-item-align: center !important;
-        align-self: center !important;
+    align-self: center !important;
   }
 
   /* line 43, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-xl-baseline {
-    -ms-flex-item-align: baseline !important;
-        align-self: baseline !important;
+    align-self: baseline !important;
   }
 
   /* line 44, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_flex.scss */
   .align-self-xl-stretch {
-    -ms-flex-item-align: stretch !important;
-        align-self: stretch !important;
+    align-self: stretch !important;
   }
 }
 /* line 5, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/utilities/_float.scss */
@@ -15149,8 +14278,7 @@ a.text-dark:hover, a.text-dark:focus {
   *::before,
   *::after {
     text-shadow: none !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 
   /* line 24, /usr/local/bundle/gems/bootstrap-4.0.0/assets/stylesheets/bootstrap/_print.scss */
@@ -15565,8 +14693,7 @@ ul.important-notes li {
   min-height: 160px;
   padding: 5px;
   border: 1px solid #e5e5e5;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* line 246, /opt/project/app/assets/stylesheets/main.sass */
@@ -15614,8 +14741,7 @@ table td {
 
 /* line 273, /opt/project/app/assets/stylesheets/main.sass */
 table.score-comparison {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 0.85rem;
 }
 /* line 278, /opt/project/app/assets/stylesheets/main.sass */
@@ -15656,8 +14782,7 @@ table.score-comparison.table-bordered thead th {
 .card {
   margin-top: 1.6em;
   border: 1px solid #e5e5e5;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* line 310, /opt/project/app/assets/stylesheets/main.sass */
@@ -15701,7 +14826,6 @@ div.card-body th {
   margin-right: 0.4rem;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-transition: all linear 0.25s;
   transition: all linear 0.25s;
 }
 
@@ -15880,12 +15004,10 @@ div.card-body th {
 
 /* line 370, /opt/project/app/assets/stylesheets/main.sass */
 #responsive-extra ul.pagination {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 /* line 373, /opt/project/app/assets/stylesheets/main.sass */
 #compact-extra div.btn-group {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

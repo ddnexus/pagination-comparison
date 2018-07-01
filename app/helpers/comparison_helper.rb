@@ -1,3 +1,4 @@
+require 'rake'
 module ComparisonHelper
 
   # need it in order to capture the benchmark details
@@ -14,13 +15,13 @@ module ComparisonHelper
 
   def pagy_pagination(scope=Dish.all, page=params[:page])
     pagy, records = pagy(scope, page: page)
-    pagy_nav_bootstrap(pagy)
+    pagy_bootstrap_nav(pagy)
     pagy_info(pagy)
   end
 
   def will_paginate_pagination(scope=Dish.all, page=params[:page])
     records = scope.page(page)
-    will_paginate records, outer_window: 4, page_links: true, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer
+    will_paginate records, outer_window: 5, inner_window: 5, page_links: true, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer
     page_entries_info(records)
   end
 
@@ -37,23 +38,26 @@ module ComparisonHelper
   def init_code_size
     return unless Rails.env.production?
     # pagy
-    $p.code_size = CodeSize.new paths:   [File.join(`bundle show pagy`.strip, 'lib')],
-                                exclude: [/array\.rb/, /compact\.rb/, /responsive\.rb/, /i18n\.rb/, /initializer_example\.rb/]
+    files = FileList[File.join(`bundle show pagy`.strip, 'lib', '**', '*.rb')]
+    files.exclude(/extras/, /templates/, /config/, /countless/, /locales/)
+
+    $p.code_size = CodeSize.new files: files.to_a + [File.join(`bundle show pagy`.strip, 'lib', 'pagy', 'extras', 'bootstrap.rb')]
 
     # will_paginate
-    paths = [ File.join(`bundle show will_paginate`.strip, 'lib'),
-              File.join(`bundle show bootstrap-will_paginate`.strip, 'lib'),
-              File.join(`bundle show bootstrap-will_paginate`.strip, 'config') ]
-    $w.code_size = CodeSize.new paths: paths
+    files = FileList[ File.join(`bundle show will_paginate`.strip, 'lib', '**', '*.rb'),
+                      File.join(`bundle show bootstrap-will_paginate`.strip, 'lib', '**', '*.rb'),
+                      File.join(`bundle show bootstrap-will_paginate`.strip, 'config', '**', '*.rb') ]
+    $w.code_size = CodeSize.new files: files.to_a
     # kaminari
-    paths = %w[kaminari kaminari-core kaminari-actionview kaminari-activerecord].map do |gem|
-      File.join(`bundle show #{gem}`.strip, 'lib')
+    dirs = %w[kaminari kaminari-core kaminari-actionview kaminari-activerecord].map do |gem|
+      File.join(`bundle show #{gem}`.strip, 'lib', '**', '*.{rb,erb}')
     end
     # kaminari templates
-    paths << File.join(`bundle show kaminari-core`.strip, 'app', 'views', 'kaminari').to_s
+    dirs << File.join(`bundle show kaminari-core`.strip, 'app', 'views', 'kaminari', '**', '*.erb').to_s
     # kaminari bootstrap templates
-    paths << Rails.root.join('app', 'views', 'kaminari').to_s
-    $k.code_size = CodeSize.new paths: paths, ext: '{rb,erb}', exclude: [/^generators/]
+    dirs << Rails.root.join('app', 'views', 'kaminari', '**', '*.erb').to_s
+    files = FileList[*dirs].exclude(/generators/)
+    $k.code_size = CodeSize.new files: files.to_a
   end
 
   def loc_chart_data
@@ -79,7 +83,7 @@ module ComparisonHelper
 
   def init_code_struct
     return unless Rails.env.production?
-    $p.code_struct = CodeStruct.new Pagy, [/responsive|compact/]
+    $p.code_struct = CodeStruct.new Pagy, [/responsive|compact|plain/]
     $w.code_struct = CodeStruct.new WillPaginate
     $k.code_struct = CodeStruct.new Kaminari
   end
@@ -259,11 +263,11 @@ module ComparisonHelper
   def pagy_helper_block
     # pagy = Pagy.new(count:1000, page: 20)
     pagy, records = pagy(Dish.all, page: 20)
-    pagy_nav_bootstrap(pagy)
+    pagy_bootstrap_nav(pagy)
     pagy_info(pagy)
   end
 
-  BOOTSTRAP_TEMPLATE = Pagy.root.join('pagy', 'extras', 'templates', 'nav_bootstrap.html.slim').to_s
+  BOOTSTRAP_TEMPLATE = Pagy.root.join('templates', 'bootstrap_nav.html.slim').to_s
   # same as pagy_pagination done with template so we can compare the IPS with other gems
   # The block run with the template is only ~30% slower than the helper, so it is still ~17x faster than Kaminari
   def pagy_template_block

@@ -15,6 +15,11 @@
 //= require rails-ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require pagy-responsive
-//= require pagy-compact
+//= require pagy
 //= require_tree .
+
+
+// PagyInit.try = function(payload){console.log(payload)};
+
+window.addEventListener("turbolinks:load", Pagy.init);
+

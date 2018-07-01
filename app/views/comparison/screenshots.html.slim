@@ -49,19 +49,19 @@ style
     - pagy = Pagy.new count: 1000, page: 20
     #responsive-extra.graph-screenshot
       .row
+        .col-lg-7
+          == pagy_bootstrap_responsive_nav(pagy)
+      .row
         .col-lg-6
-          == pagy_nav_bootstrap_responsive(pagy)
+          == pagy_bootstrap_responsive_nav(pagy)
       .row
         .col-lg-4
-          == pagy_nav_bootstrap_responsive(pagy)
-      .row
-        .col-lg-3
-          == pagy_nav_bootstrap_responsive(pagy)
+          == pagy_bootstrap_responsive_nav(pagy)
 
     #compact-extra.graph-screenshot
       .row
         .col-lg-3
-          == pagy_nav_bootstrap_compact(pagy)
+          == pagy_bootstrap_compact_nav(pagy)
 
 
 = render 'shared/init_charts'

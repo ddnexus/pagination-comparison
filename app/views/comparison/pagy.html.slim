@@ -18,7 +18,7 @@
           | (your) Custom Templates
         li Other Methods (benchmarks and profiles)
 
-      p You can use this page to inspect the commented source, and make decision about using one method or another, based on Benchmarks and Memory allocation.
+      p style="padding-bottom:2rem;" You can use this page to inspect the commented source, and make decision about using one method or another, based on Benchmarks and Memory allocation.
 
 .container.container-page
 
@@ -40,67 +40,80 @@
           == wrap_nav "pagy_nav helper"
             == pagy_nav(@pagy)
 
+    .scrollable-section
       .pagy-nav
-        .capt pagy_nav_bootstrap
+        .capt pagy_bootstrap_nav
         .pager-example
-          == wrap_nav "pagy_nav_bootstrap helper"
-            == pagy_nav_bootstrap(@pagy)
+          / == pagy_apply_init_tag(@pagy, 'try')
+          == wrap_nav "pagy_bootstrap_nav helper"
+            == pagy_bootstrap_nav(@pagy)
 
     h3.title.fas.fa-code Pagy Responsive Helpers
 
     p Resize the windodw to get different quantities of pages shown...
 
     .pagy-nav
-      .capt pagy_nav_responsive
-      .no-flex.pager-example
+      .capt pagy_plain_responsive_nav
+      .no-flex.pager-example#dd-try
         == wrap_nav "pagy_nav_responsive helper"
-          == pagy_nav_responsive(@pagy)
-
+          == pagy_plain_responsive_nav(@pagy)
 
     .pagy-nav
-      .capt pagy_nav_bootstrap_responsive
+      .capt pagy_bootstrap_responsive_nav
       .pager-example
-        == wrap_nav "pagy_nav_bootstrap_responsive helper"
-          == pagy_nav_bootstrap_responsive(@pagy)
-
+        == wrap_nav "pagy_bootstrap_responsive_nav helper"
+          == pagy_bootstrap_responsive_nav(@pagy)
 
     h3.title.fas.fa-code Pagy Compact Helpers
 
     .pagy-nav
-      .capt pagy_nav_compact
+      .capt pagy_plain_compact_nav
       .no-flex.pager-example
-        == wrap_nav "pagy_nav_compact helper"
-          == pagy_nav_compact(@pagy)
+        == wrap_nav "pagy_plain_compact_nav helper"
+          == pagy_plain_compact_nav(@pagy)
 
     .pagy-nav
-      .capt pagy_nav_bootstrap_compact
+      .capt pagy_bootstrap_compact_nav
       .pager-example
-        == wrap_nav "pagy_nav_bootstrap_compact helper"
-          == pagy_nav_bootstrap_compact(@pagy)
+        == wrap_nav "pagy_bootstrap_compact_nav helper"
+          == pagy_bootstrap_compact_nav(@pagy)
+
+
+    / h3.title.fas.fa-code Pagy Items Selector Helper
+    /
+    / .pagy-nav
+    /   .capt pagy_items_selector
+    /   .no-flex.pager-example
+    /     == wrap_nav "pagy_items_selector helper"
+    /       == pagy_items_selector(@pagy)
+    /
 
     h3.title.fas.fa-file-code Pagy Templates
 
-    .scrollable-section
-      - Pagy.root.join('pagy', 'extras', 'templates').each_child.sort.each do |t|
-        .pagy-nav
-          .capt title=t = t.basename
-          .no-flex.pager-example
-            == wrap_nav "template #{t}"
-              == render file: t, locals: { pagy: @pagy }
 
-    h3.title.fas.fa-file-code Custom Templates
-
-    .scrollable-section
-      - if Rails.root.join('app', 'views', 'pagy').entries.size > 2
-        - Rails.root.join('app', 'views', 'pagy').each_child.sort.each do |t|
+    - %w[/nav. nav_bootstrap.].each do |n|
+      - Pagy.root.join('templates').each_child.sort.each do |t|
+        - next unless t.to_s.include?(n)
+        .scrollable-section
           .pagy-nav
             .capt title=t = t.basename
             .no-flex.pager-example
               == wrap_nav "template #{t}"
                 == render file: t, locals: { pagy: @pagy }
-      - else
-        .pagy-nav
-          p You can try your custom templates by adding them to the <code>app/views/pagy</code> dir and reload this page.
+
+    / h3.title.fas.fa-file-code Custom Templates
+    /
+    / .scrollable-section
+    /   - if Rails.root.join('app', 'views', 'pagy').entries.size > 2
+    /     - Rails.root.join('app', 'views', 'pagy').each_child.sort.each do |t|
+    /       .pagy-nav
+    /         .capt title=t = t.basename
+    /         .no-flex.pager-example
+    /           == wrap_nav "template #{t}"
+    /             == render file: t, locals: { pagy: @pagy }
+    /   - else
+    /     .pagy-nav
+    /       p You can try your custom templates by adding them to the <code>app/views/pagy</code> dir and reload this page.
 
 
   h2.title.fas.fa-balance-scale Comparisons

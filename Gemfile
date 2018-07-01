@@ -5,13 +5,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '~> 2.6.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.6'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.11'
 
 gem 'jquery-rails'
 # Use SCSS for stylesheets
@@ -47,20 +48,19 @@ gem 'jbuilder', '~> 2.5'
 # end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'loofah', '~> 2.2.1'
 
-# fundation
-gem 'bootstrap', '~> 4.0.0'
-gem 'font-awesome-sass', '~> 5.0.6'
+gem 'bootstrap'
+gem 'font-awesome-sass'
 gem 'faker'
 gem 'slim-rails'
 gem 'haml'
 
 # pagination
-gem 'pagy', '~> 0.8.5'
-#gem 'pagy', path: '/opt/pagy'
+gem 'pagy', '~> 2.0'
+# gem 'pagy', path: '/opt/pagy'
 
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
@@ -70,3 +70,16 @@ gem 'kaminari'
 gem 'benchmark-ips'
 gem 'kalibera'
 gem 'memory_profiler'
+
+# gem 'bulma-rails'
+# gem 'materialize-sass', '~> 1.0.0.rc2'
+# gem 'material_icons'
+
+# gem 'foundation-rails', :github => 'zurb/foundation-rails'
+# gem 'autoprefixer-rails'
+
+# gem 'semantic-ui-sass'
+
+gem 'ruby-debug-ide', '0.7.0.beta7'
+gem 'debase', '0.2.3.beta5'
+
