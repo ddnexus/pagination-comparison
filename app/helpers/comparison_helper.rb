@@ -20,7 +20,7 @@ module ComparisonHelper
 
   def will_paginate_pagination(scope=Dish.all, page=params[:page])
     records = scope.page(page)
-    will_paginate records, outer_window: 4, page_links: true, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer
+    will_paginate records, outer_window: 5, inner_window: 5, page_links: true, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer
     page_entries_info(records)
   end
 
@@ -38,7 +38,7 @@ module ComparisonHelper
     return unless Rails.env.production?
     # pagy
     $p.code_size = CodeSize.new paths:   [File.join(`bundle show pagy`.strip, 'lib')],
-                                exclude: [/array\.rb/, /compact\.rb/, /responsive\.rb/, /i18n\.rb/, /initializer_example\.rb/]
+                                exclude: [/array\.rb/, /compact\.rb/, /responsive\.rb/, /i18n\.rb/, /initializer_example\.rb/, /items[^.]*\.rb/, /locales/]
 
     # will_paginate
     paths = [ File.join(`bundle show will_paginate`.strip, 'lib'),

@@ -28,6 +28,10 @@ class ComparisonController < ApplicationController
     render 'pagy'
   end
 
+  def responsive_screencast
+    @pagy, @records = pagy(Dish.all)
+  end
+
 
   private
 

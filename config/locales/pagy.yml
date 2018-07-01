@@ -19,6 +19,9 @@ en:
     compact:
       page: Page
       of: of
+    items:
+      show: "Show"
+      items: "items per page"
 
 
   # we add the activerecord models here, since we don't use I18n

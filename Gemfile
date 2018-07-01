@@ -59,7 +59,7 @@ gem 'slim-rails'
 gem 'haml'
 
 # pagination
-gem 'pagy', '~> 0.8.5'
+gem 'pagy', '~> 0.14.0'
 #gem 'pagy', path: '/opt/pagy'
 
 gem 'will_paginate'
@@ -70,3 +70,7 @@ gem 'kaminari'
 gem 'benchmark-ips'
 gem 'kalibera'
 gem 'memory_profiler'
+
+# gem 'bulma-rails'
+# gem 'materialize-sass', '~> 1.0.0.rc2'
+# gem 'material_icons'

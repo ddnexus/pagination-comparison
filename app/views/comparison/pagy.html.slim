@@ -58,10 +58,10 @@
 
 
     .pagy-nav
-      .capt pagy_nav_bootstrap_responsive
+      .capt pagy_nav_responsive_bootstrap
       .pager-example
-        == wrap_nav "pagy_nav_bootstrap_responsive helper"
-          == pagy_nav_bootstrap_responsive(@pagy)
+        == wrap_nav "pagy_nav_responsive_bootstrap helper"
+          == pagy_nav_responsive_bootstrap(@pagy)
 
 
     h3.title.fas.fa-code Pagy Compact Helpers
@@ -73,10 +73,19 @@
           == pagy_nav_compact(@pagy)
 
     .pagy-nav
-      .capt pagy_nav_bootstrap_compact
+      .capt pagy_nav_compact_bootstrap
       .pager-example
-        == wrap_nav "pagy_nav_bootstrap_compact helper"
-          == pagy_nav_bootstrap_compact(@pagy)
+        == wrap_nav "pagy_nav_compact_bootstrap helper"
+          == pagy_nav_compact_bootstrap(@pagy)
+
+
+    / h3.title.fas.fa-code Pagy Items Selector Helper
+    /
+    / .pagy-nav
+    /   .capt pagy_items_selector
+    /   .no-flex.pager-example
+    /     == wrap_nav "pagy_items_selector helper"
+    /       == pagy_items_selector(@pagy)
 
     h3.title.fas.fa-file-code Pagy Templates
 

@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   get 'pagy1', to: 'comparison#pagy1'
 
   get 'screenshots', to: 'comparison#screenshots'
+  get 'responsive_screencast', to: 'comparison#responsive_screencast'
 
 end

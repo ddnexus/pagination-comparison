@@ -18005,46 +18005,84 @@ var Alert = function ($) {
 
 
 
-function PagyResponsive(id, items, widths, series){
-  var pagyNav    = document.getElementById('pagy-nav-'+id),
-      pagyBox    = pagyNav.firstChild || pagyNav,
-      pagyParent = pagyNav.parentElement,
-      lastWidth  = undefined;
+// See the Pagy documentation: https://ddnexus.github.io/pagy/extras#javascript
 
-  this.render = function(){
-                  var parentWidth = parseInt(pagyParent.clientWidth),
-                      width       = widths.find(function(w){return parentWidth > w});
-                  if (width !== lastWidth) {
-                    while (pagyBox.firstChild) { pagyBox.removeChild(pagyBox.firstChild) }
-                    var tags = items['prev'];
-                    series[width].forEach(function(item){tags += items[item]});
-                    tags += items['next'];
-                    pagyBox.insertAdjacentHTML('beforeend', tags);
-                    lastWidth = width;
-                  }
-                };
+function Pagy(){}
 
-  if (window.attachEvent) { window.attachEvent('onresize', this.render) }
-  else if (window.addEventListener) { window.addEventListener('resize', this.render, true) }
+Pagy.windowListeners = [];
 
-  this.render();
-};
-function PagyCompact(id, marker, page){
-  var pagyNav = document.getElementById('pagy-nav-'+id),
-      input   = pagyNav.getElementsByTagName('input')[0],
-      link    = pagyNav.getElementsByTagName('a')[0];
+Pagy.addInputEventListeners = function(input, handler){
+                                // select the content on click: easier for typing a number
+                                input.addEventListener('click', function(){ this.select() });
+                                // go when the input looses focus
+                                input.addEventListener('focusout', handler);
+                                // … and when pressing enter inside the input
+                                input.addEventListener('keyup', function(e){ if (e.which === 13) handler() }.bind(this));
+                              };
 
-  this.go = function(){
-    if (page !== input.value) {
-      var href = link.getAttribute('href').replace(marker, input.value);
-      link.setAttribute('href', href);
-      link.click();
-    }
-  };
+Pagy.compact = function(id, marker, page){
+                 var pagyNav = document.getElementById('pagy-nav-'+id),
+                     input   = pagyNav.getElementsByTagName('input')[0],
+                     link    = pagyNav.getElementsByTagName('a')[0],
+                     go      = function(){
+                                 if (page !== input.value) {
+                                   var href = link.getAttribute('href').replace(marker, input.value);
+                                   link.setAttribute('href', href);
+                                   link.click();
+                                 }
+                               };
+                 Pagy.addInputEventListeners(input, go);
+               };
 
-  input.addEventListener("focusout", this.go);
-}
-;
+Pagy.items = function(id, marker, from){
+               var pagyNav = document.getElementById('pagy-items-'+id),
+                   input   = pagyNav.getElementsByTagName('input')[0],
+                   current = input.value,
+                   link    = pagyNav.getElementsByTagName('a')[0],
+                   go      = function(){
+                               var items = input.value;
+                               if (current !== items) {
+                                 var page = Math.max(Math.ceil(from / items),1);
+                                 var href = link.getAttribute('href').replace(marker+'-page-', page).replace(marker+'-items-', items);
+                                 link.setAttribute('href', href);
+                                 link.click();
+                               }
+                             };
+               Pagy.addInputEventListeners(input, go);
+             };
+
+Pagy.responsive = function(id, tags, widths, series){
+                    var pagyNav    = document.getElementById('pagy-nav-'+id),
+                        pagyParent = pagyNav.parentElement,
+                        lastWidth  = undefined,
+                        render     = function(){
+                                       var parentWidth = parseInt(pagyParent.clientWidth),
+                                           width       = widths.find(function(w){return parentWidth > w});
+                                       if (width !== lastWidth) {
+                                         while (pagyNav.firstChild) { pagyNav.removeChild(pagyNav.firstChild) }
+                                         var html = tags['before'];
+                                         series[width].forEach(function(item){html += tags[item]});
+                                         html += tags['after'];
+                                         pagyNav.insertAdjacentHTML('beforeend', html);
+                                         lastWidth = width;
+                                       }
+                                     }.bind(this);
+                    window.addEventListener('resize', render, true);
+                    Pagy.windowListeners.push(render);
+                    render();
+                  };
+
+Pagy.init = function(){
+              // we need to explicitly remove the window listeners  because turbolinks persists the window object
+              Pagy.windowListeners.forEach(function(l){window.removeEventListener('resize', l, true)});
+              Pagy.windowListeners = [];
+              ['compact', 'items', 'responsive'].forEach(function(name){
+                var json = document.getElementsByClassName("pagy-"+name+"-json");
+                for (var i = 0, len = json.length; i < len; i++) {
+                  Pagy[name].apply(null, JSON.parse(json[i].innerHTML))
+                }
+              })
+            };
 google.charts.load('current', { 'packages': ['bar', 'treemap', 'corechart'] });
 
 var sharedOpts = {
@@ -18163,7 +18201,7 @@ function drawIpsChart() {
   var opts  = $.extend({}, barOpts, {
     title: 'Iterations Per Second',
     hAxis: { format: 'decimal', gridlines: { count: 8 } },
-    chartArea: { left: 80, top: 40, width: '84%' }
+    chartArea: { left: 80, top: 40, width: '79%' }
   });
   chart.draw(data, opts);
 };
@@ -18212,4 +18250,4 @@ function drawComparisonChart() {
 
 
 
-;
+window.addEventListener("turbolinks:load", Pagy.init);
