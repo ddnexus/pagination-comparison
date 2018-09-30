@@ -16,15 +16,15 @@ class ComparisonController < ApplicationController
 
   helper_method :pagy      # we use #pagy also in the comparison helpers
 
+  before_action :set_pagy_vars
+
   def gems
-    @pagy, @records        = pagy(Dish.all)
     @will_paginate_records = Dish.all.page(params[:page])
     @kaminari_records      = Dish.all.kaminari_page(params[:page])
   end
 
 
   def pagy_action
-    @pagy, @records = pagy(Dish.all)
     render 'pagy'
   end
 
@@ -34,6 +34,10 @@ class ComparisonController < ApplicationController
 
 
   private
+
+    def set_pagy_vars
+      @pagy, @records = pagy(Dish.all)
+    end
 
   GEMS_DATA_FILE = Rails.root.join('db', 'saved_gems_data')
 

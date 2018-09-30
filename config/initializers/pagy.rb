@@ -1,25 +1,60 @@
-# Example of initializer file
+# Pagy initializer file
 # Customize only what you really need but notice that Pagy works also without any of the following lines.
 
 
 # Extras
 # See https://ddnexus.github.io/pagy/extras
 
-# Array: Paginate arrays efficiently avoiding expensive array-wrapping and without overriding
+
+# Backend Extras
+
+# Array: Paginate arrays efficiently, avoiding expensive array-wrapping and without overriding
 # See https://ddnexus.github.io/pagy/extras/array
 # require 'pagy/extras/array'
 
-# Bootstrap: Nav helper and templates for Bootstrap pagination
+# Searchkick: Paginate `Searchkick::Results` objects efficiently, avoiding expensive oject-wrapping and without overriding.
+# See https://ddnexus.github.io/pagy/extras/searchkick
+# require 'pagy/extras/searchkick'
+
+
+# Frontend Extras
+
+# Navs: Add responsive and compact generic/unstyled nav helpers
+# Notice: the other frontend extras add their own framework-styled versions,
+# so require this extra only if you need the plain unstyled version
+# See https://ddnexus.github.io/pagy/extras/navs
+require 'pagy/extras/navs'
+
+# Bootstrap: Nav, responsive and compact helpers and templates for Bootstrap pagination
 # See https://ddnexus.github.io/pagy/extras/bootstrap
 require 'pagy/extras/bootstrap'
 
-# Bulma: Nav helper and templates for Bulma pagination
+# Bulma: Nav, responsive and compact helpers and templates for Bulma pagination
 # See https://ddnexus.github.io/pagy/extras/bulma
-require 'pagy/extras/bulma'
+# require 'pagy/extras/bulma'
 
-# Compact: An alternative UI that combines the pagination with the nav info in one compact element
-# See https://ddnexus.github.io/pagy/extras/compact
-require 'pagy/extras/compact'
+# Foundation: Nav, responsive and compact helpers and templates for Foundation pagination
+# See https://ddnexus.github.io/pagy/extras/foundation
+# require 'pagy/extras/foundation'
+
+# Materialize: Nav, responsive and compact helpers for Materialize pagination
+# See https://ddnexus.github.io/pagy/extras/materialize
+# require 'pagy/extras/materialize'
+
+# Semantic: Nav helper for Semantic UI pagination
+# See https://ddnexus.github.io/pagy/extras/semantic
+# require 'pagy/extras/semantic'
+
+# Breakoints var used by the responsive nav helpers
+# See https://ddnexus.github.io/pagy/extras/navs#breakpoints
+# Pagy::VARS[:breakpoints] = { 0 => [1,2,2,1], 350 => [2,3,3,2], 550 => [3,4,4,3] }    # example of width/size pairs
+Pagy::VARS[:breakpoints] = { 0   => [1,1,1,1],
+                             450 => [2,2,2,2],
+                             600 => [3,3,3,3],
+                             700 => [4,4,4,4] }
+
+
+# Feature Extras
 
 # Items: Allow the client to request a custom number of items per page with a ready to use selector UI
 # See https://ddnexus.github.io/pagy/extras/items
@@ -27,22 +62,14 @@ require 'pagy/extras/compact'
 # Pagy::VARS[:items_param] = :items    # default
 # Pagy::VARS[:max_items]   = 100       # default
 
-# Bulma: Nav helper and templates for Materialize pagination
-# See https://ddnexus.github.io/pagy/extras/materialize
-# require 'pagy/extras/materialize'
-
 # Out Of Range: Allow for easy handling of out of range pages
 # See https://ddnexus.github.io/pagy/extras/out_of_range
 # Pagy::VARS[:out_of_range_mode] = :last_page    # default  (other options: :empty_page and :exception)
 
-# Responsive: On resize, the number of page links will adapt in real-time to the available window/container width
-# See https://ddnexus.github.io/pagy/extras/responsive
-require 'pagy/extras/responsive'
-# See https://ddnexus.github.io/pagy/extras/responsive#breakpoints
-Pagy::VARS[:breakpoints] = { 0   => [1,1,1,1],
-                             450 => [2,2,2,2],
-                             600 => [3,3,3,3],
-                             700 => [4,4,4,4] }
+# Trim: Remove the page=1 param from links
+# See https://ddnexus.github.io/pagy/extras/trim
+# require 'pagy/extras/trim'
+
 
 
 # Pagy Variables
@@ -50,24 +77,33 @@ Pagy::VARS[:breakpoints] = { 0   => [1,1,1,1],
 # All the Pagy::VARS are set for all the Pagy instances but can be overridden
 # per instance by just passing them to Pagy.new or the #pagy controller method
 
+
 # Instance variables
 # See https://ddnexus.github.io/pagy/api/pagy#instance-variables
+# Pagy::VARS[:items] = 20                                   # default
 Pagy::VARS[:items] = 25
+
 
 # Other Variables
 # See https://ddnexus.github.io/pagy/api/pagy#other-variables
+# Pagy::VARS[:size]       = [1,4,4,1]                       # default
 Pagy::VARS[:size]       = [5,5,5,5]
 # Pagy::VARS[:page_param] = :page                           # default
 # Pagy::VARS[:params]     = {}                              # default
 # Pagy::VARS[:anchor]     = '#anchor'                       # example
 # Pagy::VARS[:link_extra] = 'data-remote="true"'            # example
+# Pagy::VARS[:item_path]  = 'activerecord.models.product'   # example
 Pagy::VARS[:item_path]  = 'activerecord.models.dish'
 
 
-# Rails: extras assets path required by compact, items and responsive extras
-# See https://ddnexus.github.io/pagy/extras
-Rails.application.config.assets.paths << Pagy.root.join('pagy', 'extras', 'javascripts')
+# Rails
 
+# Rails: extras assets path required by the compact and responsive navs, and the items extra
+# See https://ddnexus.github.io/pagy/extras#javascript
+Rails.application.config.assets.paths << Pagy.root.join('javascripts')
+
+
+# I18n
 
 # I18n: faster internal pagy implementation (does not use the I18n gem)
 # Use only for single language apps that don't need dynamic translation between multiple languages
@@ -81,5 +117,9 @@ Rails.application.config.assets.paths << Pagy.root.join('pagy', 'extras', 'javas
 # See https://ddnexus.github.io/pagy/extras/i18n
 # require 'pagy/extras/i18n'
 
+
 # just to check if :pagy_t works with a custom file with AR entries
 Pagy::Frontend::I18N.load(file: Rails.root.join('config', 'locales', 'pagy.yml'))
+
+
+# Pagy::Frontend.send(:module_function, :pagy_url_for)

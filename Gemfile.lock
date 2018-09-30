@@ -1,3 +1,8 @@
+PATH
+  remote: /opt/pagy
+  specs:
+    pagy (0.20.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -39,7 +44,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
-    autoprefixer-rails (7.2.5)
+    autoprefixer-rails (9.1.1)
       execjs
     benchmark-ips (2.7.2)
     bootstrap (4.0.0)
@@ -58,6 +63,9 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
+    debase (0.2.3.beta2)
+      debase-ruby_core_source (>= 0.10.2)
+    debase-ruby_core_source (0.10.3)
     erubi (1.7.0)
     execjs (2.7.0)
     faker (1.8.7)
@@ -109,7 +117,6 @@ GEM
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
-    pagy (0.14.0)
     popper_js (1.12.9)
     puma (3.11.2)
     rack (2.0.3)
@@ -143,6 +150,8 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rbzip2 (0.2.0)
+    ruby-debug-ide (0.7.0.beta6)
+      rake (>= 0.8.1)
     sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -190,11 +199,12 @@ PLATFORMS
 
 DEPENDENCIES
   benchmark-ips
-  bootstrap (~> 4.0.0)
+  bootstrap
   bootstrap-will_paginate
   coffee-rails (~> 4.2)
+  debase (= 0.2.3.beta2)
   faker
-  font-awesome-sass (~> 5.0.6)
+  font-awesome-sass
   haml
   jbuilder (~> 2.5)
   jquery-rails
@@ -202,9 +212,10 @@ DEPENDENCIES
   kaminari
   loofah (~> 2.2.1)
   memory_profiler
-  pagy (~> 0.14.0)
+  pagy!
   puma (~> 3.7)
   rails (~> 5.1.4)
+  ruby-debug-ide (= 0.7.0.beta6)
   sass-rails (~> 5.0)
   slim-rails
   sqlite3

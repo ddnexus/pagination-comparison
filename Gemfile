@@ -51,16 +51,15 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'loofah', '~> 2.2.1'
 
-# fundation
-gem 'bootstrap', '~> 4.0.0'
-gem 'font-awesome-sass', '~> 5.0.6'
+gem 'bootstrap'
+gem 'font-awesome-sass'
 gem 'faker'
 gem 'slim-rails'
 gem 'haml'
 
 # pagination
-gem 'pagy', '~> 0.14.0'
-#gem 'pagy', path: '/opt/pagy'
+#gem 'pagy', '~> 0.14.0'
+gem 'pagy', path: '/opt/pagy'
 
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
@@ -74,3 +73,11 @@ gem 'memory_profiler'
 # gem 'bulma-rails'
 # gem 'materialize-sass', '~> 1.0.0.rc2'
 # gem 'material_icons'
+
+# gem 'foundation-rails', :github => 'zurb/foundation-rails'
+# gem 'autoprefixer-rails'
+
+# gem 'semantic-ui-sass'
+
+gem 'ruby-debug-ide', '0.7.0.beta6'
+gem 'debase', '0.2.3.beta2'

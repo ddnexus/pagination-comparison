@@ -40,6 +40,7 @@
           == wrap_nav "pagy_nav helper"
             == pagy_nav(@pagy)
 
+    .scrollable-section
       .pagy-nav
         .capt pagy_nav_bootstrap
         .pager-example
@@ -56,13 +57,11 @@
         == wrap_nav "pagy_nav_responsive helper"
           == pagy_nav_responsive(@pagy)
 
-
     .pagy-nav
       .capt pagy_nav_responsive_bootstrap
       .pager-example
         == wrap_nav "pagy_nav_responsive_bootstrap helper"
           == pagy_nav_responsive_bootstrap(@pagy)
-
 
     h3.title.fas.fa-code Pagy Compact Helpers
 
@@ -86,30 +85,34 @@
     /   .no-flex.pager-example
     /     == wrap_nav "pagy_items_selector helper"
     /       == pagy_items_selector(@pagy)
+    /
 
     h3.title.fas.fa-file-code Pagy Templates
 
-    .scrollable-section
-      - Pagy.root.join('pagy', 'extras', 'templates').each_child.sort.each do |t|
-        .pagy-nav
-          .capt title=t = t.basename
-          .no-flex.pager-example
-            == wrap_nav "template #{t}"
-              == render file: t, locals: { pagy: @pagy }
 
-    h3.title.fas.fa-file-code Custom Templates
-
-    .scrollable-section
-      - if Rails.root.join('app', 'views', 'pagy').entries.size > 2
-        - Rails.root.join('app', 'views', 'pagy').each_child.sort.each do |t|
+    - %w[/nav. nav_bootstrap.].each do |n|
+      - Pagy.root.join('templates').each_child.sort.each do |t|
+        - next unless t.to_s.include?(n)
+        .scrollable-section
           .pagy-nav
             .capt title=t = t.basename
             .no-flex.pager-example
               == wrap_nav "template #{t}"
                 == render file: t, locals: { pagy: @pagy }
-      - else
-        .pagy-nav
-          p You can try your custom templates by adding them to the <code>app/views/pagy</code> dir and reload this page.
+
+    / h3.title.fas.fa-file-code Custom Templates
+    /
+    / .scrollable-section
+    /   - if Rails.root.join('app', 'views', 'pagy').entries.size > 2
+    /     - Rails.root.join('app', 'views', 'pagy').each_child.sort.each do |t|
+    /       .pagy-nav
+    /         .capt title=t = t.basename
+    /         .no-flex.pager-example
+    /           == wrap_nav "template #{t}"
+    /             == render file: t, locals: { pagy: @pagy }
+    /   - else
+    /     .pagy-nav
+    /       p You can try your custom templates by adding them to the <code>app/views/pagy</code> dir and reload this page.
 
 
   h2.title.fas.fa-balance-scale Comparisons
