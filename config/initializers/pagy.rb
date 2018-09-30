@@ -27,7 +27,7 @@ require 'pagy/extras/navs'
 
 # Bootstrap: Nav, responsive and compact helpers and templates for Bootstrap pagination
 # See https://ddnexus.github.io/pagy/extras/bootstrap
-require 'pagy/extras/bootstrap'
+# require 'pagy/extras/bootstrap'
 
 # Bulma: Nav, responsive and compact helpers and templates for Bulma pagination
 # See https://ddnexus.github.io/pagy/extras/bulma
@@ -39,7 +39,7 @@ require 'pagy/extras/bootstrap'
 
 # Materialize: Nav, responsive and compact helpers for Materialize pagination
 # See https://ddnexus.github.io/pagy/extras/materialize
-# require 'pagy/extras/materialize'
+require 'pagy/extras/materialize'
 
 # Semantic: Nav helper for Semantic UI pagination
 # See https://ddnexus.github.io/pagy/extras/semantic

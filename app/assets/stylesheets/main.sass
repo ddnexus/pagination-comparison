@@ -32,6 +32,9 @@
   border: 1px solid #e5e5e5
   box-shadow: 0 0 10px rgba(0,0,0,0.1)
 
+@mixin border-radius($_)
+
+
 $dark-white: #f7f7f7
 $dark-grey: #51585f
 $light-grey: lighten($dark-grey, 20%)
@@ -40,10 +43,14 @@ $bg-good: #0F9D58
 $bg-bad: #DB4437
 
 
+$font-family-base:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default
+$font-weight-base:          400 !default
+
+
 //////// Override
 
 .pagination
-  @extend .pagination-sm
+  //@extend .pagination-sm
 
 //////// Home
 
@@ -287,7 +294,7 @@ table.score-comparison
   .thead-dark th
     color: #fff
     background-color: $dark-grey
-    //border-color: white
+  //border-color: white
 
 
   td.txt-invert
@@ -323,7 +330,7 @@ table.score-comparison
       text-decoration: none
       color: #007bff !important
 
-      //light blue: #007bff; dark blue: #0056b3;
+//light blue: #007bff; dark blue: #0056b3;
 
 div.card-body th
   padding-bottom: .8em
@@ -365,7 +372,7 @@ div.card-body th
     display: block
 
 .pagy-nav-bootstrap-compact a, .pagy-nav-bootstrap-compact button
-  @extend .btn-sm
+  //@extend .btn-sm
 
 #responsive-extra ul.pagination
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
