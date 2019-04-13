@@ -55,7 +55,7 @@
 
     p
       = icon('fas', 'info-circle')
-      i  To be fair with all gems, we added the <b>pagy_bootstrap_nav</b> method needed to render the same bootstrap pagination as the other gems.
+      i  To be fair with all gems, we added the <b>pagy_bootstrap_nav_js</b> method needed to render the same bootstrap pagination as the other gems.
 
 
   = render 'shared/details', id: :code do
@@ -93,7 +93,7 @@
     .graph-container.col-md-10.col-lg-8
       #memory-page-chart.chart
 
-  p This chart shows the memory usage with increasing number of pages shown, starting from a pagination bar of just 2 pages, up to 20 pages. From 2 to 20 pages Pagy has just a <b>#{increase_times(:p)}</b> (its chart-line is almost horizontal on the very bottom part of the memory usage), Will Paginate has a <b>#{increase_times(:w)}</b> (noticeable slope) and Kaminari has a <b>#{increase_times(:k)}</b> (a very steep memory increase)!
+  p This chart shows the memory usage with increasing number of pages shown, starting from a pagination bar of just 2 pages, up to 20 pages. From 2 to 20 pages Pagy has  <b>#{increase_times(:p)}</b>  (its chart-line is totally flat on the very bottom part of the memory usage), Will Paginate has a <b>#{increase_times(:w)}</b> (noticeable slope) and Kaminari has a <b>#{increase_times(:k)}</b> (a very steep memory increase)!
 
   p You can take a look at the full Memory Profile for each gem in the Details below. Please, keep in mind that each pagination gem may use its own code or may use other gems (rails, activerecord, activesupport, etc.) to do its job. Because of that, we measure the memory allocated by the app as a whole (all gems included), not by the single pagination gem (which obviously wouldn't make any sense).
 
@@ -110,13 +110,11 @@
       tbody
         tr
           td.scroll
-            .pre-mono == $p.memory.stats
+            .pre-mono = $p.memory.stats
           td.scroll
-            .pre-mono == $w.memory.stats
+            .pre-mono = $w.memory.stats
           td.scroll
-            .pre-mono == $k.memory.stats
-
-
+            .pre-mono = $k.memory.stats
 
 #gems2.step
   = render 'shared/step', path: :gems2, timeout: 4000

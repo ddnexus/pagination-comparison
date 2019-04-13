@@ -26,7 +26,6 @@ class ComparisonController < ApplicationController
     @kaminari_records      = Dish.all.kaminari_page(params[:page])
   end
 
-
   def pagy_action
     render 'pagy'
   end

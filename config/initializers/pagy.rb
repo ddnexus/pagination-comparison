@@ -1,8 +1,9 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
-# Pagy initializer file
+# Pagy initializer file (3.0.0)
 # Customize only what you really need and notice that Pagy works also without any of the following lines.
+# Should you just cherry pick part of this file, please maintain the require-order of the extras
 
 
 # Extras
@@ -20,52 +21,54 @@
 # require 'pagy/extras/countless'
 # Pagy::VARS[:cycle] = false    # default
 
-# Elasticsearch Rails extra: Paginate `ElasticsearchRails::Results` objects efficiently, avoiding expensive object-wrapping and without overriding.
+# Elasticsearch Rails extra: Paginate `ElasticsearchRails::Results` objects
 # See https://ddnexus.github.io/pagy/extras/elasticsearch_rails
 # require 'pagy/extras/elasticsearch_rails'
 
-# Searchkick extra: Paginate `Searchkick::Results` objects efficiently, avoiding expensive object-wrapping and without overriding.
+# Searchkick extra: Paginate `Searchkick::Results` objects
 # See https://ddnexus.github.io/pagy/extras/searchkick
 # require 'pagy/extras/searchkick'
 
 
 # Frontend Extras
 
-# Bootstrap extra: Add nav, responsive and compact helpers and templates for Bootstrap pagination
+# Bootstrap extra: Add nav, nav_js and combo_nav_js helpers and templates for Bootstrap pagination
 # See https://ddnexus.github.io/pagy/extras/bootstrap
 require 'pagy/extras/bootstrap'
 
-# Bulma extra: Add nav, responsive and compact helpers and templates for Bulma pagination
+# Bulma extra: Add nav, nav_js and combo_nav_js helpers and templates for Bulma pagination
 # See https://ddnexus.github.io/pagy/extras/bulma
 # require 'pagy/extras/bulma'
 
-# Foundation extra: Add nav, responsive and compact helpers and templates for Foundation pagination
+# Foundation extra: Add nav, nav_js and combo_nav_js helpers and templates for Foundation pagination
 # See https://ddnexus.github.io/pagy/extras/foundation
 # require 'pagy/extras/foundation'
 
-# Materialize extra: Nav, responsive and compact helpers for Materialize pagination
+# Materialize extra: Add nav, nav_js and combo_nav_js helpers for Materialize pagination
 # See https://ddnexus.github.io/pagy/extras/materialize
 # require 'pagy/extras/materialize'
 
-# Plain extra: Add responsive and compact nav plain helpers
+# Navs extra: Add nav_js and combo_nav_js javascript helpers
 # Notice: the other frontend extras add their own framework-styled versions,
-# so require this extra only if you need the plain unstyled version
-# See https://ddnexus.github.io/pagy/extras/plain
-require 'pagy/extras/plain'
+# so require this extra only if you need the unstyled version
+# See https://ddnexus.github.io/pagy/extras/navs
+require 'pagy/extras/navs'
 
-# Semantic extra: Nav, responsive and compact helpers for Semantic UI pagination
+# Semantic extra: Add nav, nav_js and combo_nav_js helpers for Semantic UI pagination
 # See https://ddnexus.github.io/pagy/extras/semantic
 # require 'pagy/extras/semantic'
 
-# Breakpoints var used by the responsive nav helpers
-# See https://ddnexus.github.io/pagy/extras/plain#breakpoints
-# Pagy::VARS[:breakpoints] = { 0 => [1,2,2,1], 350 => [2,3,3,2], 550 => [3,4,4,3] }    # example of width/size pairs
-Pagy::VARS[:breakpoints] = { 0   => [1,1,1,1],
-                             450 => [2,2,2,2],
-                             600 => [3,3,3,3],
-                             700 => [4,4,4,4] }
+# Multi size var used by the *_nav_js helpers
+# See https://ddnexus.github.io/pagy/extras/navs#steps
+Pagy::VARS[:steps] = { 0 => [2,3,3,2], 540 => [3,5,5,3], 720 => [5,7,7,5] }   # example
+
 
 # Feature Extras
+
+# Headers extra: http response headers (and other helpers) useful for API pagination
+# See http://ddnexus.github.io/pagy/extras/headers
+# require 'pagy/extras/headers'
+# Pagy::VARS[:headers] = { page: 'Current-Page', items: 'Page-Items', count: 'Total-Count', pages: 'Total-Pages' }     # default
 
 # Support extra: Extra support for features like: incremental, infinite, auto-scroll pagination
 # See https://ddnexus.github.io/pagy/extras/support
@@ -79,7 +82,8 @@ Pagy::VARS[:breakpoints] = { 0   => [1,1,1,1],
 
 # Overflow extra: Allow for easy handling of overflowing pages
 # See https://ddnexus.github.io/pagy/extras/overflow
-# Pagy::VARS[:overflow] = :last_page    # default  (other options: :empty_page and :exception)
+# require 'pagy/extras/overflow'
+# Pagy::VARS[:overflow] = :empty_page    # default  (other options: :last_page and :exception)
 
 # Trim extra: Remove the page=1 param from links
 # See https://ddnexus.github.io/pagy/extras/trim
@@ -107,22 +111,22 @@ Pagy::VARS[:size]       = [5,5,5,5]
 # Pagy::VARS[:params]     = {}                              # default
 # Pagy::VARS[:anchor]     = '#anchor'                       # example
 # Pagy::VARS[:link_extra] = 'data-remote="true"'            # example
-# Pagy::VARS[:item_path]  = 'activerecord.models.product'   # example
-Pagy::VARS[:item_path]  = 'activerecord.models.dish'
 
 
 # Rails
 
-# Rails: extras assets path required by the compact and responsive navs, and the items extra
+# Rails: extras assets path required by the helpers that use javascript
+# (pagy*_nav_js, pagy*_combo_nav_js, and pagy_items_selector_js)
 # See https://ddnexus.github.io/pagy/extras#javascript
 Rails.application.config.assets.paths << Pagy.root.join('javascripts')
 
 
 # I18n
 
-# Pagy internal I18n: ~12x faster using ~6x less memory than the i18n gem
+# Pagy internal I18n: ~18x faster using ~10x less memory than the i18n gem
 # See https://ddnexus.github.io/pagy/api/frontend#i18n
-# Notice: No need to use any of the following lines if you use the i18n extra below
+# Notice: No need to configure anything in this section if your app uses only "en"
+# or if you use the i18n extra below
 #
 # Examples:
 # load the "de" built-in locale:
@@ -138,7 +142,7 @@ Rails.application.config.assets.paths << Pagy.root.join('javascripts')
 #                 {locale: 'es'})
 #
 # load the "en" built-in locale, a custom "es" locale,
-# and a totally custom locale complete with the :pluralize proc:
+# and a totally custom locale complete with a custom :pluralize proc:
 # (the first passed :locale will be used also as the default_locale)
 # Pagy::I18n.load({locale: 'en'},
 #                 {locale: 'es', filepath: 'path/to/pagy-es.yml'},
@@ -149,7 +153,11 @@ Pagy::I18n.load(locale: 'en',
                 filepath: Rails.root.join('config', 'locales', 'pagy.yml'))
 
 
-# I18n extra: uses the standard i18n gem which is ~12x slower using ~6x more memory
+# I18n extra: uses the standard i18n gem which is ~18x slower using ~10x more memory
 # than the default pagy internal i18n (see above)
 # See https://ddnexus.github.io/pagy/extras/i18n
 # require 'pagy/extras/i18n'
+
+# Default i18n key
+# Pagy::VARS[:i18n_key] = 'pagy.item_name'   # default
+Pagy::VARS[:i18n_key] = 'activerecord.models.dish'

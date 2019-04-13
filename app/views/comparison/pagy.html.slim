@@ -31,7 +31,7 @@
 
   #pagy-nav
 
-    h3.title.fas.fa-code Pagy Helpers
+    h3.title.fas.fa-code Nav Helpers
 
     .scrollable-section
       .pagy-nav
@@ -48,50 +48,50 @@
           == wrap_nav "pagy_bootstrap_nav helper"
             == pagy_bootstrap_nav(@pagy)
 
-    h3.title.fas.fa-code Pagy Responsive Helpers
+    h3.title.fas.fa-code Javascript Nav Helpers
 
     p Resize the windodw to get different quantities of pages shown...
 
     .pagy-nav
-      .capt pagy_plain_responsive_nav
+      .capt pagy_nav_js
       .no-flex.pager-example#dd-try
-        == wrap_nav "pagy_nav_responsive helper"
-          == pagy_plain_responsive_nav(@pagy)
+        == wrap_nav "pagy_nav_js helper"
+          == pagy_nav_js(@pagy)
 
     .pagy-nav
-      .capt pagy_bootstrap_responsive_nav
+      .capt pagy_bootstrap_nav_js
       .pager-example
-        == wrap_nav "pagy_bootstrap_responsive_nav helper"
-          == pagy_bootstrap_responsive_nav(@pagy)
+        == wrap_nav "pagy_bootstrap_nav_js helper"
+          == pagy_bootstrap_nav_js(@pagy)
 
-    h3.title.fas.fa-code Pagy Compact Helpers
+    h3.title.fas.fa-code Javascript Combo Nav Helpers
 
     .pagy-nav
       .capt pagy_plain_compact_nav
       .no-flex.pager-example
-        == wrap_nav "pagy_plain_compact_nav helper"
-          == pagy_plain_compact_nav(@pagy)
+        == wrap_nav "pagy_combo_nav_js helper"
+          == pagy_combo_nav_js(@pagy)
 
     .pagy-nav
-      .capt pagy_bootstrap_compact_nav
+      .capt pagy_bootstrap_combo_nav_js
       .pager-example
-        == wrap_nav "pagy_bootstrap_compact_nav helper"
-          == pagy_bootstrap_compact_nav(@pagy)
+        == wrap_nav "pagy_bootstrap_combo_nav_js helper"
+          == pagy_bootstrap_combo_nav_js(@pagy)
 
 
     / h3.title.fas.fa-code Pagy Items Selector Helper
     /
     / .pagy-nav
-    /   .capt pagy_items_selector
+    /   .capt pagy_items_selector_js
     /   .no-flex.pager-example
-    /     == wrap_nav "pagy_items_selector helper"
-    /       == pagy_items_selector(@pagy)
+    /     == wrap_nav "pagy_items_selector_js helper"
+    /       == pagy_items_selector_js(@pagy)
     /
 
     h3.title.fas.fa-file-code Pagy Templates
 
 
-    - %w[/nav. nav_bootstrap.].each do |n|
+    - %w[/nav. bootstrap_nav.].each do |n|
       - Pagy.root.join('templates').each_child.sort.each do |t|
         - next unless t.to_s.include?(n)
         .scrollable-section

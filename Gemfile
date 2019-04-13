@@ -59,8 +59,11 @@ gem 'slim-rails'
 gem 'haml'
 
 # pagination
-gem 'pagy', '~> 2.0'
+gem 'pagy', '~> 3.0'
 # gem 'pagy', path: '/opt/pagy'
+
+# Faster and lighter JSON
+gem 'oj'
 
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
@@ -82,4 +85,3 @@ gem 'memory_profiler'
 
 gem 'ruby-debug-ide', '0.7.0.beta7'
 gem 'debase', '0.2.3.beta5'
-

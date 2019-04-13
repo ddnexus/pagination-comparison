@@ -10,11 +10,6 @@ If you are just interested in the results, charts and analysys, you can browse t
 
 If you want to run the comparisons live on your computer you need to install the rails app and running it in production mode.
 
-#### Prerequisites
-
-- ruby >= 2.5.0
-- rails ~> 5.1.4
-
 #### Installation
 
 You should be able to get it up and running with:
@@ -34,6 +29,3 @@ Bug reports and pull requests are welcome.
 ## License
 
 The app is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-
-

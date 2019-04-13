@@ -129,7 +129,7 @@ class CodeStruct
     obj = {name: mod.name, methods: [], is_class: mod.is_a?(Class)}
     mod_methods = mod.methods(false) + mod.instance_methods(false) + mod.private_instance_methods(false)
     mod_methods.each do |m|
-      obj[:methods].push(m) unless @exclude.any?{|r| m =~ r}
+      obj[:methods].push(m) unless @exclude.any?{|r| m == r}
     end
     obj[:methods].sort!
     @modules << obj

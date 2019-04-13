@@ -14,8 +14,10 @@ module ComparisonHelper
 
 
   def pagy_pagination(scope=Dish.all, page=params[:page])
-    pagy, records = pagy(scope, page: page)
-    pagy_bootstrap_nav(pagy)
+    pagy, _records = pagy(scope, page: page, steps: false)
+    # pagy_bootstrap_combo_nav_js(pagy, 'comparison')
+    pagy_bootstrap_nav_js(pagy, 'comparison')
+    # pagy_bootstrap_nav(pagy)
     pagy_info(pagy)
   end
 
@@ -83,7 +85,8 @@ module ComparisonHelper
 
   def init_code_struct
     return unless Rails.env.production?
-    $p.code_struct = CodeStruct.new Pagy, [/responsive|compact|plain/]
+    # remove a few helpers required only in onther parts of the app
+    $p.code_struct = CodeStruct.new Pagy, %i[pagy_nav_js pagy_combo_nav_js pagy_bootstrap_nav pagy_bootstrap_combo_nav_js]
     $w.code_struct = CodeStruct.new WillPaginate
     $k.code_struct = CodeStruct.new Kaminari
   end
@@ -169,9 +172,10 @@ module ComparisonHelper
       (p_start, w_start, k_start = p, w, k)  if n == 2
       if n == 20
         p_end, w_end, k_end = p, w, k
-        pa = ratio p_end, p_start, :increase
-        wa = ratio w_end, w_start, :increase
-        ka = ratio k_end, k_start, :increase
+        p_ratio = ratio_annot p_end, p_start, :more
+        pa = p_ratio.start_with?('1x') ? 'no increase' : p_ratio
+        wa = ratio_annot w_end, w_start, :increase
+        ka = ratio_annot k_end, k_start, :increase
       else
         pa, wa, ka = nil
       end
@@ -377,7 +381,7 @@ module ComparisonHelper
   end
 
   def ratio_ipskb_score(a,b,q)
-    "~<b>#{(ips_per_kb(a)/ips_per_kb(b).to_f).round}</b>x #{q}".html_safe
+    "~<b>#{(ips_per_kb(a)/ips_per_kb(b).to_f).round(-1)}</b>x #{q}".html_safe
   end
 
   def ips_per_kb(gem)

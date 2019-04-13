@@ -39,6 +39,10 @@ style
         #comparison-chart.chart
 
       .graph-screenshot
+        #resource-consumption-chart.chart
+          = image_tag('resource-consumption-chart-v3.svg')
+
+      .graph-screenshot
         = render 'shared/score_summary_table'
 
     .col-md-8.col-lg-6
@@ -50,18 +54,18 @@ style
     #responsive-extra.graph-screenshot
       .row
         .col-lg-7
-          == pagy_bootstrap_responsive_nav(pagy)
+          == pagy_bootstrap_nav_js(pagy)
       .row
         .col-lg-6
-          == pagy_bootstrap_responsive_nav(pagy)
+          == pagy_bootstrap_nav_js(pagy)
       .row
         .col-lg-4
-          == pagy_bootstrap_responsive_nav(pagy)
+          == pagy_bootstrap_nav_js(pagy)
 
     #compact-extra.graph-screenshot
       .row
         .col-lg-3
-          == pagy_bootstrap_compact_nav(pagy)
+          == pagy_bootstrap_combo_nav_js(pagy)
 
 
 = render 'shared/init_charts'
